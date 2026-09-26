@@ -10,7 +10,7 @@
       "volumes": 100,
       "articleTitle": "Inside the World of Batman",
       "description": "Explore Gotham City, Batman's origins, iconic villains, memorable characters, and important story details fans may have missed.",
-      "image": "Movie_Article_img/the-batman.png"
+      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790412484/batman_comic.jpg"
     },
     {
       "id": 2,

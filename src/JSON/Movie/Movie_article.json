@@ -46,7 +46,7 @@
       "duration": "2h 56m",
       "articleTitle": "The Batman: Details You May Have Missed",
       "description": "Discover the darker side of Gotham, important clues, characters, detective work, and story details from The Batman.",
-      "image": "Movie_Article_img/the-batman.png"
+      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790413653/Batman_movie.jpg"
     },
     {
       "id": 5,
@@ -94,7 +94,7 @@
       "duration": "2h 32m",
       "articleTitle": "The Dark Knight — Details You May Have Missed",
       "description": "Explore Gotham, Batman and the Joker, memorable scenes, character motivations, and hidden details from the film.",
-      "image": "Movie_Article_img/the-dark-knight.png"
+      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790412487/joker.jpg"
     }
   ]
 }
