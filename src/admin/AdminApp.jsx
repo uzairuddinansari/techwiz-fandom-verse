@@ -113,11 +113,11 @@ function AdminLogin() {
           </label>
           <button type="submit" className="adm-btn adm-btn-primary">Sign in</button>
         </form>
-        <div className="adm-login-hint">
+        {/* <div className="adm-login-hint">
           <strong>Demo access</strong>
           <span>Email: <code>{DEMO_CREDENTIALS.email}</code> · Password: <code>{DEMO_CREDENTIALS.password}</code></span>
           <small>Front-end demo only — there is no server, so this is not real security.</small>
-        </div>
+        </div> */}
       </section>
       <aside className="adm-login-art" aria-hidden="true">
         <div>
