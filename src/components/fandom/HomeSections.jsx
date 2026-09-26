@@ -134,7 +134,7 @@ export function FeaturedShowcase() {
         )}
       </div>
 
-      {playing && <MediaModal items={[playing]} index={0} onNavigate={() => {}} onClose={() => setPlaying(null)} />}
+      {playing && <MediaModal items={[playing]} index={0} onNavigate={() => { }} onClose={() => setPlaying(null)} />}
     </section>
   );
 }
@@ -198,7 +198,6 @@ export function HomeEvents() {
   );
 }
 
-/* One lead story plus a list of the latest reads from different hubs. */
 export function HomeNews() {
   const picks = categories
     .map((category) => category.items.filter((item) => item.type === "article")[1] || category.items.find((item) => item.type === "article"))
