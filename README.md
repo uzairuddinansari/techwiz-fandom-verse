@@ -57,8 +57,8 @@ The `dist/` folder is a static site and can be hosted on any static host (Netlif
 
 | Name | Email | Password |
 | --- | --- | --- |
-| Demo Fan | demo@fandomverse.example | Fandom@123 |
-| Aiko Tanaka | aiko@fandomverse.example | Otaku#2026 |
+| Admin Panel  | admin@gmail.com | fandom2026 |
+
 
 The user journey:
 
