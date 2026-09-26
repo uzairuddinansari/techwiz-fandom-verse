@@ -14,7 +14,7 @@
       "name": "Uzair Ansari",
       "role": "Frontend Developer",
       "email": "uzair@fandomverse.example",
-      "image": "team/member-01.png",
+      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406043/Uzair_teckwiz.jpg",
       "bio": "Built the interface, interactions and overall visual experience of FandomVerse.",
       "slug": "uzair-ansari",
       "tagline": "Turns ideas into fast, animated, accessible interfaces.",
@@ -72,12 +72,12 @@
       ]
     },
     {
-      "name": "Team Member 02",
+      "name": "Hafiza Yousra Sheikh",
       "role": "UI / UX Designer",
-      "email": "design@fandomverse.example",
-      "image": "team/member-02.png",
+      "email": "yousra@fandomverse.example",
+      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406198/yousra.jpg",
       "bio": "Focused on visual direction, layouts and a clear, accessible experience.",
-      "slug": "member-02",
+      "slug": "yousra-sheikh",
       "tagline": "Designs clear layouts and a consistent visual language.",
       "location": "Karachi, Pakistan",
       "skills": [
@@ -128,12 +128,12 @@
       "links": []
     },
     {
-      "name": "Team Member 03",
+      "name": "Damsa Zehra",
       "role": "Research & Content",
-      "email": "content@fandomverse.example",
-      "image": "team/member-03.png",
+      "email": "damsa@fandomverse.example",
+      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406199/damsa.jpg",
       "bio": "Researched each fandom and curated the articles, characters and events.",
-      "slug": "member-03",
+      "slug": "damsa-zehra",
       "tagline": "Researches every fandom and writes the content fans read.",
       "location": "Karachi, Pakistan",
       "skills": [
@@ -184,12 +184,12 @@
       "links": []
     },
     {
-      "name": "Team Member 04",
+      "name": "Abdul Rafay Ahmed",
       "role": "Testing & Presentation",
-      "email": "team@fandomverse.example",
-      "image": "team/member-04.png",
+      "email": "rafay@fandomverse.example",
+      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406198/rafay.jpg",
       "bio": "Tested every feature across devices and presented the project.",
-      "slug": "member-04",
+      "slug": "abdul-rafay-ahmed",
       "tagline": "Tests on every screen and presents the project.",
       "location": "Karachi, Pakistan",
       "skills": [

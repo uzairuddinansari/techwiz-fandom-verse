@@ -24,7 +24,7 @@ const Nav = () => {
     <>
       <header className={`nav_parent ${scrolled ? "is-scrolled" : ""}`}>
         <nav className="nav" aria-label="Main">
-         <Link to="/" className="nav_logo" aria-label="FandomVerse home">
+          <Link to="/" className="nav_logo" aria-label="FandomVerse home">
             <img src={logo} alt="FandomVerse" />
           </Link>
 

@@ -43,7 +43,7 @@ const slides = [
     eyebrow: "Popular · TV Shows",
     title: "Your Next Series Awaits",
     description: "Binge-worthy shows, cliffhangers and the characters that keep fans pressing “next episode”.",
-    image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=1600&q=80",
+    image: "https://res.cloudinary.com/i6su4pd1/image/upload/v1790405112/tv_shows.jpg",
     link: "/TV_Shows",
     symbol: "視",
   },
