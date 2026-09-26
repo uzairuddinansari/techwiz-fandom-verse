@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Bookmark, ChevronLeft, ChevronRight, ShoppingBag, X } from "lucide-react";
 import { formatDate, formatPrice, sectionForType, sectionPath, typeLabels } from "../../fandom/catalog";
 import { addToCart, toggleBookmark, useBookmarks } from "../../fandom/store";
+import { parseEditorialTitle } from "./ContentCard";
 
 function Player({ item }) {
   if (item.youtube) {
@@ -85,6 +86,7 @@ export default function MediaModal({ items, index, onClose, onNavigate }) {
   const bookmarks = useBookmarks();
   const saved = bookmarks.some((entry) => entry.uid === item.uid);
   const canBrowse = items.length > 1;
+  const parsedTitle = parseEditorialTitle(item?.title);
 
   useEffect(() => {
     const previousFocus = document.activeElement;
@@ -144,14 +146,36 @@ export default function MediaModal({ items, index, onClose, onNavigate }) {
         </div>
 
         <div className="fv-modal-copy">
-          <span className="fv-eyebrow">
-            {item.categoryName} / {typeLabels[item.type]}
-            {canBrowse && ` · ${index + 1} of ${items.length}`}
-          </span>
-          <h2>{item.title}</h2>
-          {item.franchise && <p className="fv-card-subtitle">{item.franchise}</p>}
-          {item.date && <p className="fv-muted">{item.status === "upcoming" ? "Releases" : "Published"} {formatDate(item.date)}</p>}
-          <p>{item.description}</p>
+          <div className="fv-modal-header">
+            <div className="fv-modal-badges">
+              <span className="fv-modal-badge fv-modal-badge-cat">{item.categoryName}</span>
+              <span className="fv-modal-badge fv-modal-badge-type">{typeLabels[item.type]}</span>
+              {item.kind && item.kind !== item.type && (
+                <span className="fv-modal-badge fv-modal-badge-kind">{item.kind}</span>
+              )}
+              {canBrowse && (
+                <span className="fv-modal-badge fv-modal-badge-counter">{index + 1} / {items.length}</span>
+              )}
+            </div>
+            <h2 className="fv-modal-title">{parsedTitle.title}</h2>
+            {parsedTitle.subtitle && <p className="fv-modal-tagline">{parsedTitle.subtitle}</p>}
+            {item.franchise && item.franchise !== parsedTitle.title && (
+              <p className="fv-card-subtitle">{item.franchise}</p>
+            )}
+          </div>
+
+          {(item.date || item.duration) && (
+            <div className="fv-modal-meta">
+              {item.date && (
+                <span className="fv-muted">
+                  {item.status === "upcoming" ? "Releases" : "Published"} {formatDate(item.date)}
+                </span>
+              )}
+              {item.duration && <span className="fv-muted">· {item.duration}</span>}
+            </div>
+          )}
+
+          <p className="fv-modal-desc">{item.description}</p>
           {item.type === "merchandise" && <ProductPanel key={item.uid} item={item} />}
           <div className="fv-modal-actions">
             <button type="button" className={`fv-button-outline ${saved ? "active" : ""}`} onClick={() => toggleBookmark(item)} aria-pressed={saved}>
@@ -166,3 +190,5 @@ export default function MediaModal({ items, index, onClose, onNavigate }) {
     </div>
   );
 }
+
+

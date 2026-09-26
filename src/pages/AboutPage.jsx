@@ -53,7 +53,7 @@ export default function AboutPage() {
           ))}
         </section>
 
-        <section className="fv-team" aria-labelledby="team-title">
+        {/* <section className="fv-team" aria-labelledby="team-title">
           <span className="fv-eyebrow">The people behind it</span>
           <h2 id="team-title">Meet the team</h2>
           <div className="fv-team-grid fv-team-grid-large">
@@ -66,7 +66,7 @@ export default function AboutPage() {
               </article>
             ))}
           </div>
-        </section>
+        </section> */}
 
         <section className="fv-panel fv-about-note">
           <h2>How it is built</h2>

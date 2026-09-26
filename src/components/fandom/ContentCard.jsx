@@ -1,5 +1,7 @@
+import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { Bookmark, CalendarDays, Expand, Headphones, MapPin, Play, ShoppingBag } from "lucide-react";
+import gsap from "gsap";
 import { detailPath, formatDate, formatPrice, typeLabels } from "../../fandom/catalog";
 import { toggleBookmark, useBookmarks } from "../../fandom/store";
 
@@ -15,6 +17,22 @@ const actionLabel = {
   trailer: "Watch trailer",
   merchandise: "View product",
 };
+
+export function parseEditorialTitle(rawTitle) {
+  if (!rawTitle) return { title: "", subtitle: "" };
+  let str = String(rawTitle).trim();
+  // Strip trailing artifacts like "Is —", "is -", "—", "-"
+  str = str.replace(/\s*(?:is\s*)?[—–-]+\s*$/i, "").trim();
+
+  // Check for separator like " — ", " – ", " - "
+  const match = str.match(/^(.+?)\s+(?:[—–]|-)\s+(.+)$/);
+  if (match) {
+    const title = match[1].replace(/\s*(?:is\s*)?[—–-]+\s*$/i, "").trim();
+    const subtitle = match[2].replace(/\s*(?:is\s*)?[—–-]+\s*$/i, "").trim();
+    return { title, subtitle };
+  }
+  return { title: str, subtitle: "" };
+}
 
 function CardMeta({ item }) {
   const parts = [item.categoryName];
@@ -40,6 +58,75 @@ export default function ContentCard({ item, onOpen, index = 0 }) {
   const saved = bookmarks.some((entry) => entry.uid === item.uid);
   const inModal = opensInModal.includes(item.type);
   const open = () => onOpen?.(item);
+  const mediaRef = useRef(null);
+
+  const parsedTitle = parseEditorialTitle(item.title);
+
+  // GSAP smooth hover interaction for card media
+  useEffect(() => {
+    const el = mediaRef.current;
+    if (!el) return;
+
+    // Only apply on fine-pointer devices with true hover support, respecting reduced motion
+    const canHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
+    const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (!canHover || prefersReducedMotion) return;
+
+    const img = el.querySelector(".fv-card-image");
+    const play = el.querySelector(".fv-card-play");
+
+    const onEnter = () => {
+      if (img) {
+        gsap.to(img, {
+          scale: 1.05,
+          duration: 0.5,
+          ease: "power2.out",
+          overwrite: "auto",
+          force3D: true,
+        });
+      }
+      if (play) {
+        gsap.to(play, {
+          scale: 1.08,
+          duration: 0.4,
+          ease: "power2.out",
+          overwrite: "auto",
+          force3D: true,
+        });
+      }
+    };
+
+    const onLeave = () => {
+      if (img) {
+        gsap.to(img, {
+          scale: 1,
+          duration: 0.45,
+          ease: "power2.out",
+          overwrite: "auto",
+          force3D: true,
+        });
+      }
+      if (play) {
+        gsap.to(play, {
+          scale: 1,
+          duration: 0.4,
+          ease: "power2.out",
+          overwrite: "auto",
+          force3D: true,
+        });
+      }
+    };
+
+    el.addEventListener("mouseenter", onEnter);
+    el.addEventListener("mouseleave", onLeave);
+
+    return () => {
+      el.removeEventListener("mouseenter", onEnter);
+      el.removeEventListener("mouseleave", onLeave);
+      if (img) gsap.killTweensOf(img);
+      if (play) gsap.killTweensOf(play);
+    };
+  }, []);
 
   const MediaIcon = item.type === "audio" ? Headphones : item.type === "gallery" ? Expand : item.type === "merchandise" ? ShoppingBag : Play;
 
@@ -60,7 +147,7 @@ export default function ContentCard({ item, onOpen, index = 0 }) {
 
   return (
     <article className={`fv-card fv-card-${item.type} ${saved ? "is-saved" : ""}`} style={{ "--card-delay": `${Math.min(index, 12) * 60}ms` }}>
-      <div className="fv-card-media">
+      <div className="fv-card-media" ref={mediaRef}>
         {inModal ? (
           <button type="button" className="fv-card-media-button" onClick={open} aria-label={`${actionLabel[item.type]}: ${item.title}`}>
             {media}
@@ -94,12 +181,20 @@ export default function ContentCard({ item, onOpen, index = 0 }) {
         <CardMeta item={item} />
         <h3 className="fv-card-title">
           {inModal ? (
-            <button type="button" onClick={open}>{item.title}</button>
+            <button type="button" onClick={open}>
+              <span className="fv-card-title-main">{parsedTitle.title}</span>
+              {parsedTitle.subtitle && <span className="fv-card-title-sub">{parsedTitle.subtitle}</span>}
+            </button>
           ) : (
-            <Link to={detailPath(item)}>{item.title}</Link>
+            <Link to={detailPath(item)}>
+              <span className="fv-card-title-main">{parsedTitle.title}</span>
+              {parsedTitle.subtitle && <span className="fv-card-title-sub">{parsedTitle.subtitle}</span>}
+            </Link>
           )}
         </h3>
-        {item.franchise && item.type !== "article" && <p className="fv-card-subtitle">{item.franchise}</p>}
+        {item.franchise && item.type !== "article" && item.franchise !== parsedTitle.title && (
+          <p className="fv-card-subtitle">{item.franchise}</p>
+        )}
         {item.type === "event" && (
           <p className="fv-card-subtitle fv-card-location">
             <MapPin size={13} /> {item.location}

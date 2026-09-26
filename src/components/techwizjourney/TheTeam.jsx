@@ -11,29 +11,29 @@ gsap.registerPlugin(ScrollTrigger);
 
 const members = [
   {
-    image: "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406043/Uzair_teckwiz.jpg",
+    image: member01,
     name: "Uzair Ansari",
     role: "Frontend Developer",
     description:
       "Worked on the interface, interactions and overall visual experience of the project.",
   },
   {
-    image: "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406198/yousra.jpg",
-    name: "Hafiza Yousra Sheikh",
+    image: member02,
+    name: "Team Member 02",
     role: "UI / UX Designer",
     description:
       "Focused on visual direction, layouts and creating a clear experience for users.",
   },
   {
-    image: "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406199/damsa.jpg",
-    name: "Damsa Zehra",
+    image: member03,
+    name: "Team Member 03",
     role: "Research & Planning",
     description:
       "Handled research, planning and helped turn our ideas into a practical direction.",
   },
   {
-    image: "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406198/rafay.jpg",
-    name: "Abdul Rafay Ahmed",
+    image: member04,
+    name: "Team Member 04",
     role: "Presentation",
     description:
       "Worked on presenting our project and making sure our idea was communicated clearly.",

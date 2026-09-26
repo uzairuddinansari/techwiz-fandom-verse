@@ -72,12 +72,12 @@
       ]
     },
     {
-      "name": "Hafiza Yousra Sheikh",
+      "name": "Hafiz Yousra Shaikh",
       "role": "UI / UX Designer",
-      "email": "yousra@fandomverse.example",
+      "email": "design@fandomverse.example",
       "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406198/yousra.jpg",
       "bio": "Focused on visual direction, layouts and a clear, accessible experience.",
-      "slug": "yousra-sheikh",
+      "slug": "yousra-shaikh",
       "tagline": "Designs clear layouts and a consistent visual language.",
       "location": "Karachi, Pakistan",
       "skills": [
@@ -128,12 +128,12 @@
       "links": []
     },
     {
-      "name": "Damsa Zehra",
+      "name": "Abdul Rafay",
       "role": "Research & Content",
-      "email": "damsa@fandomverse.example",
-      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406199/damsa.jpg",
+      "email": "content@fandomverse.example",
+      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406198/rafay.jpg",
       "bio": "Researched each fandom and curated the articles, characters and events.",
-      "slug": "damsa-zehra",
+      "slug": "abdul-rafay",
       "tagline": "Researches every fandom and writes the content fans read.",
       "location": "Karachi, Pakistan",
       "skills": [
@@ -184,12 +184,12 @@
       "links": []
     },
     {
-      "name": "Abdul Rafay Ahmed",
+      "name": "Damsa Zehra",
       "role": "Testing & Presentation",
-      "email": "rafay@fandomverse.example",
-      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406198/rafay.jpg",
+      "email": "team@fandomverse.example",
+      "image": "https://res.cloudinary.com/i6su4pd1/image/upload/v1790406199/damsa.jpg",
       "bio": "Tested every feature across devices and presented the project.",
-      "slug": "abdul-rafay-ahmed",
+      "slug": "damsa-zehra",
       "tagline": "Tests on every screen and presents the project.",
       "location": "Karachi, Pakistan",
       "skills": [

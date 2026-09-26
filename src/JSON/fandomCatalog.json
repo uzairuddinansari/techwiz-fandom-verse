@@ -547,7 +547,7 @@
         {
           "name": "The Tarnished",
           "franchise": "Elden Ring",
-          "image": "Game_Article/ELDEN RING.png",
+          "image": "https://res.cloudinary.com/ocuwwclo/image/upload/v1790415800/407c35641359ca9988faf5f157b60513.jpg",
           "bio": "An exile called back to the Lands Between to claim the shattered Elden Ring and become Elden Lord.",
           "traits": [
             "persistent",
