@@ -78,7 +78,7 @@ export default function SettingsPage() {
         </Panel>
 
         <Panel title="Admin access">
-          <p className="adm-muted"><KeyRound size={14} /> Demo sign-in: <code>{DEMO_CREDENTIALS.username}</code> / <code>{DEMO_CREDENTIALS.password}</code></p>
+          <p className="adm-muted"><KeyRound size={14} /> Demo sign-in: <code>{DEMO_CREDENTIALS.email}</code> / <code>{DEMO_CREDENTIALS.password}</code></p>
           <p className="adm-muted">
             The SRS forbids a backend, so this gate is a front-end demonstration only. Sessions end when the browser tab closes.
           </p>

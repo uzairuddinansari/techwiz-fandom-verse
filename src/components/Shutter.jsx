@@ -34,11 +34,31 @@ const projects = [
   }
 ];
 
-const RollingLink = ({ to, children }) => {
+const shutterLinks = [
+  { to: "/", label: "Home" },
+  { to: "/shop", label: "Shop" },
+  { to: "/Trailers", label: "Trailers" },
+  { to: "/releases", label: "Releases" },
+  { to: "/search", label: "Explore" },
+  { to: "/bookmarks", label: "Bookmarks" },
+  { to: "/about", label: "About" },
+  { to: "/team", label: "Team" },
+  { to: "/contact", label: "Contact" },
+  { to: "/profile", label: "My account" },
+  { to: "/admin", label: "Admin" },
+];
+
+const RollingLink = ({ to, index, children }) => {
   const text = String(children);
+  const formattedIndex = typeof index === "number" ? String(index + 1).padStart(2, "0") : null;
 
   return (
     <Link to={to} className="rolling_link">
+      {formattedIndex && (
+        <span className="shutter_link_num" aria-hidden="true">
+          {formattedIndex}
+        </span>
+      )}
       <span className="rolling_mask">
         <span className="rolling_line rolling_current">
           {text.split("").map((char, i) => (
@@ -77,6 +97,35 @@ const Shutter = ({ open, setOpen }) => {
   useEffect(() => {
     setOpen(false);
   }, [pathname, setOpen]);
+
+  // Lock body scroll behind shutter while open to prevent background scrolling
+  useEffect(() => {
+    if (open) {
+      const originalOverflow = document.body.style.overflow;
+      const originalPaddingRight = document.body.style.paddingRight;
+      const scrollBarWidth = window.innerWidth - document.documentElement.clientWidth;
+      if (scrollBarWidth > 0) {
+        document.body.style.paddingRight = `${scrollBarWidth}px`;
+      }
+      document.body.style.overflow = "hidden";
+
+      return () => {
+        document.body.style.overflow = originalOverflow;
+        document.body.style.paddingRight = originalPaddingRight;
+      };
+    }
+  }, [open]);
+
+  // Keyboard accessibility: Escape key closes the shutter
+  useEffect(() => {
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape" && open) {
+        setOpen(false);
+      }
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [open, setOpen]);
 
   const project = projects[active];
 
@@ -304,18 +353,12 @@ const Shutter = ({ open, setOpen }) => {
         </div>
 
         <div ref={leftContentRef} className="left_content">
-          <nav className="shutter_links">
-            <RollingLink to="/">Home</RollingLink>
-            <RollingLink to="/shop">Shop</RollingLink>
-            <RollingLink to="/Trailers">Trailers</RollingLink>
-            <RollingLink to="/releases">Releases</RollingLink>
-            <RollingLink to="/search">Explore</RollingLink>
-            <RollingLink to="/bookmarks">Bookmarks</RollingLink>
-            <RollingLink to="/about">About</RollingLink>
-            <RollingLink to="/team">Team</RollingLink>
-            <RollingLink to="/contact">Contact</RollingLink>
-            <RollingLink to="/profile">My account</RollingLink>
-            <RollingLink to="/admin">Admin</RollingLink>
+          <nav className="shutter_links" aria-label="Shutter navigation">
+            {shutterLinks.map((item, index) => (
+              <RollingLink key={item.to + item.label} to={item.to} index={index}>
+                {item.label}
+              </RollingLink>
+            ))}
           </nav>
         </div>
 

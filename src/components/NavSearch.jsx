@@ -2,14 +2,8 @@ import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Search, X } from "lucide-react";
 
-const COMPACT = "(max-width: 700px)";
+const COMPACT = "(max-width: 820px)";
 
-/*
-  Navbar search.
-  - Wide screens: the input is always there — click the pill and type.
-  - Phones: the icon opens the field already focused (one tap to type).
-  Enter searches; an empty search opens the search page. "/" focuses it from anywhere, Esc clears it.
-*/
 export default function NavSearch() {
   const navigate = useNavigate();
   const inputRef = useRef(null);

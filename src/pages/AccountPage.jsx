@@ -16,16 +16,16 @@ const labels = { name: "Display name", email: "Email", password: "Password", con
 const schemaFor = (mode) =>
   mode === "signup"
     ? {
-        name: [rules.required("Choose a display name."), rules.minLength(2, "Display name needs at least 2 characters."), rules.maxLength(30)],
-        email: [rules.required("Enter your email address."), rules.email()],
-        password: [rules.required("Create a password."), rules.minLength(8, "Use at least 8 characters."), rules.pattern(/\d/, "Include at least one number.")],
-        confirm: [rules.required("Repeat your password."), (value, values) => (value && value !== values.password ? "Passwords don’t match." : "")],
-        terms: [rules.required("Please accept the community guidelines to continue.")],
-      }
+      name: [rules.required("Choose a display name."), rules.minLength(2, "Display name needs at least 2 characters."), rules.maxLength(30)],
+      email: [rules.required("Enter your email address."), rules.email()],
+      password: [rules.required("Create a password."), rules.minLength(8, "Use at least 8 characters."), rules.pattern(/\d/, "Include at least one number.")],
+      confirm: [rules.required("Repeat your password."), (value, values) => (value && value !== values.password ? "Passwords don’t match." : "")],
+      terms: [rules.required("Please accept the community guidelines to continue.")],
+    }
     : {
-        email: [rules.required("Enter your email address."), rules.email()],
-        password: [rules.required("Enter your password.")],
-      };
+      email: [rules.required("Enter your email address."), rules.email()],
+      password: [rules.required("Enter your password.")],
+    };
 
 const strength = (password) => {
   if (!password) return 0;
@@ -235,28 +235,6 @@ export default function AccountPage() {
             </p>
           </section>
 
-          <aside className="fv-panel acc-demo">
-            <span className="fv-eyebrow"><KeyRound size={12} /> Demo accounts</span>
-            <h2>Try it instantly</h2>
-            <p className="fv-muted">These accounts come from <code>src/JSON/users.json</code>. New sign-ups are saved in this browser.</p>
-            <ul>
-              {demoAccounts.map((account) => (
-                <li key={account.id}>
-                  <span className="shop-avatar" style={{ "--avatar": account.avatarColor }} aria-hidden="true">{account.name[0]}</span>
-                  <div>
-                    <strong>{account.name}</strong>
-                    <small>{account.email}</small>
-                    <small>Password: <code>{account.demoPassword}</code></small>
-                  </div>
-                  <button type="button" className="fv-button-outline" onClick={() => { if (mode !== "login") switchMode("login"); fillDemo(account); }}>
-                    Use
-                  </button>
-                </li>
-              ))}
-            </ul>
-            <small className="fv-muted">Front-end demo: accounts live in the browser, so this is not real security.</small>
-            <Link to="/shop" className="fv-link-button">Browse the shop first →</Link>
-          </aside>
         </div>
       </div>
     </main>

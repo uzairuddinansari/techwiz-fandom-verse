@@ -206,13 +206,14 @@
 }
 
 .nav_parent.is-scrolled .nav_logo {
-  width: 64px;
-  height: 64px;
+  height: clamp(30px, 3.8vw, 40px);
+  width: auto;
+  max-width: clamp(110px, 16vw, 160px);
   box-shadow: none;
 }
 
 .nav_parent.is-scrolled .nav_logo img {
-  transform: scale(1.55);
+  transform: none;
 }
 
 .nav_pill {
@@ -875,13 +876,15 @@
   height: 100%;
   object-fit: cover;
   object-position: center 30%;
-  will-change: transform;
-  transform-origin: center center;
-  transition: filter 0.35s ease;
+  transition: transform 0.6s ease, filter 0.35s ease;
 }
 
 .fv-card-image-empty {
   background: linear-gradient(140deg, #111, #333);
+}
+
+.fv-card:hover .fv-card-image {
+  transform: scale(1.06);
 }
 
 .fv-card-play {
@@ -898,14 +901,13 @@
   background: rgba(0, 0, 0, 0.55);
   backdrop-filter: blur(8px);
   transform: translate(-50%, -50%);
-  transform-origin: center center;
-  will-change: transform;
-  transition: background 0.3s ease, border-color 0.3s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .fv-card:hover .fv-card-play {
   border-color: var(--color-accent);
   background: var(--color-accent);
+  transform: translate(-50%, -50%) scale(1.08);
 }
 
 .fv-chip {
@@ -1008,20 +1010,6 @@
   font-weight: 750;
   line-height: 1.3;
   letter-spacing: -0.02em;
-}
-
-.fv-card-title-main {
-  display: block;
-}
-
-.fv-card-title-sub {
-  display: block;
-  margin-top: 3px;
-  color: var(--color-muted-text);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: normal;
-  line-height: 1.4;
 }
 
 .fv-card-title a,
@@ -1169,37 +1157,84 @@
   position: fixed;
   inset: 0;
   z-index: 3000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow-y: auto;
-  overflow-x: hidden;
-  padding: clamp(12px, 3vw, 32px);
-  background: rgba(0, 0, 0, 0.84);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+  background: rgba(0, 0, 0, 0.82);
+  backdrop-filter: blur(8px);
   animation: fadeIn 0.25s ease;
-  overscroll-behavior: contain;
 }
 
 .fv-modal {
   position: relative;
   display: grid;
-  grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.95fr);
-  width: min(1160px, 100%);
-  max-height: min(90vh, 840px);
-  margin: auto;
+  grid-template-columns: minmax(0, 1.65fr) minmax(300px, 0.85fr);
+  width: min(1180px, 100%);
+  max-height: calc(100vh - 48px);
   overflow: hidden;
-  border-radius: clamp(16px, 2.5vw, 24px);
+  border-radius: 22px;
   background: var(--color-secondary);
-  border: 1px solid var(--color-border);
-  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.55);
-  animation: modalIn 0.35s var(--fv-ease);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.5);
+  animation: modalIn 0.4s var(--fv-ease);
 }
 
 .fv-modal-merchandise {
   grid-template-columns: minmax(0, 1fr) minmax(320px, 1fr);
   width: min(980px, 100%);
+}
+
+/* Video & Trailer modals: Keep .fv-player visually centered in the viewport */
+.fv-modal-video,
+.fv-modal-trailer,
+.fv-modal:has(.fv-player) {
+  display: flex;
+  flex-direction: column;
+  grid-template-columns: 1fr;
+  width: min(1000px, calc(100vw - 32px));
+  max-height: calc(100vh - 48px);
+  max-height: calc(100dvh - 48px);
+  margin: auto;
+  border-radius: 22px;
+  background: var(--color-secondary);
+  overflow: hidden;
+}
+
+.fv-modal-video .fv-modal-stage,
+.fv-modal-trailer .fv-modal-stage,
+.fv-modal:has(.fv-player) .fv-modal-stage {
+  width: 100%;
+  min-height: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #000;
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.fv-modal-video .fv-player,
+.fv-modal-trailer .fv-player,
+.fv-modal:has(.fv-player) .fv-player {
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  max-height: min(65vh, 65dvh, 560px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.fv-modal-video .fv-modal-copy,
+.fv-modal-trailer .fv-modal-copy,
+.fv-modal:has(.fv-player) .fv-modal-copy {
+  width: 100%;
+  padding: 16px 24px 20px;
+  gap: 10px;
+  max-height: min(26vh, 26dvh);
+  overflow-y: auto;
+  background: var(--color-secondary);
+  flex-shrink: 0;
 }
 
 @keyframes fadeIn {
@@ -1211,7 +1246,11 @@
 @keyframes modalIn {
   from {
     opacity: 0;
-    transform: translateY(24px) scale(0.98);
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
   }
 }
 
@@ -1219,55 +1258,58 @@
   position: absolute;
   top: 14px;
   right: 14px;
-  z-index: 5;
+  z-index: 10;
   display: grid;
   place-items: center;
   width: 42px;
   height: 42px;
   border-radius: 50%;
   color: #fff;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   cursor: pointer;
-  transition: background 0.25s ease;
+  transition: background 0.25s ease, transform 0.2s ease;
 }
 
 .fv-modal-close:hover {
   background: var(--color-accent);
+  transform: scale(1.05);
 }
 
 .fv-modal-stage {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  min-height: clamp(280px, 45vh, 520px);
-  background: #080808;
-  overflow: hidden;
+  display: grid;
+  place-items: center;
+  min-height: 420px;
+  background: #0a0a0a;
 }
 
 .fv-modal-image {
-  max-width: 100%;
-  max-height: 100%;
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: 100%;
+  max-height: calc(100vh - 48px);
   object-fit: contain;
-  margin: auto;
-  display: block;
   animation: fadeIn 0.35s ease;
 }
 
 .fv-player {
   width: 100%;
+  max-width: 100%;
   aspect-ratio: 16 / 9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .fv-player iframe,
 .fv-player video {
   width: 100%;
   height: 100%;
+  aspect-ratio: 16 / 9;
   border: 0;
+  display: block;
   background: #000;
 }
 
@@ -1331,92 +1373,22 @@
 .fv-modal-copy {
   display: flex;
   flex-direction: column;
-  gap: 16px;
-  padding: clamp(22px, 3.2vw, 36px);
+  gap: 12px;
+  padding: 34px 30px;
   overflow-y: auto;
-  overscroll-behavior: contain;
 }
 
-.fv-modal-header {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.fv-modal-badges {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px;
-}
-
-.fv-modal-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 4px 9px;
-  border-radius: 6px;
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-.fv-modal-badge-cat {
-  background: color-mix(in srgb, var(--color-primary) 16%, transparent);
-  color: var(--color-primary);
-  border: 1px solid color-mix(in srgb, var(--color-primary) 32%, transparent);
-}
-
-.fv-modal-badge-type {
-  background: color-mix(in srgb, var(--color-accent) 16%, transparent);
-  color: var(--color-accent);
-  border: 1px solid color-mix(in srgb, var(--color-accent) 32%, transparent);
-}
-
-.fv-modal-badge-kind {
-  background: color-mix(in srgb, var(--color-text) 8%, transparent);
-  color: var(--color-muted-text);
-  border: 1px solid var(--color-border);
-}
-
-.fv-modal-badge-counter {
-  margin-left: auto;
-  color: var(--color-muted-text);
-  font-size: 11px;
-  font-weight: 600;
-}
-
-.fv-modal-title {
-  color: var(--color-text);
-  font-size: clamp(22px, 2.5vw, 32px);
+.fv-modal-copy h2 {
+  font-size: 28px;
   font-weight: 800;
-  line-height: 1.18;
+  line-height: 1.15;
   letter-spacing: -0.03em;
-  margin: 0;
 }
 
-.fv-modal-tagline {
+.fv-modal-copy>p {
   color: var(--color-muted-text);
-  font-size: clamp(14px, 1.4vw, 16px);
-  line-height: 1.45;
-  font-weight: 500;
-  margin: 0;
-}
-
-.fv-modal-meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-  font-size: 13px;
-  color: var(--color-muted-text);
-}
-
-.fv-modal-desc {
-  color: var(--color-muted-text);
-  font-size: 14.5px;
-  line-height: 1.65;
-  margin: 0;
+  font-size: 14px;
+  line-height: 1.7;
 }
 
 .fv-modal-actions {
@@ -3241,18 +3213,15 @@
   .fv-modal,
   .fv-modal-merchandise {
     grid-template-columns: 1fr;
-    width: min(100%, 620px);
-    max-height: min(92vh, 90dvh);
     overflow-y: auto;
   }
 
   .fv-modal-stage {
-    min-height: clamp(220px, 35vh, 320px);
-    max-height: 44vh;
+    min-height: 260px;
   }
 
   .fv-modal-image {
-    max-height: 44vh;
+    max-height: 60vh;
   }
 
   .home-category-grid {
@@ -3294,8 +3263,9 @@
   }
 
   .nav_parent.is-scrolled .nav_logo {
-    width: 54px;
-    height: 54px;
+    height: clamp(28px, 3.5vw, 34px);
+    width: auto;
+    max-width: 130px;
   }
 }
 
@@ -3488,54 +3458,15 @@
   }
 
   .fv-modal-backdrop {
-    padding: 8px;
+    padding: 10px;
   }
 
   .fv-modal-copy {
-    padding: 18px 16px;
-    gap: 12px;
-  }
-
-  .fv-modal-actions {
-    flex-direction: column;
-  }
-
-  .fv-modal-actions .fv-button-outline {
-    width: 100%;
-    justify-content: center;
+    padding: 22px;
   }
 
   .fv-account {
     padding: 24px;
-  }
-}
-
-@media (max-height: 520px) and (orientation: landscape) {
-  .fv-modal-backdrop {
-    padding: 8px;
-  }
-
-  .fv-modal,
-  .fv-modal-merchandise {
-    grid-template-columns: minmax(0, 1.25fr) minmax(280px, 1fr);
-    max-height: 96vh;
-    overflow: hidden;
-  }
-
-  .fv-modal-stage {
-    min-height: 0;
-    height: 100%;
-    max-height: 96vh;
-  }
-
-  .fv-modal-image {
-    max-height: 90vh;
-  }
-
-  .fv-modal-copy {
-    padding: 16px 20px;
-    overflow-y: auto;
-    max-height: 96vh;
   }
 }
 

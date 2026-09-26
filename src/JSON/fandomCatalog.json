@@ -1731,7 +1731,7 @@
           "name": "Official-Style Lightstick",
           "franchise": "BTS",
           "kind": "accessory",
-          "image": "K_pop_Article/news-BTS.png",
+          "image": "https://res.cloudinary.com/rxxbxgc0/image/upload/v1790427017/Official-Style_LightstickBestseller.jpg",
           "price": [
             45,
             60
@@ -1742,7 +1742,7 @@
           "name": "BLACKPINK Photocard Binder",
           "franchise": "BLACKPINK",
           "kind": "collectible",
-          "image": "K_pop_Article/BLACK PINK.webp",
+          "image": "https://res.cloudinary.com/rxxbxgc0/image/upload/v1790426697/BLACKPINK_Photocard_Binder.jpg",
           "price": [
             16,
             24
@@ -1753,7 +1753,7 @@
           "name": "Stray Kids SKZOO Plush",
           "franchise": "Stray Kids",
           "kind": "plushie",
-          "image": "K_pop_Article/STRAY KIDS.jpg",
+          "image": "https://res.cloudinary.com/rxxbxgc0/image/upload/v1790427017/Stray_Kids_SKZOO_Plush.jpg",
           "price": [
             20,
             28
@@ -1764,7 +1764,8 @@
           "name": "NewJeans Bunny Tote",
           "franchise": "NewJeans",
           "kind": "apparel",
-          "image": "K_pop_Article/NEW JEANS.webp",
+          "image": "https://res.cloudinary.com/rxxbxgc0/image/upload/v1790427016/new_jeans_bunny_tote_bag.jpg"
+,
           "price": [
             15,
             20
@@ -1775,7 +1776,7 @@
           "name": "TWICE Album Box Set",
           "franchise": "TWICE",
           "kind": "music",
-          "image": "K_pop_Article/TWICE.jfif",
+          "image": "https://res.cloudinary.com/rxxbxgc0/image/upload/v1790427018/twice_album_box_set.jpg",
           "price": [
             35,
             55

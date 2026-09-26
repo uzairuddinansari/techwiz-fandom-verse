@@ -45,11 +45,7 @@ const Anim_hero = () => {
             Discover legendary stories, unforgettable characters,
             latest news and everything from the world of anime.
           </p>
-
-          <button className="anim-hero-btn">
-            EXPLORE ANIME
-            <span>→</span>
-          </button>
+          
         </div>
       </div>
 

@@ -12,6 +12,16 @@ const USERS_KEY = "fandomverse_users";
 const SESSION_KEY = "fandomverse_session";
 const ORDERS_KEY = (userId) => `fandomverse_orders:${userId}`;
 
+export const ADMIN_USER = {
+  id: "u-admin",
+  name: "Admin",
+  email: "admin@gmail.com",
+  avatarColor: "#e32636",
+  favorites: ["anime", "gaming", "movies", "tv-shows", "k-pop", "comics", "manga"],
+  bio: "FandomVerse Administrator",
+  joined: "2026-01-01",
+};
+
 const listeners = new Set();
 const emit = () => {
   cachedUser = undefined;
@@ -67,14 +77,18 @@ let cachedUser;
 export const getCurrentUser = () => {
   if (cachedUser === undefined) {
     const session = readSession();
-    const user = session && allUsers().find((entry) => entry.id === session.userId);
-    // Never expose the password hash to components.
-    if (user) {
-      const safe = { ...user };
-      delete safe.passwordHash;
-      cachedUser = safe;
+    if (session?.userId === "u-admin") {
+      cachedUser = { ...ADMIN_USER };
     } else {
-      cachedUser = null;
+      const user = session && allUsers().find((entry) => entry.id === session.userId);
+      // Never expose the password hash to components.
+      if (user) {
+        const safe = { ...user };
+        delete safe.passwordHash;
+        cachedUser = safe;
+      } else {
+        cachedUser = null;
+      }
     }
   }
   return cachedUser;
@@ -101,7 +115,8 @@ const startSession = (userId, remember) => {
 
 /* Each function returns { ok: true, user } or { ok: false, field, message } for the forms. */
 export async function signUp({ name, email, password, favorites = [] }) {
-  if (findByEmail(email)) {
+  const normalizedEmail = (email || "").trim().toLowerCase();
+  if (findByEmail(email) || normalizedEmail === "admin@gmail.com") {
     return { ok: false, field: "email", message: "An account with this email already exists. Try logging in instead." };
   }
   const colors = usersData.avatarColors;
@@ -121,6 +136,17 @@ export async function signUp({ name, email, password, favorites = [] }) {
 }
 
 export async function logIn({ email, password, remember = true }) {
+  const normalizedEmail = (email || "").trim().toLowerCase();
+
+  // Built-in Admin credentials for /account login
+  if (normalizedEmail === "admin@gmail.com") {
+    if (password === "fandom2026") {
+      startSession("u-admin", remember);
+      return { ok: true, user: getCurrentUser() };
+    }
+    return { ok: false, field: "password", message: "That password isn’t right. Check it and try again." };
+  }
+
   const user = findByEmail(email);
   if (!user) return { ok: false, field: "email", message: "We couldn’t find an account with that email." };
   if ((await hashPassword(user.email, password)) !== user.passwordHash) {
@@ -153,6 +179,9 @@ export function updateProfile(patch) {
 
 export async function changePassword(currentPassword, newPassword) {
   const session = getCurrentUser();
+  if (session?.id === "u-admin") {
+    return { ok: false, field: "current", message: "Built-in admin password cannot be changed here." };
+  }
   const user = session && allUsers().find((entry) => entry.id === session.id);
   if (!user) return { ok: false, field: "current", message: "You’re not logged in." };
   if ((await hashPassword(user.email, currentPassword)) !== user.passwordHash) {
@@ -165,7 +194,7 @@ export async function changePassword(currentPassword, newPassword) {
 
 export function deleteAccount() {
   const user = getCurrentUser();
-  if (!user) return;
+  if (!user || user.id === "u-admin") return;
   const seed = usersData.users.some((entry) => entry.id === user.id);
   if (seed) saveLocalUser({ id: user.id, deleted: true });
   else safeWrite(localStorage, USERS_KEY, localUsers().filter((entry) => entry.id !== user.id));

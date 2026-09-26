@@ -10,7 +10,7 @@ import { useSyncExternalStore } from "react";
 const KEY = "fandomverse_admin";
 const AUTH_KEY = "fandomverse_admin_session";
 
-export const DEMO_CREDENTIALS = { username: "admin", password: "fandom2026" };
+export const DEMO_CREDENTIALS = { email: "admin@gmail.com", username: "admin@gmail.com", password: "fandom2026" };
 
 const empty = { overrides: {}, items: [], faqs: [], activity: [] };
 
@@ -110,8 +110,9 @@ export const isAdminSignedIn = () => {
   }
 };
 
-export const signInAdmin = (username, password) => {
-  const ok = username.trim().toLowerCase() === DEMO_CREDENTIALS.username && password === DEMO_CREDENTIALS.password;
+export const signInAdmin = (identifier, password) => {
+  const normalized = (identifier || "").trim().toLowerCase();
+  const ok = (normalized === DEMO_CREDENTIALS.email || normalized === DEMO_CREDENTIALS.username) && password === DEMO_CREDENTIALS.password;
   if (ok) sessionStorage.setItem(AUTH_KEY, "1");
   return ok;
 };

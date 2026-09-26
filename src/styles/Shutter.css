@@ -6,6 +6,10 @@
 .shutter {
   position: fixed;
   inset: 0;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+  max-height: 100dvh;
   z-index: 999999;
   display: flex;
   overflow: hidden;
@@ -36,7 +40,8 @@
   position: relative;
   width: 38%;
   height: 100%;
-  padding: 34px 38px 26px;
+  max-height: 100dvh;
+  padding: max(28px, env(safe-area-inset-top, 28px)) max(34px, env(safe-area-inset-right, 34px)) max(22px, env(safe-area-inset-bottom, 22px)) max(34px, env(safe-area-inset-left, 34px));
   box-sizing: border-box;
   background: rgba(12, 14, 20, 0.96);
   backdrop-filter: blur(28px);
@@ -50,6 +55,7 @@
   box-shadow: 18px 0 50px rgba(0, 0, 0, 0.55);
   z-index: 10;
   will-change: transform, opacity;
+  overflow: hidden;
 }
 
 /* Subtle inner accent glow on the left panel edge */
@@ -79,6 +85,7 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 16px;
+  flex-shrink: 0;
 }
 
 .brand {
@@ -158,29 +165,43 @@
 
 
 .left_content {
-  flex: 1;
+  flex: 1 1 auto;
   min-height: 0;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 8px 4px 8px 0;
-  scrollbar-width: none;
+  padding: 8px 6px 8px 0;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.18) transparent;
+  -webkit-overflow-scrolling: touch;
   will-change: transform, opacity;
 }
 
 .left_content::-webkit-scrollbar {
-  display: none;
+  width: 4px;
+}
+
+.left_content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.left_content::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 4px;
+}
+
+.left_content::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 51, 75, 0.5);
 }
 
 .shutter_links {
-  counter-reset: nav-counter;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 3px;
   width: 100%;
+  margin: auto 0;
 }
 
 .shutter_links a {
@@ -189,28 +210,41 @@
   align-items: baseline;
   gap: 12px;
   width: max-content;
+  max-width: 100%;
   color: #8c93a4;
   text-decoration: none;
   font-family: var(--font-heading, "Inter", sans-serif);
-  font-size: clamp(26px, 2.5vw, 38px);
-  line-height: 1.14;
-  letter-spacing: -1.2px;
-  font-weight: 600;
-  padding: 2px 0;
+  font-size: clamp(24px, 2.5vw, 36px);
+  line-height: 1.15;
+  letter-spacing: -1.1px;
+  font-weight: var(--heading-weight, 600);
+  padding: 3px 0;
+  box-sizing: border-box;
   transition: color 0.3s ease, opacity 0.35s ease, transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
-/* Editorial Index Counter (01, 02, 03...) */
-.shutter_links a::before {
-  counter-increment: nav-counter;
-  content: counter(nav-counter, decimal-leading-zero);
+/* Editorial Index Counter (01, 02, 03...) - fixed column */
+.shutter_link_num {
+  display: inline-block;
+  width: 2.2ch;
+  min-width: 2.2ch;
+  text-align: right;
   font-size: 11px;
   font-weight: 700;
   letter-spacing: 1.4px;
   color: rgba(255, 255, 255, 0.22);
   font-family: var(--font-body, monospace);
+  font-variant-numeric: tabular-nums;
   line-height: 1;
+  flex-shrink: 0;
+  user-select: none;
   transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Ensure no double counter */
+.shutter_links a::before {
+  content: none !important;
+  display: none !important;
 }
 
 /* Spotlight Hover Effect — Focus hovered, dim others */
@@ -226,7 +260,7 @@
   transform: translateX(6px);
 }
 
-.shutter_links a:hover::before {
+.shutter_links a:hover .shutter_link_num {
   color: #ff334b;
   transform: translateX(2px);
 }
@@ -320,12 +354,13 @@
 
 .shutter_footer {
   border-top: 1px solid rgba(255, 255, 255, 0.08);
-  padding-top: 16px;
+  padding-top: 14px;
   color: #7d8597;
   font-size: 13px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 10px;
+  flex-shrink: 0;
 }
 
 .shutter_footer span {
@@ -599,14 +634,11 @@
   transition: all 0.3s ease;
 }
 
-/* =========================================================
-   RESPONSIVE DESIGN BREAKPOINTS
-   ========================================================= */
 
 @media (max-width: 1200px) {
   .shutter_left {
     width: 44%;
-    padding: 30px 30px 22px;
+    padding: 28px 28px 20px;
   }
 
   .shutter_right {
@@ -614,7 +646,7 @@
   }
 
   .shutter_links a {
-    font-size: clamp(24px, 2.6vw, 32px);
+    font-size: clamp(22px, 2.5vw, 30px);
     letter-spacing: -1px;
   }
 
@@ -626,7 +658,7 @@
 @media (max-width: 960px) {
   .shutter_left {
     width: 50%;
-    padding: 26px 24px 20px;
+    padding: 24px 22px 18px;
   }
 
   .shutter_right {
@@ -634,24 +666,24 @@
   }
 
   .shutter_links a {
-    font-size: 26px;
+    font-size: 24px;
     letter-spacing: -0.8px;
   }
 
   .project_meta_clip {
-    top: 26px;
-    left: 26px;
-    right: 26px;
+    top: 24px;
+    left: 24px;
+    right: 24px;
   }
 
   .project_title {
-    left: 26px;
-    right: 26px;
-    bottom: 26px;
+    left: 24px;
+    right: 24px;
+    bottom: 24px;
   }
 
   .project_title h2 {
-    font-size: 38px;
+    font-size: 34px;
   }
 
   .project_title > span {
@@ -667,16 +699,46 @@
   .shutter {
     flex-direction: column;
     overflow-y: auto;
+    overflow-x: hidden;
     -webkit-overflow-scrolling: touch;
   }
 
   .shutter_left {
     width: 100%;
     min-height: 100%;
+    min-height: 100dvh;
     height: auto;
-    padding: 24px 20px 24px;
+    max-height: none;
+    overflow: visible;
+    padding: max(20px, env(safe-area-inset-top, 20px)) max(20px, env(safe-area-inset-right, 20px)) max(28px, env(safe-area-inset-bottom, 28px)) max(20px, env(safe-area-inset-left, 20px));
     border-right: none;
     box-shadow: none;
+    justify-content: flex-start;
+    gap: 20px;
+  }
+
+  .shutter_top {
+    position: sticky;
+    top: 0;
+    z-index: 25;
+    background: rgba(12, 14, 20, 0.94);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    padding-top: max(4px, env(safe-area-inset-top, 4px));
+    padding-bottom: 10px;
+    margin-top: -4px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .left_content {
+    flex: 0 0 auto;
+    overflow: visible;
+    padding: 6px 0;
+  }
+
+  .shutter_links {
+    margin: 0;
+    gap: 6px;
   }
 
   .shutter_right {
@@ -684,16 +746,123 @@
   }
 
   .shutter_links a {
-    font-size: 26px;
+    font-size: clamp(21px, 5.5vw, 26px);
     letter-spacing: -0.6px;
+    padding: 5px 0;
+  }
+
+  .shutter_link_num {
+    font-size: 10.5px;
   }
 
   .shutter_footer {
     display: flex;
-    margin-top: 14px;
+    margin-top: 18px;
+    padding-top: 16px;
+    padding-bottom: max(16px, env(safe-area-inset-bottom, 16px));
   }
 
   .shutter_hubs {
     max-width: 100%;
+  }
+}
+
+/* Landscape Phones & Short Viewports */
+@media (max-height: 560px) {
+  .shutter_left {
+    padding: max(14px, env(safe-area-inset-top, 14px)) max(24px, env(safe-area-inset-right, 24px)) max(12px, env(safe-area-inset-bottom, 12px)) max(24px, env(safe-area-inset-left, 24px));
+    gap: 10px;
+  }
+
+  .brand {
+    font-size: 18px;
+  }
+
+  .brand_subtitle {
+    display: none;
+  }
+
+  .shutter_close {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+  }
+
+  .shutter_links {
+    margin: 0;
+    gap: 2px;
+  }
+
+  .shutter_links a {
+    font-size: 20px;
+    line-height: 1.15;
+    padding: 2px 0;
+    letter-spacing: -0.6px;
+  }
+
+  .shutter_link_num {
+    font-size: 10px;
+  }
+
+  .shutter_footer {
+    padding-top: 8px;
+    gap: 6px;
+  }
+
+  .shutter_footer p {
+    display: none;
+  }
+
+  .shutter_footer .visit {
+    margin-top: 2px;
+  }
+
+  .shutter_footer small {
+    margin-top: 2px;
+  }
+
+  .project_meta_clip {
+    top: 16px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .project_title {
+    left: 20px;
+    right: 20px;
+    bottom: 16px;
+  }
+
+  .project_title h2 {
+    font-size: 28px;
+  }
+}
+
+@media (max-height: 500px) and (orientation: landscape) and (min-width: 721px) {
+  .shutter_left {
+    width: 50%;
+  }
+
+  .shutter_right {
+    width: 50%;
+  }
+}
+
+/* Very Small Mobile Screens */
+@media (max-width: 360px) {
+  .shutter_left {
+    padding-left: 14px;
+    padding-right: 14px;
+  }
+
+  .shutter_links a {
+    font-size: 20px;
+    gap: 10px;
+  }
+
+  .shutter_link_num {
+    font-size: 10px;
+    width: 2ch;
+    min-width: 2ch;
   }
 }

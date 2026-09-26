@@ -43,7 +43,7 @@ const menu = [
 function AdminLogin() {
   const navigate = useNavigate();
   const location = useLocation();
-  const [values, setValues] = useState({ username: "", password: "" });
+  const [values, setValues] = useState({ email: "", password: "" });
   const [touched, setTouched] = useState({});
   const [submitted, setSubmitted] = useState(false);
   const [failed, setFailed] = useState(0);
@@ -52,7 +52,7 @@ function AdminLogin() {
   if (isAdminSignedIn()) return <Navigate to={location.state?.from || "/admin"} replace />;
 
   const errors = validateForm(values, {
-    username: [rules.required("Enter your admin username.")],
+    email: [rules.required("Enter your admin email."), rules.email("Enter a valid email address.")],
     password: [rules.required("Enter your password.")],
   });
   const visible = Object.fromEntries(Object.entries(errors).filter(([field]) => submitted || touched[field]));
@@ -66,7 +66,7 @@ function AdminLogin() {
       focusFirstError(formRef.current, errors);
       return;
     }
-    if (signInAdmin(values.username, values.password)) {
+    if (signInAdmin(values.email, values.password)) {
       toast("You’re signed in to the control centre.", { title: "Welcome back" });
       navigate(location.state?.from || "/admin", { replace: true });
     } else {
@@ -89,13 +89,22 @@ function AdminLogin() {
         <form ref={formRef} onSubmit={submit} className={`adm-form ${failed ? "fb-shake" : ""}`} key={failed} noValidate>
           {failed > 0 && (
             <FormAlert type="error" title="Those details didn’t match" onClose={() => setFailed(0)}>
-              Check the username and password and try again{failed > 2 ? " — the demo credentials are shown below." : "."}
+              Check the email and password and try again{failed > 2 ? " — the demo credentials are shown below." : "."}
             </FormAlert>
           )}
-          <label htmlFor="adm-username">
-            <span>Username</span>
-            <input name="username" autoComplete="username" value={values.username} onChange={update("username")} onBlur={blur("username")} {...fieldA11y("adm-username", visible.username)} />
-            <FieldError id="adm-username" message={visible.username} />
+          <label htmlFor="adm-email">
+            <span>Email</span>
+            <input
+              type="email"
+              name="email"
+              placeholder="admin@gmail.com"
+              autoComplete="email"
+              value={values.email}
+              onChange={update("email")}
+              onBlur={blur("email")}
+              {...fieldA11y("adm-email", visible.email)}
+            />
+            <FieldError id="adm-email" message={visible.email} />
           </label>
           <label htmlFor="adm-password">
             <span>Password</span>
@@ -106,7 +115,7 @@ function AdminLogin() {
         </form>
         <div className="adm-login-hint">
           <strong>Demo access</strong>
-          <span>Username <code>{DEMO_CREDENTIALS.username}</code> · Password <code>{DEMO_CREDENTIALS.password}</code></span>
+          <span>Email: <code>{DEMO_CREDENTIALS.email}</code> · Password: <code>{DEMO_CREDENTIALS.password}</code></span>
           <small>Front-end demo only — there is no server, so this is not real security.</small>
         </div>
       </section>
