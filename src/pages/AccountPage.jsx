@@ -128,6 +128,8 @@ export default function AccountPage() {
               <button type="button" role="tab" aria-selected={mode === "signup"} className={mode === "signup" ? "active" : ""} onClick={() => switchMode("signup")}>Sign up</button>
             </div>
 
+            
+
             <h1>{mode === "login" ? "Welcome back." : "Join the Verse."}</h1>
             <p className="fv-muted">
               {mode === "login" ? "Log in to see your profile, orders and saved cart." : "Create a free fan profile — it takes less than a minute."}
@@ -234,7 +236,12 @@ export default function AccountPage() {
               {mode === "login" ? <>New to FandomVerse? <button type="button" className="acc-inline-link" onClick={() => switchMode("signup")}>Create an account</button></> : <>Already a member? <button type="button" className="acc-inline-link" onClick={() => switchMode("login")}>Log in</button></>}
             </p>
           </section>
-
+<div className="fv-login-image">
+  <img
+    src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=80"
+    alt="Login"
+  />
+</div>
         </div>
       </div>
     </main>
