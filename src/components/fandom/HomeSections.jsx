@@ -249,7 +249,6 @@ export function HomeNews() {
 const perks = [
   [Search, "Search everything", "One search across all hubs and content types.", "/search"],
   [Bookmark, "Save & export", "Bookmark anything, add notes, export your list.", "/bookmarks"],
-  [Bot, "Ask Nova", "Our chatbot recommends what to watch, read or play.", null],
   [ShoppingBag, "Fan merch", "Browse collectibles and build a cart.", "/search?type=merchandise"],
 ];
 

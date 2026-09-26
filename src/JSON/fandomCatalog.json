@@ -617,7 +617,7 @@
           "name": "Witcher Medallion Necklace",
           "franchise": "The Witcher 3",
           "kind": "accessory",
-          "image": "Game_Article/THE_WITCHER_3_WILD_HUNT.png",
+          "image": "https://res.cloudinary.com/wt5zcyhg/image/upload/v1790428799/Wolf_School_medallion_in_antique-finish_metal_on_a_steel_chain..jpg",
           "price": [
             19,
             29
@@ -628,7 +628,7 @@
           "name": "Night City Jacket",
           "franchise": "Cyberpunk 2077",
           "kind": "apparel",
-          "image": "Game_Article/CYBERPUNK.png",
+          "image": "https://res.cloudinary.com/wt5zcyhg/image/upload/v1790428860/Samurai-inspired_jacket_with_reflective_trim_and_a_quilted_lining..jpg",
           "price": [
             79,
             99
@@ -639,7 +639,7 @@
           "name": "Creeper Plushie",
           "franchise": "Minecraft",
           "kind": "plushie",
-          "image": "Game_Article/MINECRAFT.png",
+          "image": "https://res.cloudinary.com/wt5zcyhg/image/upload/v1790428897/Soft_pixel-perfect_plush_thankfully_it_will_not_explode..jpg",
           "price": [
             15,
             22
@@ -650,7 +650,7 @@
           "name": "Radiant Keycap Set",
           "franchise": "VALORANT",
           "kind": "accessory",
-          "image": "Game_Article/VALORANT.png",
+          "image": "https://res.cloudinary.com/wt5zcyhg/image/upload/v1790428943/PBT_keycaps_with_agent-ability_icons_fits_most_mechanical_keyboards..jpg",
           "price": [
             35,
             55
@@ -661,7 +661,7 @@
           "name": "Wukong Staff Replica",
           "franchise": "Black Myth: Wukong",
           "kind": "collectible",
-          "image": "Game_Article/BLACK MYTH WUKONG.png",
+          "image": "https://res.cloudinary.com/wt5zcyhg/image/upload/v1790428990/Extendable_foam-core_Ruyi_Jingu_Bang_safe_for_cosplay_events..jpg",
           "price": [
             59,
             89
@@ -984,7 +984,7 @@
           "name": "Spider-Man Mask Replica",
           "franchise": "Spider-Man",
           "kind": "collectible",
-          "image": "Movie_Article_img/SPIDER_MAN_NO_WAY_HOME.png",
+          "image": "https://res.cloudinary.com/wt5zcyhg/image/upload/v1790429470/Life-size_mask_with_textured_web_pattern_and_display_stand..jpg",
           "price": [
             49,
             69
@@ -995,7 +995,7 @@
           "name": "Arrakis Poster Set",
           "franchise": "Dune: Part Two",
           "kind": "poster",
-          "image": "Movie_Article_img/DUNE_PART_2.png",
+          "image": "https://res.cloudinary.com/wt5zcyhg/image/upload/v1790429554/Three_matte-finish_A3_posters_inspired_by_the_desert_planet..jpg",
           "price": [
             18,
             26
@@ -1006,7 +1006,7 @@
           "name": "Aviator Sunglasses",
           "franchise": "Top Gun: Maverick",
           "kind": "accessory",
-          "image": "Movie_Article_img/top-gun-maverick.png",
+          "image": "https://res.cloudinary.com/wt5zcyhg/image/upload/v1790429618/Classic_metal-frame_aviators_with_a_Top_Gun_case..jpg",
           "price": [
             29,
             45
@@ -1017,7 +1017,7 @@
           "name": "Infinity Gauntlet Mug",
           "franchise": "Avengers: Endgame",
           "kind": "homeware",
-          "image": "Movie_Article_img/avengers-endgame.png",
+          "image": "https://res.cloudinary.com/wt5zcyhg/image/upload/v1790429637/Ceramic_mug_shaped_like_the_gauntlet_all_six_stones_included..jpg",
           "price": [
             14,
             19
@@ -1356,7 +1356,7 @@
           "name": "Hellfire Club Tee",
           "franchise": "Stranger Things",
           "kind": "apparel",
-          "image": "TV_Aericle_img/STRANDER THINGS.png",
+          "image": "https://res.cloudinary.com/rxxbxgc0/image/upload/v1790428046/Hellfire_Club_Tee.jpg",
           "price": [
             22,
             30
@@ -1367,7 +1367,7 @@
           "name": "Nevermore Crest Scarf",
           "franchise": "Wednesday",
           "kind": "apparel",
-          "image": "TV_Aericle_img/WEDNESDAY.png",
+          "image": "https://res.cloudinary.com/rxxbxgc0/image/upload/v1790428203/Nevermore_Crest_Scarf.jpg",
           "price": [
             19,
             27
@@ -1378,7 +1378,7 @@
           "name": "Jinx Monkey Bomb Plush",
           "franchise": "Arcane",
           "kind": "plushie",
-          "image": "TV_Aericle_img/ARCANE.png",
+          "image": "https://res.cloudinary.com/rxxbxgc0/image/upload/v1790428534/Jinx_Monkey_Bomb_Plush.jpg",
           "price": [
             21,
             28
