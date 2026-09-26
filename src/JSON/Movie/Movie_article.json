@@ -1,0 +1,100 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "title": "Oppenheimer",
+      "category": "Movies",
+      "genre": "Biography, Drama, History",
+      "releaseDate": "2023-07-21",
+      "rating": "8.2/10",
+      "duration": "3h",
+      "articleTitle": "Oppenheimer: The Story Behind the Movie",
+      "description": "A closer look at Oppenheimer, its historical story, major characters, powerful scenes, and details viewers may have missed.",
+      "image": "Movie_Article_img/OPPENHEIMER.png"
+    },
+    {
+      "id": 2,
+      "title": "Dune: Part Two",
+      "category": "Movies",
+      "genre": "Action, Adventure, Drama",
+      "releaseDate": "2024-03-01",
+      "rating": "8.4/10",
+      "duration": "2h 46m",
+      "articleTitle": "Dune: Part Two — Things You May Have Missed",
+      "description": "Explore the world of Arrakis, important characters, hidden details, and the story behind Paul's journey.",
+      "image": "Movie_Article_img/DUNE_PART_2.png"
+    },
+    {
+      "id": 3,
+      "title": "Spider-Man: No Way Home",
+      "category": "Movies",
+      "genre": "Action, Adventure, Fantasy",
+      "releaseDate": "2021-12-17",
+      "rating": "8.1/10",
+      "duration": "2h 28m",
+      "articleTitle": "Spider-Man: No Way Home — Hidden Details",
+      "description": "A closer look at Spider-Man's multiverse adventure, returning characters, major story moments, and details fans may have missed.",
+      "image": "Movie_Article_img/SPIDER_MAN_NO_WAY_HOME.png"
+    },
+    {
+      "id": 4,
+      "title": "The Batman",
+      "category": "Movies",
+      "genre": "Action, Crime, Drama",
+      "releaseDate": "2022-03-04",
+      "rating": "7.8/10",
+      "duration": "2h 56m",
+      "articleTitle": "The Batman: Details You May Have Missed",
+      "description": "Discover the darker side of Gotham, important clues, characters, detective work, and story details from The Batman.",
+      "image": "Movie_Article_img/the-batman.png"
+    },
+    {
+      "id": 5,
+      "title": "Top Gun: Maverick",
+      "category": "Movies",
+      "genre": "Action, Drama",
+      "releaseDate": "2022-05-27",
+      "rating": "8.2/10",
+      "duration": "2h 10m",
+      "articleTitle": "Top Gun: Maverick — Behind the Scenes",
+      "description": "Take a closer look at Maverick's return, the pilots, aviation sequences, emotional moments, and memorable details.",
+      "image": "Movie_Article_img/top-gun-maverick.png"
+    },
+    {
+      "id": 6,
+      "title": "Avengers: Endgame",
+      "category": "Movies",
+      "genre": "Action, Adventure, Drama",
+      "releaseDate": "2019-04-26",
+      "rating": "8.4/10",
+      "duration": "3h 1m",
+      "articleTitle": "Avengers: Endgame — Things You Missed",
+      "description": "Revisit the epic Marvel finale and explore important details, character moments, references, and connections throughout the movie.",
+      "image": "Movie_Article_img/avengers-endgame.png"
+    },
+    {
+      "id": 7,
+      "title": "Inception",
+      "category": "Movies",
+      "genre": "Action, Sci-Fi, Thriller",
+      "releaseDate": "2010-07-16",
+      "rating": "8.8/10",
+      "duration": "2h 28m",
+      "articleTitle": "Inception: Understanding the Hidden Details",
+      "description": "A closer look at dreams, reality, symbolism, characters, and the details that make Inception so memorable.",
+      "image": "Movie_Article_img/inception.png"
+    },
+    {
+      "id": 8,
+      "title": "The Dark Knight",
+      "category": "Movies",
+      "genre": "Action, Crime, Drama",
+      "releaseDate": "2008-07-18",
+      "rating": "9.0/10",
+      "duration": "2h 32m",
+      "articleTitle": "The Dark Knight — Details You May Have Missed",
+      "description": "Explore Gotham, Batman and the Joker, memorable scenes, character motivations, and hidden details from the film.",
+      "image": "Movie_Article_img/the-dark-knight.png"
+    }
+  ]
+}

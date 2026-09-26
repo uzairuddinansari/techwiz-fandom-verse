@@ -1,0 +1,84 @@
+{
+  "games": [
+    {
+      "id": 1,
+      "title": "The King of Fighters XV",
+      "category": "Fighting",
+      "releaseDate": "February 17, 2022",
+      "currentVersion": "Ver. 2.52",
+      "articleTitle": "The King of Fighters XV",
+      "description": "A closer look at KOF XV, its characters, team-based battles and competitive fighting system.",
+      "image": "Game_Article/KOFXV.png"
+    },
+    {
+      "id": 2,
+      "title": "Grand Theft Auto VI",
+      "category": "Action-Adventure / Open World",
+      "releaseDate": "November 19, 2026",
+      "currentVersion": "Upcoming / Not Released Yet",
+      "articleTitle": "Grand Theft Auto VI",
+      "description": "Everything to know about GTA VI, including Vice City, Jason and Lucia, and the return to the world of Grand Theft Auto.",
+      "image": "Game_Article/grand theft auto vi.png"
+    },
+    {
+      "id": 3,
+      "title": "VALORANT",
+      "category": "Tactical Shooter",
+      "releaseDate": "June 2, 2020",
+      "currentVersion": "Patch 13.06",
+      "articleTitle": "Things You Missed in VALORANT",
+      "description": "A closer look at VALORANT — story beats, agents, maps, competitive gameplay and details players may have missed.",
+      "image": "Game_Article/VALORANT.png"
+    },
+    {
+      "id": 4,
+      "title": "Minecraft",
+      "category": "Sandbox / Survival",
+      "releaseDate": "November 18, 2011",
+      "currentVersion": "Java 26.3 / Bedrock 26.51",
+      "articleTitle": "Minecraft: Things You May Have Missed",
+      "description": "Explore Minecraft's hidden details, survival mechanics, world generation and memorable secrets.",
+      "image": "Game_Article/MINECRAFT.png"
+    },
+    {
+      "id": 5,
+      "title": "Cyberpunk 2077",
+      "category": "Action RPG / Open World",
+      "releaseDate": "December 10, 2020",
+      "currentVersion": "2.31",
+      "articleTitle": "Cyberpunk 2077: Details Worth Discovering",
+      "description": "A closer look at Night City, characters, story details, gameplay systems and features hidden throughout Cyberpunk 2077.",
+      "image": "Game_Article/CYBERPUNK.png"
+    },
+    {
+      "id": 6,
+      "title": "Elden Ring",
+      "category": "Action RPG",
+      "releaseDate": "February 25, 2022",
+      "currentVersion": "1.17.1",
+      "articleTitle": "Elden Ring: Secrets You Might Have Missed",
+      "description": "Discover hidden areas, story details, characters, world-building and gameplay secrets across the Lands Between.",
+      "image": "Game_Article/ELDEN RING.png"
+    },
+    {
+      "id": 7,
+      "title": "Black Myth: Wukong",
+      "category": "Action RPG",
+      "releaseDate": "August 20, 2024",
+      "currentVersion": "1.0.21.23831",
+      "articleTitle": "Black Myth: Wukong — Details You Missed",
+      "description": "Explore the mythology, characters, combat mechanics and hidden details behind the journey of the Destined One.",
+      "image": "Game_Article/BLACK MYTH WUKONG.png"
+    },
+    {
+      "id": 8,
+      "title": "The Witcher 3: Wild Hunt",
+      "category": "Action RPG / Open World",
+      "releaseDate": "May 19, 2015",
+      "currentVersion": "4.04",
+      "articleTitle": "The Witcher 3: Details You May Have Missed",
+      "description": "Take another look at Geralt's journey, important characters, quests, world-building and hidden details.",
+      "image": "Game_Article/THE_WITCHER_3_WILD_HUNT.png"
+    }
+  ]
+}

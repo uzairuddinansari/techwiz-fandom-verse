@@ -1,0 +1,1013 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;600;700&display=swap');
+
+.what-learned-page {
+  width: 100%;
+  overflow: hidden;
+  background: #f7f7f5;
+}
+
+
+.scroll-progress {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  height: 4px;
+
+  background: #111;
+
+  z-index: 9999;
+
+  transition: width 0.08s linear;
+}
+
+
+
+/* =====================================================
+   COMMON LABEL
+===================================================== */
+
+.hero-label {
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+
+  color: #666;
+}
+
+
+.hero-label span {
+  width: 38px;
+
+  height: 1px;
+
+  background: #222;
+}
+
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.wl-hero {
+
+  min-height: 100vh;
+
+  padding: 75px 8%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  position: relative;
+
+  background:
+    linear-gradient(
+      180deg,
+      #eeeeec 0%,
+      #ffffff 65%,
+      #f1f1ef 100%
+    );
+}
+
+
+.hero-layout {
+
+  margin-top: 55px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 65px;
+
+  align-items: center;
+}
+
+
+.hero-copy h1 {
+
+  font-family:
+    "DM Serif Display",
+    serif;
+
+  font-size:
+    clamp(70px, 8vw, 135px);
+
+  font-weight: 400;
+
+  line-height: 0.78;
+
+  letter-spacing: -5px;
+
+  color: #111;
+}
+
+
+.hero-copy h1 span {
+  color: #858585;
+}
+
+
+.hero-copy > p {
+
+  max-width: 590px;
+
+  margin-top: 55px;
+
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  color: #5d5d5d;
+}
+
+
+.hero-details {
+
+  display: flex;
+
+  gap: 90px;
+
+  margin-top: 45px;
+
+  padding-top: 25px;
+
+  border-top: 1px solid #d8d8d8;
+}
+
+
+.hero-details div {
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 9px;
+}
+
+
+.hero-details small {
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  color: #999;
+}
+
+
+.hero-details strong {
+
+  font-size: 11px;
+
+  letter-spacing: 1px;
+
+  color: #111;
+}
+
+
+
+/* =====================================================
+   HERO IMAGE
+===================================================== */
+
+.hero-team-image {
+
+  height: 440px;
+
+  position: relative;
+
+  overflow: hidden;
+
+  background: #ddd;
+}
+
+
+.hero-team-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  filter: grayscale(15%);
+
+  transition:
+    transform 0.8s ease,
+    filter 0.5s ease;
+}
+
+
+.hero-team-image:hover img {
+
+  transform: scale(1.025);
+
+  filter: grayscale(0%);
+}
+
+
+.hero-team-image::after {
+
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  right: 0;
+
+  bottom: 0;
+
+  height: 35%;
+
+  background:
+    linear-gradient(
+      transparent,
+      rgba(255,255,255,0.95)
+    );
+
+  pointer-events: none;
+}
+
+
+.hero-image-label {
+
+  position: absolute;
+
+  left: 22px;
+
+  bottom: 20px;
+
+  z-index: 2;
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  color: #555;
+}
+
+
+
+/* =====================================================
+   SCROLL INDICATOR
+===================================================== */
+
+.scroll-indicator {
+
+  position: absolute;
+
+  bottom: 30px;
+
+  left: 8%;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 14px;
+
+  font-size: 9px;
+
+  letter-spacing: 3px;
+
+  color: #777;
+}
+
+
+.scroll-indicator span {
+  font-size: 19px;
+}
+
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.wl-intro {
+
+  padding: 145px 8%;
+
+  background: #fff;
+}
+
+
+.intro-layout {
+
+  margin-top: 70px;
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 100px;
+}
+
+
+.intro-layout h2 {
+
+  font-family:
+    "DM Serif Display",
+    serif;
+
+  font-size:
+    clamp(50px, 6vw, 90px);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+}
+
+
+.intro-layout h2 span {
+
+  color: #888;
+}
+
+
+.intro-description {
+
+  max-width: 540px;
+}
+
+
+.intro-description p {
+
+  margin-bottom: 25px;
+
+  font-family: Georgia, serif;
+
+  font-size: 16px;
+
+  line-height: 1.9;
+
+  color: #5e5e5e;
+}
+
+
+
+/* =====================================================
+   LESSONS WRAPPER
+===================================================== */
+
+.lessons-wrapper {
+
+  padding: 145px 8%;
+
+  background: #efefed;
+}
+
+
+.lessons-title {
+
+  margin-bottom: 100px;
+}
+
+
+.lessons-title h2 {
+
+  margin-top: 42px;
+
+  font-family:
+    "DM Serif Display",
+    serif;
+
+  font-size:
+    clamp(50px, 6vw, 90px);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+}
+
+
+.lessons-title h2 span {
+  color: #888;
+}
+
+
+
+/* =====================================================
+   LESSON LIST
+===================================================== */
+
+.lesson-list {
+
+  max-width: 1250px;
+
+  margin: auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 75px;
+}
+
+
+
+/* =====================================================
+   INDIVIDUAL LEARNING BLOCK
+===================================================== */
+
+.learning-block {
+
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  min-height: 470px;
+
+  background: #fff;
+
+  border: 1px solid #dededb;
+
+  overflow: hidden;
+
+  transition:
+    transform 0.5s ease,
+    box-shadow 0.5s ease,
+    border-color 0.4s ease;
+}
+
+
+.learning-block:hover {
+
+  transform: translateY(-5px);
+
+  border-color: #bdbdb9;
+
+  box-shadow:
+    0 18px 45px
+    rgba(0,0,0,0.07);
+}
+
+
+
+/* =====================================================
+   ALTERNATING LAYOUT
+===================================================== */
+
+.image-left .learning-image {
+  order: 1;
+}
+
+.image-left .learning-content {
+  order: 2;
+}
+
+
+.image-right .learning-image {
+  order: 2;
+}
+
+.image-right .learning-content {
+  order: 1;
+}
+
+
+
+/* =====================================================
+   TOPIC IMAGE
+===================================================== */
+
+.learning-image {
+
+  position: relative;
+
+  min-height: 470px;
+
+  overflow: hidden;
+
+  background: #ddd;
+}
+
+
+.learning-image img {
+
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  filter: grayscale(22%);
+
+  transition:
+    transform 0.7s ease,
+    filter 0.5s ease;
+}
+
+
+.learning-block:hover
+.learning-image img {
+
+  transform: scale(1.035);
+
+  filter: grayscale(0%);
+}
+
+
+.image-number {
+
+  position: absolute;
+
+  top: 25px;
+
+  left: 28px;
+
+  font-family:
+    "DM Serif Display",
+    serif;
+
+  font-size: 25px;
+
+  color: #fff;
+
+  z-index: 2;
+}
+
+
+
+/* =====================================================
+   TOPIC CONTENT
+===================================================== */
+
+.learning-content {
+
+  padding: 60px 55px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  background: #fff;
+}
+
+
+.topic-number {
+
+  margin-bottom: 22px;
+
+  font-size: 9px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+
+  color: #999;
+}
+
+
+.learning-content h3 {
+
+  font-family:
+    "DM Serif Display",
+    serif;
+
+  font-size: 52px;
+
+  font-weight: 700;
+
+  letter-spacing: -1px;
+
+  line-height: 1;
+
+  color: #080808;
+}
+
+
+.topic-line {
+
+  width: 55px;
+
+  height: 2px;
+
+  margin: 24px 0;
+
+  background: #111;
+
+  transition: width 0.4s ease;
+}
+
+
+.learning-block:hover .topic-line {
+
+  width: 85px;
+}
+
+
+.topic-text p {
+
+  max-width: 570px;
+
+  margin-bottom: 17px;
+
+  font-family: Georgia, serif;
+
+  font-size: 15px;
+
+  line-height: 1.85;
+
+  color: #5d5d5d;
+}
+
+
+
+/* =====================================================
+   50% REVEAL ANIMATION
+===================================================== */
+
+.learn-reveal {
+
+  opacity: 0;
+
+  transform: translateY(85px);
+
+  transition:
+    opacity 0.9s ease,
+    transform 1s cubic-bezier(.22,1,.36,1);
+}
+
+
+.learn-reveal.visible {
+
+  opacity: 1;
+
+  transform: translateY(0);
+}
+
+
+
+/* =====================================================
+   FINAL SECTION
+===================================================== */
+
+.wl-final {
+
+  min-height: 85vh;
+
+  padding: 140px 8%;
+
+  display: grid;
+
+  grid-template-columns: 0.5fr 1.5fr;
+
+  gap: 80px;
+
+  align-items: center;
+
+  background: #111;
+
+  color: #fff;
+}
+
+
+.final-year {
+
+  font-family:
+    "DM Serif Display",
+    serif;
+
+  font-size:
+    clamp(90px, 13vw, 210px);
+
+  line-height: 0.8;
+
+  color: #303030;
+}
+
+
+.final-content h2 {
+
+  margin-top: 45px;
+
+  font-family:
+    "DM Serif Display",
+    serif;
+
+  font-size:
+    clamp(50px, 6vw, 90px);
+
+  font-weight: 400;
+
+  line-height: 0.95;
+
+  letter-spacing: -3px;
+}
+
+
+.final-content h2 span {
+  color: #777;
+}
+
+
+.final-content p {
+
+  max-width: 680px;
+
+  margin-top: 45px;
+
+  font-family: Georgia, serif;
+
+  font-size: 17px;
+
+  line-height: 1.9;
+
+  color: #aaa;
+}
+
+
+.final-divider {
+
+  width: 100%;
+
+  height: 1px;
+
+  margin: 55px 0 25px;
+
+  background: #333;
+}
+
+
+.final-content strong {
+
+  font-size: 10px;
+
+  letter-spacing: 3px;
+
+  color: #ddd;
+}
+
+
+.wl-final .hero-label {
+  color: #999;
+}
+
+
+.wl-final .hero-label span {
+  background: #888;
+}
+
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.wl-footer {
+
+  min-height: 105px;
+
+  padding: 35px 8%;
+
+  display: flex;
+
+  justify-content: space-between;
+
+  align-items: center;
+
+  background: #f7f7f5;
+
+  border-top: 1px solid #d5d5d5;
+
+  font-size: 9px;
+
+  letter-spacing: 2px;
+
+  color: #777;
+}
+
+
+.wl-footer strong {
+  color: #111;
+}
+
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 900px) {
+
+  .wl-hero,
+  .wl-intro,
+  .lessons-wrapper,
+  .wl-final {
+
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+
+
+  .hero-layout {
+
+    grid-template-columns: 1fr;
+
+    gap: 50px;
+  }
+
+
+  .hero-team-image {
+
+    height: 350px;
+  }
+
+
+  .intro-layout {
+
+    grid-template-columns: 1fr;
+
+    gap: 45px;
+  }
+
+
+  .learning-block {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .image-left .learning-image,
+  .image-right .learning-image {
+
+    order: 1;
+  }
+
+
+  .image-left .learning-content,
+  .image-right .learning-content {
+
+    order: 2;
+  }
+
+
+  .learning-image {
+
+    min-height: 350px;
+  }
+
+
+  .learning-content {
+
+    padding: 50px 40px;
+  }
+
+
+  .wl-final {
+
+    grid-template-columns: 1fr;
+  }
+
+
+  .final-year {
+    display: none;
+  }
+
+
+  .wl-footer {
+
+    padding:
+      30px 6%;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 15px;
+  }
+
+}
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 600px) {
+
+  .wl-hero {
+
+    padding-top: 65px;
+
+    min-height: auto;
+
+    padding-bottom: 120px;
+  }
+
+
+  .hero-copy h1 {
+
+    font-size: 60px;
+
+    letter-spacing: -3px;
+  }
+
+
+  .hero-copy > p {
+
+    margin-top: 40px;
+
+    font-size: 15px;
+  }
+
+
+  .hero-details {
+
+    gap: 35px;
+  }
+
+
+  .hero-team-image {
+
+    height: 280px;
+  }
+
+
+  .wl-intro,
+  .lessons-wrapper,
+  .wl-final {
+
+    padding-top: 100px;
+
+    padding-bottom: 100px;
+  }
+
+
+  .intro-layout h2,
+  .lessons-title h2,
+  .final-content h2 {
+
+    font-size: 48px;
+
+    letter-spacing: -2px;
+  }
+
+
+  .lesson-list {
+
+    gap: 40px;
+  }
+
+
+  .learning-image {
+
+    min-height: 240px;
+  }
+
+
+  .learning-content {
+
+    padding: 35px 25px;
+  }
+
+
+  .learning-content h3 {
+
+    font-size: 36px;
+  }
+
+
+  .topic-text p {
+
+    font-size: 14px;
+
+    line-height: 1.8;
+  }
+
+
+  .wl-footer {
+
+    font-size: 8px;
+  }
+
+}

@@ -1,0 +1,33 @@
+.btn_parrent {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  width: 100%;
+  padding: 0 20px 10px;
+}
+
+.gallery-count {
+  color: var(--color-muted-text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+#clear {
+  min-height: 36px;
+  padding: 0 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  color: var(--color-text);
+  background: var(--color-secondary);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: border-color 0.2s ease;
+}
+
+#clear:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}

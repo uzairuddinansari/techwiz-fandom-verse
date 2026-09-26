@@ -1,0 +1,390 @@
+{
+  "greeting": "Hi, I’m Nova — your FandomVerse guide! Ask me about a fandom, tell me what you like, or pick a quick reply below.",
+  "fallback": "I’m not sure about that one yet. Try asking about a category (like “anime” or “K-Pop”), a franchise (like “Batman”), or tell me what you enjoy — for example “recommend something with action”.",
+  "quickReplies": [
+    "What is FandomVerse?",
+    "Recommend something",
+    "Upcoming events",
+    "How do bookmarks work?",
+    "Show me merch",
+    "Latest trailers"
+  ],
+  "intents": [
+    {
+      "id": "about",
+      "keywords": [
+        "what is fandomverse",
+        "about",
+        "who made",
+        "who built",
+        "team",
+        "purpose"
+      ],
+      "answer": "FandomVerse is a one-stop portal for Anime, Gaming, Movies, TV Shows, K-Pop, Comics and Manga fans — articles, characters, galleries, videos, events, merch and trailers in one place.",
+      "links": [
+        {
+          "label": "About us",
+          "to": "/about"
+        }
+      ]
+    },
+    {
+      "id": "greeting",
+      "keywords": [
+        "hello",
+        "hi",
+        "hey",
+        "salam",
+        "good morning",
+        "good evening"
+      ],
+      "answer": "Hey there! 👋 What are you into today — anime, games, movies, TV, K-Pop, comics or manga?",
+      "quickReplies": [
+        "Anime",
+        "Gaming",
+        "Movies",
+        "K-Pop"
+      ]
+    },
+    {
+      "id": "recommend",
+      "keywords": [
+        "recommend",
+        "suggest",
+        "what should i",
+        "something to watch",
+        "something to read",
+        "something to play"
+      ],
+      "answer": "Happy to help! What kind of vibe do you like?",
+      "quickReplies": [
+        "Action",
+        "Fantasy",
+        "Sci-fi",
+        "Superhero",
+        "Music",
+        "Thriller"
+      ]
+    },
+    {
+      "id": "events",
+      "keywords": [
+        "event",
+        "convention",
+        "meetup",
+        "watch party",
+        "con ",
+        "expo",
+        "tournament"
+      ],
+      "answer": "Here’s what’s coming up soon. You can see everything on the release calendar too.",
+      "links": [
+        {
+          "label": "Release calendar",
+          "to": "/releases"
+        },
+        {
+          "label": "All events",
+          "to": "/search?type=event&sort=newest"
+        }
+      ],
+      "show": {
+        "type": "event",
+        "status": "upcoming"
+      }
+    },
+    {
+      "id": "trailers",
+      "keywords": [
+        "trailer",
+        "teaser",
+        "upcoming release",
+        "new release"
+      ],
+      "answer": "Here are some trailers you can watch right away:",
+      "links": [
+        {
+          "label": "Trailers hub",
+          "to": "/Trailers"
+        },
+        {
+          "label": "Upcoming releases",
+          "to": "/releases"
+        }
+      ],
+      "show": {
+        "type": "trailer"
+      }
+    },
+    {
+      "id": "merch",
+      "keywords": [
+        "merch",
+        "shop",
+        "buy",
+        "t-shirt",
+        "tshirt",
+        "figure",
+        "plush",
+        "hoodie",
+        "product"
+      ],
+      "answer": "The FandomVerse shop has figures, apparel, plushies and collectibles from every hub. Pick an edition and size, add to cart, then check out with a free account.",
+      "links": [
+        {
+          "label": "Open the shop",
+          "to": "/shop"
+        },
+        {
+          "label": "Top-rated merch",
+          "to": "/shop?sort=rating"
+        }
+      ],
+      "show": {
+        "type": "merchandise"
+      }
+    },
+    {
+      "id": "cart",
+      "keywords": [
+        "cart",
+        "checkout",
+        "check out",
+        "basket",
+        "total",
+        "bill",
+        "delivery",
+        "shipping"
+      ],
+      "answer": "Open your cart to change quantities, add a promo code and choose delivery. Checkout needs a free account and saves the order to your profile — it’s a demo, so no payment is taken.",
+      "links": [
+        {
+          "label": "View cart",
+          "to": "/cart"
+        }
+      ]
+    },
+    {
+      "id": "promo",
+      "keywords": [
+        "promo",
+        "coupon",
+        "discount",
+        "code",
+        "voucher",
+        "sale"
+      ],
+      "answer": "Try FANDOM10 for 10% off, FREESHIP for free delivery on orders over $40, or WELCOME5 ($5 off over $30) once you’re logged in.",
+      "links": [
+        {
+          "label": "Go to cart",
+          "to": "/cart"
+        }
+      ]
+    },
+    {
+      "id": "orders",
+      "keywords": [
+        "order",
+        "my order",
+        "track",
+        "delivery status",
+        "purchase history"
+      ],
+      "answer": "Your orders are saved in your profile under Orders, with the items, delivery details and totals.",
+      "links": [
+        {
+          "label": "My orders",
+          "to": "/profile?tab=orders"
+        }
+      ]
+    },
+    {
+      "id": "bookmarks",
+      "keywords": [
+        "bookmark",
+        "save",
+        "favourite",
+        "favorite",
+        "note",
+        "export"
+      ],
+      "answer": "Tap “Save” on any card to bookmark it. On the Bookmarks page you can add personal notes (kept only for this session) and export your list as a text or CSV file.",
+      "links": [
+        {
+          "label": "Open bookmarks",
+          "to": "/bookmarks"
+        }
+      ]
+    },
+    {
+      "id": "search",
+      "keywords": [
+        "search",
+        "find",
+        "look for",
+        "filter",
+        "sort"
+      ],
+      "answer": "Use the search bar at the top of every page. On the results page you can filter by category and content type, and sort by popularity, date or A–Z.",
+      "links": [
+        {
+          "label": "Open search",
+          "to": "/search"
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "keywords": [
+        "contact",
+        "email",
+        "phone",
+        "address",
+        "location",
+        "where are you",
+        "map"
+      ],
+      "answer": "You can reach the team from the Contact page — it has our address, a Google Map and a GPS button to get directions.",
+      "links": [
+        {
+          "label": "Contact us",
+          "to": "/contact"
+        }
+      ]
+    },
+    {
+      "id": "account",
+      "keywords": [
+        "login",
+        "log in",
+        "sign up",
+        "signup",
+        "register",
+        "account",
+        "password",
+        "profile"
+      ],
+      "answer": "Create a free fan profile to check out, keep your cart across visits and see your orders. You can also try the demo account: demo@fandomverse.example / Fandom@123.",
+      "links": [
+        {
+          "label": "Log in",
+          "to": "/account"
+        },
+        {
+          "label": "Sign up",
+          "to": "/account?mode=signup"
+        },
+        {
+          "label": "My profile",
+          "to": "/profile"
+        }
+      ]
+    },
+    {
+      "id": "gallery",
+      "keywords": [
+        "gallery",
+        "image",
+        "picture",
+        "photo",
+        "wallpaper",
+        "art"
+      ],
+      "answer": "Each hub has an image gallery with a lightbox — use the arrows or your keyboard to browse.",
+      "show": {
+        "type": "gallery"
+      }
+    },
+    {
+      "id": "characters",
+      "keywords": [
+        "character",
+        "profile",
+        "hero",
+        "villain",
+        "idol"
+      ],
+      "answer": "Every hub has character profiles with biographies and traits. A few favourites:",
+      "show": {
+        "type": "character"
+      }
+    },
+    {
+      "id": "audio",
+      "keywords": [
+        "podcast",
+        "audio",
+        "listen",
+        "music",
+        "song",
+        "soundtrack"
+      ],
+      "answer": "Podcasts and soundtracks live in each hub’s Audio tab:",
+      "show": {
+        "type": "audio"
+      }
+    },
+    {
+      "id": "thanks",
+      "keywords": [
+        "thank",
+        "thanks",
+        "great",
+        "awesome",
+        "cool",
+        "nice"
+      ],
+      "answer": "Anytime! Enjoy exploring the Verse. ✨"
+    }
+  ],
+  "interests": {
+    "action": [
+      "action",
+      "shonen",
+      "fighting",
+      "superhero"
+    ],
+    "fantasy": [
+      "fantasy",
+      "dark fantasy",
+      "rpg",
+      "mythology"
+    ],
+    "sci-fi": [
+      "sci-fi",
+      "cyberpunk",
+      "post-apocalyptic"
+    ],
+    "superhero": [
+      "superhero",
+      "marvel",
+      "dc"
+    ],
+    "music": [
+      "music",
+      "music video",
+      "girl group",
+      "boy group"
+    ],
+    "thriller": [
+      "thriller",
+      "mystery",
+      "death note"
+    ],
+    "romance": [
+      "drama",
+      "slice of life"
+    ],
+    "comedy": [
+      "comedy",
+      "classic",
+      "satire"
+    ],
+    "horror": [
+      "post-apocalyptic",
+      "dark fantasy",
+      "thriller"
+    ]
+  }
+}

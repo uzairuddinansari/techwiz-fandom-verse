@@ -1,0 +1,270 @@
+/* Site map: a tree from the landing page down to every section. */
+
+.sitemap-tools {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+
+.sitemap-tools .shop-search {
+  position: relative;
+  display: flex;
+  flex: 1 1 320px;
+  align-items: center;
+}
+
+.sitemap-tools .shop-search svg {
+  position: absolute;
+  left: 16px;
+  color: var(--color-muted-text);
+}
+
+.sitemap-tools .shop-search input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0 16px 0 44px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-secondary);
+  font-size: 15px;
+  outline: none;
+}
+
+.sitemap-tools .shop-search input:focus {
+  border-color: var(--color-primary);
+}
+
+.sitemap-tree {
+  position: relative;
+  display: grid;
+  gap: 28px;
+  padding-left: 30px;
+}
+
+/* The trunk line connecting every branch to the landing page. */
+.sitemap-tree::before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  bottom: 30px;
+  left: 9px;
+  width: 2px;
+  border-radius: 2px;
+  background: linear-gradient(var(--color-accent), var(--color-border));
+}
+
+.sitemap-root {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 14px;
+  justify-self: start;
+  margin-left: -30px;
+  padding: 16px 22px;
+  border-radius: 18px;
+  color: #fff;
+  background: var(--color-primary);
+  box-shadow: 0 14px 30px color-mix(in srgb, var(--color-primary) 25%, transparent);
+  transition: transform 0.25s ease, background 0.25s ease;
+}
+
+.sitemap-root:hover {
+  background: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.sitemap-root strong {
+  display: block;
+  font-size: 17px;
+}
+
+.sitemap-root small {
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 12.5px;
+}
+
+.sitemap-branch {
+  position: relative;
+  animation: sitemapIn 0.5s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Branch connector from the trunk. */
+.sitemap-branch::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: -21px;
+  width: 16px;
+  height: 2px;
+  background: var(--color-border);
+}
+
+.sitemap-branch::after {
+  content: "";
+  position: absolute;
+  top: 11px;
+  left: -26px;
+  width: 12px;
+  height: 12px;
+  border: 2px solid var(--color-accent);
+  border-radius: 50%;
+  background: var(--color-background);
+}
+
+@keyframes sitemapIn {
+  from { opacity: 0; transform: translateY(12px); }
+}
+
+.sitemap-branch h2 {
+  font-size: clamp(22px, 2.6vw, 30px);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+}
+
+.sitemap-branch > .fv-muted {
+  margin: 4px 0 16px;
+}
+
+.sitemap-hubs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 14px;
+}
+
+.sitemap-hub {
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: 18px;
+  background: var(--color-secondary);
+}
+
+.sitemap-hub-head {
+  display: grid;
+  grid-template-columns: 44px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border-bottom: 1px solid var(--color-border);
+  transition: background 0.2s ease;
+}
+
+.sitemap-hub-head:hover {
+  background: color-mix(in srgb, var(--color-text) 4%, transparent);
+}
+
+.sitemap-hub-head img {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.sitemap-hub-head strong {
+  display: block;
+  font-size: 15px;
+}
+
+.sitemap-hub-head small {
+  color: var(--color-muted-text);
+  font-size: 11.5px;
+}
+
+.sitemap-hub ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 12px;
+}
+
+.sitemap-hub a {
+  display: inline-block;
+  padding: 5px 10px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.2s ease;
+}
+
+.sitemap-hub ul a:hover {
+  border-color: var(--color-primary);
+  color: #fff;
+  background: var(--color-primary);
+}
+
+.sitemap-pages {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 12px;
+}
+
+.sitemap-pages a,
+.sitemap-pages div {
+  display: grid;
+  gap: 4px;
+  height: 100%;
+  padding: 16px;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  background: var(--color-secondary);
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.sitemap-pages a:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-3px);
+}
+
+.sitemap-pages strong {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 15px;
+}
+
+.sitemap-pages strong svg {
+  color: var(--color-accent);
+}
+
+.sitemap-pages span {
+  color: var(--color-muted-text);
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+.sitemap-pages small {
+  color: var(--color-accent);
+  font-family: ui-monospace, monospace;
+  font-size: 11.5px;
+}
+
+@media (max-width: 560px) {
+  .sitemap-tree {
+    padding-left: 22px;
+  }
+
+  .sitemap-tree::before {
+    left: 5px;
+  }
+
+  .sitemap-root {
+    margin-left: -22px;
+  }
+
+  .sitemap-branch::before {
+    left: -17px;
+    width: 12px;
+  }
+
+  .sitemap-branch::after {
+    left: -22px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sitemap-branch {
+    animation: none;
+  }
+}

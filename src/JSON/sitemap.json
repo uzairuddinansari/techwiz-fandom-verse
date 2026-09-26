@@ -1,0 +1,56 @@
+{
+  "intro": "Every page of FandomVerse at a glance. The landing page leads to the seven category hubs; cross-category features, your account and help pages are available from every page.",
+  "groups": [
+    {
+      "id": "features",
+      "title": "Cross-category features",
+      "description": "Available from every page through the navigation, menu and footer.",
+      "pages": [
+        { "label": "Global search", "path": "/search", "text": "Search and filter every item across all hubs." },
+        { "label": "Featured articles", "path": "/search?type=article", "text": "Long-form stories from every fandom." },
+        { "label": "Trailers", "path": "/Trailers", "text": "Upcoming and recently released trailers." },
+        { "label": "Upcoming releases", "path": "/releases", "text": "Calendar of releases and events." },
+        { "label": "Events", "path": "/search?type=event", "text": "Conventions, meetups and watch parties." },
+        { "label": "Shop", "path": "/shop", "text": "Merchandise from all seven hubs." },
+        { "label": "Media search", "path": "/Gellery", "text": "Browse every photo and video." },
+        { "label": "Nova chatbot", "path": null, "text": "The “Ask Nova” button on every page." }
+      ]
+    },
+    {
+      "id": "account",
+      "title": "Your account",
+      "description": "Sign in to check out, save your cart and see your orders.",
+      "pages": [
+        { "label": "Log in / Sign up", "path": "/account", "text": "Create a free fan profile." },
+        { "label": "My profile", "path": "/profile", "text": "Orders, wishlist and settings.", "members": true },
+        { "label": "Cart", "path": "/cart", "text": "Promo codes, delivery and totals." },
+        { "label": "Checkout", "path": "/checkout", "text": "Delivery details and order confirmation.", "members": true },
+        { "label": "Bookmarks", "path": "/bookmarks", "text": "Saved items, notes and export." }
+      ]
+    },
+    {
+      "id": "about",
+      "title": "About & help",
+      "description": "Learn about the project and the people who built it.",
+      "pages": [
+        { "label": "About us", "path": "/about", "text": "The website and how it works." },
+        { "label": "Our team", "path": "/team", "text": "Team portfolio and profiles." },
+        { "label": "Contact us", "path": "/contact", "text": "Message form, map and GPS." },
+        { "label": "Installation guide", "path": "/installation", "text": "Run the project locally." },
+        { "label": "Techwiz journey", "path": "/TechwizJourney", "text": "The story of our competition." },
+        { "label": "Site map", "path": "/sitemap", "text": "You are here." }
+      ]
+    },
+    {
+      "id": "admin",
+      "title": "Administration",
+      "description": "For the site team (demo sign-in: admin / fandom2026).",
+      "pages": [
+        { "label": "Admin dashboard", "path": "/admin", "text": "Stats, charts and activity." },
+        { "label": "Content library", "path": "/admin/content", "text": "Edit, hide and feature items." },
+        { "label": "Customers & orders", "path": "/admin/customers", "text": "Accounts and order history." },
+        { "label": "Appearance", "path": "/admin/appearance", "text": "Theme presets and fonts." }
+      ]
+    }
+  ]
+}

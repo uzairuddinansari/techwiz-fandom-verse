@@ -1,0 +1,83 @@
+.robot {
+  position: fixed;
+  left: 30px;
+  bottom: 2px;
+  width: 180px;
+  height: 200px;
+  z-index: 10001;
+  /* cursor: grab; */
+  user-select: none;
+  touch-action: none;
+  background: transparent;
+  /* White robot ko background se separate karega */
+  filter:
+    drop-shadow(0 3px 3px rgba(0, 0, 0, 0.35))
+    drop-shadow(0 8px 12px rgba(0, 0, 0, 0.12));
+}
+
+
+.robot canvas {
+  width: 100% !important;
+  height: 100% !important;
+  pointer-events: none;
+  background: transparent !important;
+}
+
+.robot-active {
+  filter:
+    drop-shadow(0 3px 3px rgba(0, 0, 0, 0.4))
+    drop-shadow(0 8px 15px rgba(0, 0, 0, 0.15));
+}
+
+.robot-sleep {
+  opacity: 0.85;
+  filter:
+    drop-shadow(0 3px 3px rgba(0, 0, 0, 0.3))
+    drop-shadow(0 6px 10px rgba(0, 0, 0, 0.1));
+}
+
+.robot-wait {
+  position: absolute;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 8px 15px;
+  border-radius: 20px;
+  background: white;
+  color: #222;
+  font-size: 13px;
+  white-space: nowrap;
+  z-index: 20;
+  pointer-events: none;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .robot {
+    left: 15px;
+    bottom: 5px;
+    width: 140px;
+    height: 180px;
+  }
+
+  .robot-wait {
+    top: -35px;
+    font-size: 12px;
+    padding: 7px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .robot {
+    left: 10px;
+    bottom: 0px;
+    width: 80px;
+    height: 115px;
+  }
+
+  .robot-wait {
+    top: -32px;
+    font-size: 11px;
+    padding: 6px 10px;
+  }
+}

@@ -1,0 +1,69 @@
+/* =========================================================
+   Route transitions — lightweight and GPU-friendly.
+   ========================================================= */
+
+/* Slim accent bar that sweeps across the top on every navigation. */
+.route-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 5000;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-accent), color-mix(in srgb, var(--color-accent) 40%, #fff));
+  box-shadow: 0 0 12px color-mix(in srgb, var(--color-accent) 60%, transparent);
+  transform-origin: left;
+  pointer-events: none;
+  animation: routeProgress 0.7s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+
+@keyframes routeProgress {
+  0% { opacity: 1; transform: scaleX(0); }
+  70% { opacity: 1; transform: scaleX(1); }
+  100% { opacity: 0; transform: scaleX(1); }
+}
+
+/* The incoming page fades and rises into place. */
+.route-view {
+  animation: routeEnter 0.55s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes routeEnter {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+/* Softer cross-fade for tab changes inside a hub, profile tabs and account steps. */
+.fv-section,
+.acc-panel,
+.fv-account form {
+  animation: sectionFade 0.4s ease both;
+}
+
+@keyframes sectionFade {
+  from { opacity: 0; }
+}
+
+/* Smooth hover / focus transitions everywhere interactive. */
+:where(a, button, [role="tab"]) {
+  /* colour-type properties only, so GSAP-driven transform/opacity tweens stay crisp */
+  transition-property: color, background-color, border-color, box-shadow;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-progress,
+  .route-view,
+  .fv-section,
+  .acc-panel,
+  .fv-account form {
+    animation: none;
+  }
+}

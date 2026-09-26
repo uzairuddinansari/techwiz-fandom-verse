@@ -1,0 +1,173 @@
+:root {
+  --color-accent: #e32636;
+  --surface-soft: color-mix(in srgb, var(--color-text) 4%, var(--color-background));
+  --surface-raised: var(--color-secondary);
+  --shadow-soft: 0 12px 40px color-mix(in srgb, var(--color-text) 10%, transparent);
+  --content-width: 1240px;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: var(--color-background);
+}
+
+body {
+  overflow-x: hidden;
+  color: var(--color-text);
+  background: var(--color-background);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+}
+
+button,
+a,
+input,
+select,
+textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+:where(a, button, input, select, textarea):focus-visible {
+  outline: 3px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* Keep the original floating navigation, with enough contrast on every hero. */
+.nav_parent {
+  padding-top: 14px;
+  pointer-events: none;
+}
+
+.nav {
+  width: min(var(--content-width), 94%);
+  margin: auto;
+}
+
+.nav_logo,
+.nav_right {
+  pointer-events: auto;
+}
+
+.nav_logo {
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--color-background) 88%, transparent);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(16px);
+}
+
+.nav_logo img {
+  transform: scale(1.85);
+}
+
+.nav_search,
+.nav_menu {
+  box-shadow: 0 8px 28px color-mix(in srgb, var(--color-text) 9%, transparent);
+  backdrop-filter: blur(16px);
+}
+
+.nav_search {
+  background: color-mix(in srgb, var(--color-background) 92%, transparent);
+}
+
+.nav_menu {
+  border-color: color-mix(in srgb, var(--color-text) 25%, transparent);
+}
+
+/* Footer artwork and character animation stay unchanged, but now read as one site. */
+.anime-footer {
+  margin: 0;
+  padding: clamp(24px, 5vw, 55px);
+  border-width: 1px 0 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.footer-main {
+  max-width: var(--content-width);
+  margin: auto;
+}
+
+.footer-topbar {
+  max-width: var(--content-width);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-logo-text {
+  font-size: 28px;
+}
+
+@media (max-width: 1100px) {
+  .footer-main {
+    grid-template-columns: 1.2fr 1fr;
+  }
+
+  .footer-characters {
+    min-height: 320px;
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 780px) {
+  .nav_parent {
+    padding: 10px 14px;
+  }
+
+  .nav {
+    width: 100%;
+  }
+
+  .nav_logo {
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .nav_logo img {
+    margin-left: 0;
+    transform: scale(1.25);
+  }
+
+  .nav_search.search_open {
+    position: fixed;
+    top: 70px;
+    right: 14px;
+    left: 14px;
+    width: auto;
+    min-width: 0;
+  }
+
+  .footer-main {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-characters {
+    grid-column: auto;
+  }
+
+}
+
+@media (max-width: 520px) {
+  .footer-topbar {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .anime-footer *,
+  .page-shutter {
+    animation: none !important;
+    transition-duration: .01ms !important;
+  }
+}

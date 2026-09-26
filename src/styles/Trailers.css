@@ -1,0 +1,426 @@
+.trailers-page {
+  width: 100%;
+  min-height: 100vh;
+  padding: 80px 5vw 100px;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  overflow: hidden;
+}
+
+.trailers-header {
+  max-width: 900px;
+  margin: 0 auto 45px;
+  text-align: center;
+}
+
+.trailers-header h1 {
+  margin: 0 0 12px;
+  font-family: var(--font-heading);
+  font-size: clamp(3rem, 7vw, 7rem);
+  font-weight: var(--heading-weight);
+  line-height: .9;
+  letter-spacing: -0.05em;
+}
+
+.trailers-header p {
+  margin: 0;
+  color: var(--color-muted-text);
+  font-size: 15px;
+  letter-spacing: .04em;
+}
+
+.trailers-tabs {
+  width: fit-content;
+  margin: 0 auto 65px;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid color-mix(in srgb, var(--color-text) 12%, transparent);
+  border-radius: 100px;
+  background: color-mix(in srgb, var(--color-text) 4%, transparent);
+  backdrop-filter: blur(18px);
+}
+
+.trailers-tabs a {
+  position: relative;
+  padding: 11px 22px;
+  color: var(--color-muted-text);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: .02em;
+  border-radius: 100px;
+  transition: color .35s ease, background .35s ease, transform .35s ease;
+}
+
+.trailers-tabs a:hover {
+  color: var(--color-text);
+  transform: translateY(-2px);
+}
+
+.trailers-tabs a.active {
+  color: var(--color-background);
+  background: var(--color-text);
+}
+
+.trailers-grid {
+  width: min(1450px, 100%);
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.trailer-card {
+  position: relative;
+  min-width: 0;
+  border: 1px solid color-mix(in srgb, var(--color-text) 11%, transparent);
+  background: color-mix(in srgb, var(--color-text) 3%, transparent);
+  overflow: hidden;
+  border-radius: 18px;
+  opacity: 0;
+  transform: translateY(70px);
+  transition:
+    border-color .45s ease,
+    transform .5s cubic-bezier(.16,1,.3,1),
+    box-shadow .5s ease;
+}
+
+.trailer-card:hover {
+  border-color: color-mix(in srgb, var(--color-text) 35%, transparent);
+  transform: translateY(-8px);
+  box-shadow: 0 25px 70px rgba(0,0,0,.18);
+}
+
+.trailer-media {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #111;
+}
+
+.trailer-media::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      180deg,
+      transparent 45%,
+      rgba(0,0,0,.65) 100%
+    );
+  pointer-events: none;
+}
+
+.trailer-media img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  transform: scale(1.01);
+  transition: transform 1s cubic-bezier(.16,1,.3,1);
+}
+
+.trailer-card:hover .trailer-media img {
+  transform: scale(1.08);
+}
+
+.trailer-type {
+  position: absolute;
+  z-index: 2;
+  top: 14px;
+  left: 14px;
+  padding: 7px 11px;
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 100px;
+  color: #fff;
+  background: rgba(0,0,0,.38);
+  backdrop-filter: blur(12px);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.trailer-play {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  width: 62px;
+  height: 62px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,.45);
+  border-radius: 50%;
+  color: #111;
+  background: rgba(255,255,255,.92);
+  font-size: 17px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translate(-50%, -40%) scale(.65);
+  transition:
+    opacity .4s ease,
+    transform .5s cubic-bezier(.16,1,.3,1),
+    background .3s ease;
+}
+
+.trailer-card:hover .trailer-play {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.trailer-play:hover {
+  background: #fff;
+  transform: translate(-50%, -50%) scale(1.1) !important;
+}
+
+.trailer-favorite {
+  position: absolute;
+  z-index: 4;
+  right: 14px;
+  top: 14px;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid rgba(255,255,255,.2);
+  border-radius: 50%;
+  color: #fff;
+  background: rgba(0,0,0,.35);
+  backdrop-filter: blur(12px);
+  font-size: 19px;
+  cursor: pointer;
+  transition: .35s ease;
+}
+
+.trailer-favorite.saved {
+  width: auto;
+  padding: 0 12px;
+}
+
+.trailer-favorite:hover {
+  background: rgba(255,255,255,.9);
+  color: #111;
+  transform: rotate(8deg) scale(1.08);
+}
+
+.trailer-content {
+  padding: 24px 23px 25px;
+}
+
+.trailer-content h2 {
+  margin: 0 0 11px;
+  font-family: var(--font-heading);
+  font-size: clamp(20px, 2vw, 27px);
+  font-weight: var(--heading-weight);
+  line-height: 1.05;
+  letter-spacing: -.025em;
+}
+
+.trailer-content p {
+  margin: 0 0 20px;
+  color: var(--color-muted-text);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.trailer-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.trailer-tags span {
+  padding: 6px 10px;
+  border: 1px solid color-mix(in srgb, var(--color-text) 13%, transparent);
+  border-radius: 100px;
+  color: var(--color-muted-text);
+  font-size: 10px;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+  transition: .3s ease;
+}
+
+.trailer-card:hover .trailer-tags span {
+  border-color: color-mix(in srgb, var(--color-text) 28%, transparent);
+  color: var(--color-text);
+}
+
+@media (max-width: 1050px) {
+  .trailers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .trailers-page {
+    padding: 60px 18px 70px;
+  }
+
+  .trailers-tabs {
+    width: 100%;
+    justify-content: center;
+    overflow-x: auto;
+    border-radius: 18px;
+  }
+
+  .trailers-tabs a {
+    white-space: nowrap;
+    padding: 10px 15px;
+  }
+
+  .trailers-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .trailer-play {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(.9);
+  }
+}
+
+
+.trailer-drawer {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  pointer-events: none;
+}
+
+.trailer-drawer-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, .58);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  animation: trailerBackdropIn .45s ease forwards;
+  pointer-events: auto;
+}
+
+.trailer-video-panel {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: min(850px, 92vw);
+  height: 100%;
+  padding: 55px 35px 35px;
+  background: var(--color-background);
+  border-right: 1px solid color-mix(in srgb, var(--color-text) 15%, transparent);
+  box-shadow: 25px 0 80px rgba(0,0,0,.3);
+  overflow-y: auto;
+  transform: translateX(-100%);
+  animation: trailerPanelIn .65s cubic-bezier(.16,1,.3,1) forwards;
+  pointer-events: auto;
+}
+
+.trailer-close {
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  z-index: 5;
+  width: 42px;
+  height: 42px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border: 1px solid color-mix(in srgb, var(--color-text) 18%, transparent);
+  border-radius: 50%;
+  color: var(--color-text);
+  background: color-mix(in srgb, var(--color-text) 6%, transparent);
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  transition: .3s ease;
+}
+
+.trailer-close:hover {
+  color: var(--color-background);
+  background: var(--color-text);
+  transform: rotate(90deg);
+}
+
+.trailer-video-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  margin-top: 15px;
+  border-radius: 16px;
+  background: #000;
+}
+
+.trailer-video-wrapper video {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+  background: #000;
+}
+
+.trailer-video-info {
+  padding: 25px 5px 10px;
+}
+
+.trailer-video-info span {
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--color-muted-text);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.trailer-video-info h2 {
+  margin: 0 0 8px;
+  font-family: var(--font-heading);
+  color: var(--color-text);
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: var(--heading-weight);
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.trailer-video-info p {
+  margin: 0;
+  color: var(--color-muted-text);
+  font-size: 14px;
+}
+
+@keyframes trailerPanelIn {
+  from {
+    transform: translateX(-100%);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes trailerBackdropIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 650px) {
+  .trailer-video-panel {
+    width: 100%;
+    padding: 55px 18px 25px;
+  }
+
+  .trailer-video-wrapper {
+    border-radius: 12px;
+  }
+
+  .trailer-close {
+    top: 12px;
+    right: 14px;
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "eyebrow": "THE JOURNEY",
+  "title": "FROM TICKET",
+  "titleAccent": "TO TECHWIZ",
+  "intro": "A journey built with ambition, hard work, dedication and one unforgettable selection moment.",
+  "year": "2026",
+  "label": "TECHWIZ JOURNEY",
+
+  "steps": [
+    {
+      "number": "01",
+      "label": "THE BEGINNING",
+      "title": "TICKET TO",
+      "accent": "TECHWIZ",
+      "description": "It started with one decision. We participated in Ticket to Techwiz with one goal in mind — to take our skills beyond the classroom and prove what our team could achieve.",
+      "image": "team/where-started.jpg",
+      "caption": "WE TOOK THE FIRST STEP",
+      "smallText": "PARTICIPATION"
+    },
+    {
+      "number": "02",
+      "label": "THE WORK",
+      "title": "WE",
+      "accent": "WORKED FOR IT",
+      "description": "Ideas became plans. Plans became work. We kept pushing, learning, improving and solving problems together. Every late hour and every difficult moment brought us closer to the goal.",
+      "image": "hero_final.png",
+      "caption": "EVERYTHING STARTED TO COME TOGETHER",
+      "smallText": "HARD WORK"
+    },
+    {
+      "number": "03",
+      "label": "THE TEST",
+      "title": "TIME TO",
+      "accent": "PROVE IT",
+      "description": "Our work was evaluated. We had to present what we created, explain our ideas and show that our effort could stand up to the challenge.",
+      "image": "hero_final.png",
+      "caption": "OUR WORK WAS PUT TO THE TEST",
+      "smallText": "EVALUATION"
+    },
+    {
+      "number": "04",
+      "label": "THE MOMENT",
+      "title": "WE",
+      "accent": "MADE IT",
+      "description": "Then came the moment we had been waiting for. We passed the evaluation and were selected for Techwiz. For us, it was more than a result. It was proof that the hard work had meant something.",
+      "image": "hero_final.png",
+      "caption": "THE MOMENT WE REALIZED",
+      "smallText": "SELECTED"
+    },
+    {
+      "number": "05",
+      "label": "THE REACTION",
+      "title": "SURPRISE.",
+      "accent": "HAPPINESS.",
+      "description": "Our expressions said everything. Surprise, happiness, excitement and pride all came together in one moment. We had worked for this, and finally we could feel the achievement.",
+      "image": "hero_final.png",
+      "caption": "THE EXPRESSION SAID IT ALL",
+      "smallText": "WE WERE HAPPY"
+    },
+    {
+      "number": "06",
+      "label": "THE NEXT LEVEL",
+      "title": "NOW WE ARE",
+      "accent": "INTERNATIONAL",
+      "description": "What started with Ticket to Techwiz has taken us to an international stage. We are proud, excited and ready to represent our skills beyond borders.",
+      "image": "hero_final.png",
+      "caption": "THE JOURNEY WENT BEYOND BORDERS",
+      "smallText": "INTERNATIONAL STAGE"
+    }
+  ],
+
+  "stats": [
+    {
+      "number": "01",
+      "title": "PARTICIPATION",
+      "text": "Ticket to Techwiz"
+    },
+    {
+      "number": "02",
+      "title": "DEDICATION",
+      "text": "Hard Work & Teamwork"
+    },
+    {
+      "number": "03",
+      "title": "EVALUATION",
+      "text": "Challenge Completed"
+    },
+    {
+      "number": "04",
+      "title": "SELECTION",
+      "text": "Techwiz 2026"
+    }
+  ],
+
+  "final": {
+    "eyebrow": "FROM ONE SMALL STEP",
+    "title": "TO AN",
+    "accent": "INTERNATIONAL STAGE.",
+    "description": "We entered with an idea. We stayed with dedication. We passed the evaluation. We got selected. And now we are here — proud of how far we have come and excited for everything that comes next.",
+    "quote": "WE DIDN'T JUST GET SELECTED. WE EARNED THE MOMENT."
+  }
+}

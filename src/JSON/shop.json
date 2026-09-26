@@ -1,0 +1,354 @@
+{
+  "currency": "USD",
+  "taxRate": 0.05,
+  "freeShippingThreshold": 100,
+  "maxQuantityPerItem": 10,
+  "editions": [
+    {
+      "id": "Standard",
+      "label": "Standard",
+      "description": "The classic version."
+    },
+    {
+      "id": "Deluxe",
+      "label": "Deluxe",
+      "description": "Premium materials, collector packaging and a signed art card."
+    }
+  ],
+  "shippingOptions": [
+    {
+      "id": "standard",
+      "label": "Standard delivery",
+      "detail": "5–7 working days",
+      "price": 6
+    },
+    {
+      "id": "express",
+      "label": "Express delivery",
+      "detail": "1–2 working days",
+      "price": 15
+    },
+    {
+      "id": "pickup",
+      "label": "Store pickup",
+      "detail": "FandomVerse Studio, Karachi",
+      "price": 0
+    }
+  ],
+  "promoCodes": [
+    {
+      "code": "FANDOM10",
+      "type": "percent",
+      "value": 10,
+      "minSubtotal": 0,
+      "label": "10% off your order"
+    },
+    {
+      "code": "WELCOME5",
+      "type": "fixed",
+      "value": 5,
+      "minSubtotal": 30,
+      "label": "$5 off orders over $30",
+      "membersOnly": true
+    },
+    {
+      "code": "FREESHIP",
+      "type": "shipping",
+      "value": 0,
+      "minSubtotal": 40,
+      "label": "Free delivery on orders over $40"
+    }
+  ],
+  "kindLabels": {
+    "apparel": "Apparel",
+    "accessory": "Accessories",
+    "figure": "Figures",
+    "plushie": "Plushies",
+    "collectible": "Collectibles",
+    "poster": "Posters",
+    "homeware": "Homeware",
+    "music": "Music",
+    "comic": "Comics",
+    "stationery": "Stationery",
+    "books": "Books"
+  },
+  "perks": [
+    {
+      "icon": "truck",
+      "title": "Free delivery over $100",
+      "text": "Standard delivery is free on bigger orders."
+    },
+    {
+      "icon": "rotate",
+      "title": "30-day returns",
+      "text": "Changed your mind? Send it back within 30 days."
+    },
+    {
+      "icon": "shield",
+      "title": "Official-style quality",
+      "text": "Every item is checked by fans, for fans."
+    }
+  ],
+  "products": {
+    "anime:merchandise:hidden-leaf-hoodie": {
+      "rating": 4.7,
+      "reviews": 73,
+      "stock": 19,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sku": "FV-ANI-001"
+    },
+    "anime:merchandise:straw-hat-replica": {
+      "rating": 4.4,
+      "reviews": 126,
+      "stock": 30,
+      "sku": "FV-ANI-002"
+    },
+    "anime:merchandise:super-saiyan-goku-figure": {
+      "rating": 4.1,
+      "reviews": 179,
+      "stock": 41,
+      "badge": "Bestseller",
+      "sku": "FV-ANI-003"
+    },
+    "anime:merchandise:nezuko-plushie": {
+      "rating": 4.8,
+      "reviews": 52,
+      "stock": 12,
+      "badge": "New",
+      "sku": "FV-ANI-004"
+    },
+    "anime:merchandise:survey-corps-cape": {
+      "rating": 4.5,
+      "reviews": 105,
+      "stock": 3,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sku": "FV-ANI-005"
+    },
+    "gaming:merchandise:witcher-medallion-necklace": {
+      "rating": 4.2,
+      "reviews": 158,
+      "stock": 34,
+      "sku": "FV-GAM-006"
+    },
+    "gaming:merchandise:night-city-jacket": {
+      "rating": 4.9,
+      "reviews": 31,
+      "stock": 45,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "badge": "Limited",
+      "sku": "FV-GAM-007"
+    },
+    "gaming:merchandise:creeper-plushie": {
+      "rating": 4.6,
+      "reviews": 84,
+      "stock": 16,
+      "sku": "FV-GAM-008"
+    },
+    "gaming:merchandise:radiant-keycap-set": {
+      "rating": 4.3,
+      "reviews": 137,
+      "stock": 27,
+      "sku": "FV-GAM-009"
+    },
+    "gaming:merchandise:wukong-staff-replica": {
+      "rating": 4,
+      "reviews": 190,
+      "stock": 3,
+      "sku": "FV-GAM-010"
+    },
+    "movies:merchandise:batman-logo-tee": {
+      "rating": 4.7,
+      "reviews": 63,
+      "stock": 9,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sku": "FV-MOV-011"
+    },
+    "movies:merchandise:spider-man-mask-replica": {
+      "rating": 4.4,
+      "reviews": 116,
+      "stock": 20,
+      "sku": "FV-MOV-012"
+    },
+    "movies:merchandise:arrakis-poster-set": {
+      "rating": 4.1,
+      "reviews": 169,
+      "stock": 31,
+      "sku": "FV-MOV-013"
+    },
+    "movies:merchandise:aviator-sunglasses": {
+      "rating": 4.8,
+      "reviews": 42,
+      "stock": 42,
+      "sku": "FV-MOV-014"
+    },
+    "movies:merchandise:infinity-gauntlet-mug": {
+      "rating": 4.5,
+      "reviews": 95,
+      "stock": 3,
+      "sku": "FV-MOV-015"
+    },
+    "tv-shows:merchandise:hellfire-club-tee": {
+      "rating": 4.2,
+      "reviews": 148,
+      "stock": 24,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sku": "FV-TV--016"
+    },
+    "tv-shows:merchandise:nevermore-crest-scarf": {
+      "rating": 4.9,
+      "reviews": 21,
+      "stock": 35,
+      "sku": "FV-TV--017"
+    },
+    "tv-shows:merchandise:jinx-monkey-bomb-plush": {
+      "rating": 4.6,
+      "reviews": 74,
+      "stock": 46,
+      "sku": "FV-TV--018"
+    },
+    "tv-shows:merchandise:vault-tec-lunchbox": {
+      "rating": 4.3,
+      "reviews": 127,
+      "stock": 17,
+      "sku": "FV-TV--019"
+    },
+    "tv-shows:merchandise:dragon-egg-set": {
+      "rating": 4,
+      "reviews": 180,
+      "stock": 3,
+      "badge": "New",
+      "sku": "FV-TV--020"
+    },
+    "k-pop:merchandise:official-style-lightstick": {
+      "rating": 4.7,
+      "reviews": 53,
+      "stock": 39,
+      "badge": "Bestseller",
+      "sku": "FV-K-P-021"
+    },
+    "k-pop:merchandise:blackpink-photocard-binder": {
+      "rating": 4.4,
+      "reviews": 106,
+      "stock": 10,
+      "sku": "FV-K-P-022"
+    },
+    "k-pop:merchandise:stray-kids-skzoo-plush": {
+      "rating": 4.1,
+      "reviews": 159,
+      "stock": 21,
+      "sku": "FV-K-P-023"
+    },
+    "k-pop:merchandise:newjeans-bunny-tote": {
+      "rating": 4.8,
+      "reviews": 32,
+      "stock": 32,
+      "sku": "FV-K-P-024"
+    },
+    "k-pop:merchandise:twice-album-box-set": {
+      "rating": 4.5,
+      "reviews": 85,
+      "stock": 3,
+      "sku": "FV-K-P-025"
+    },
+    "comics:merchandise:spider-man-graphic-tee": {
+      "rating": 4.2,
+      "reviews": 138,
+      "stock": 14,
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "sku": "FV-COM-026"
+    },
+    "comics:merchandise:bat-signal-desk-lamp": {
+      "rating": 4.9,
+      "reviews": 191,
+      "stock": 25,
+      "sku": "FV-COM-027"
+    },
+    "comics:merchandise:captain-america-shield": {
+      "rating": 4.6,
+      "reviews": 64,
+      "stock": 36,
+      "badge": "Limited",
+      "sku": "FV-COM-028"
+    },
+    "comics:merchandise:classic-comics-poster-pack": {
+      "rating": 4.3,
+      "reviews": 117,
+      "stock": 47,
+      "sku": "FV-COM-029"
+    },
+    "comics:merchandise:cosmic-sentinel-issue-1": {
+      "rating": 4,
+      "reviews": 170,
+      "stock": 3,
+      "badge": "FandomVerse Original",
+      "sku": "FV-COM-030"
+    },
+    "manga:merchandise:death-note-notebook": {
+      "rating": 4.7,
+      "reviews": 43,
+      "stock": 29,
+      "sku": "FV-MAN-031"
+    },
+    "manga:merchandise:one-piece-box-set-1": {
+      "rating": 4.4,
+      "reviews": 96,
+      "stock": 40,
+      "badge": "Staff pick",
+      "sku": "FV-MAN-032"
+    },
+    "manga:merchandise:dragon-ball-poster-scroll": {
+      "rating": 4.1,
+      "reviews": 149,
+      "stock": 11,
+      "sku": "FV-MAN-033"
+    },
+    "manga:merchandise:naruto-headband": {
+      "rating": 4.8,
+      "reviews": 22,
+      "stock": 22,
+      "sku": "FV-MAN-034"
+    },
+    "manga:merchandise:manga-page-tote-bag": {
+      "rating": 4.5,
+      "reviews": 75,
+      "stock": 3,
+      "sku": "FV-MAN-035"
+    }
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "studio": {
+    "name": "FandomVerse Studio",
+    "address": "Aptech Learning Centre, Shahrah-e-Faisal, Karachi, Pakistan",
+    "mapQuery": "Shahrah-e-Faisal, Karachi, Pakistan",
+    "latitude": 24.8607,
+    "longitude": 67.0011,
+    "email": "hello@fandomverse.example",
+    "phone": "+92 21 0000 0000",
+    "hours": "Mon – Fri, 10:00 – 18:00 PKT"
+  },
+  "members": [
+    {
+      "name": "Uzair Ansari",
+      "role": "Frontend Developer",
+      "email": "uzair@fandomverse.example",
+      "image": "team/member-01.png",
+      "bio": "Built the interface, interactions and overall visual experience of FandomVerse.",
+      "slug": "uzair-ansari",
+      "tagline": "Turns ideas into fast, animated, accessible interfaces.",
+      "location": "Karachi, Pakistan",
+      "skills": [
+        {
+          "name": "React & JSX",
+          "level": 92
+        },
+        {
+          "name": "CSS & animation",
+          "level": 90
+        },
+        {
+          "name": "GSAP motion",
+          "level": 82
+        },
+        {
+          "name": "Accessibility",
+          "level": 78
+        },
+        {
+          "name": "JavaScript",
+          "level": 88
+        }
+      ],
+      "contributions": [
+        "Built the React + Vite single-page app and routing",
+        "Designed the seven category hubs and shared content cards",
+        "Created the home hero, hub heroes and page transitions",
+        "Implemented the shop, cart and account journey"
+      ],
+      "work": [
+        {
+          "title": "Home experience",
+          "path": "/",
+          "text": "Hero slider, hub rail and featured showcase."
+        },
+        {
+          "title": "FandomVerse shop",
+          "path": "/shop",
+          "text": "Product pages, cart, promo codes and checkout."
+        },
+        {
+          "title": "Category hubs",
+          "path": "/Anime",
+          "text": "Filters, sorting, lightbox and media players."
+        }
+      ],
+      "links": [
+        {
+          "label": "GitHub",
+          "url": "https://github.com/uzairuddinansari"
+        }
+      ]
+    },
+    {
+      "name": "Team Member 02",
+      "role": "UI / UX Designer",
+      "email": "design@fandomverse.example",
+      "image": "team/member-02.png",
+      "bio": "Focused on visual direction, layouts and a clear, accessible experience.",
+      "slug": "member-02",
+      "tagline": "Designs clear layouts and a consistent visual language.",
+      "location": "Karachi, Pakistan",
+      "skills": [
+        {
+          "name": "UI design",
+          "level": 90
+        },
+        {
+          "name": "Figma",
+          "level": 86
+        },
+        {
+          "name": "Typography",
+          "level": 80
+        },
+        {
+          "name": "Colour & theming",
+          "level": 84
+        },
+        {
+          "name": "Prototyping",
+          "level": 76
+        }
+      ],
+      "contributions": [
+        "Defined the black, white and red theme",
+        "Designed cards, buttons and form feedback styles",
+        "Planned responsive layouts for phones and tablets",
+        "Created the admin appearance presets"
+      ],
+      "work": [
+        {
+          "title": "Design system",
+          "path": "/admin/appearance",
+          "text": "Theme presets, colours and fonts."
+        },
+        {
+          "title": "Account pages",
+          "path": "/account",
+          "text": "Login, sign-up and profile layouts."
+        },
+        {
+          "title": "Releases calendar",
+          "path": "/releases",
+          "text": "Calendar and agenda design."
+        }
+      ],
+      "links": []
+    },
+    {
+      "name": "Team Member 03",
+      "role": "Research & Content",
+      "email": "content@fandomverse.example",
+      "image": "team/member-03.png",
+      "bio": "Researched each fandom and curated the articles, characters and events.",
+      "slug": "member-03",
+      "tagline": "Researches every fandom and writes the content fans read.",
+      "location": "Karachi, Pakistan",
+      "skills": [
+        {
+          "name": "Research",
+          "level": 90
+        },
+        {
+          "name": "Copywriting",
+          "level": 86
+        },
+        {
+          "name": "Content modelling (JSON)",
+          "level": 80
+        },
+        {
+          "name": "SEO",
+          "level": 70
+        },
+        {
+          "name": "Chatbot scripting",
+          "level": 78
+        }
+      ],
+      "contributions": [
+        "Researched franchises, characters and events",
+        "Wrote articles, bios and product descriptions",
+        "Structured all content as JSON files",
+        "Scripted Nova the chatbot’s answers"
+      ],
+      "work": [
+        {
+          "title": "Articles & characters",
+          "path": "/search?type=article",
+          "text": "Long-form articles and profiles."
+        },
+        {
+          "title": "Events",
+          "path": "/search?type=event",
+          "text": "Conventions, meetups and watch parties."
+        },
+        {
+          "title": "Nova chatbot",
+          "path": "/about",
+          "text": "Rule-based FAQ and recommendations."
+        }
+      ],
+      "links": []
+    },
+    {
+      "name": "Team Member 04",
+      "role": "Testing & Presentation",
+      "email": "team@fandomverse.example",
+      "image": "team/member-04.png",
+      "bio": "Tested every feature across devices and presented the project.",
+      "slug": "member-04",
+      "tagline": "Tests on every screen and presents the project.",
+      "location": "Karachi, Pakistan",
+      "skills": [
+        {
+          "name": "Testing & QA",
+          "level": 88
+        },
+        {
+          "name": "Presentation",
+          "level": 90
+        },
+        {
+          "name": "Documentation",
+          "level": 84
+        },
+        {
+          "name": "Lighthouse audits",
+          "level": 76
+        },
+        {
+          "name": "Project planning",
+          "level": 80
+        }
+      ],
+      "contributions": [
+        "Tested features across browsers and devices",
+        "Ran accessibility and performance checks",
+        "Wrote the installation guide and README",
+        "Prepared the demo video and presentation"
+      ],
+      "work": [
+        {
+          "title": "Installation guide",
+          "path": "/installation",
+          "text": "Step-by-step setup and troubleshooting."
+        },
+        {
+          "title": "Contact page",
+          "path": "/contact",
+          "text": "Form validation, map and GPS."
+        },
+        {
+          "title": "Site map",
+          "path": "/sitemap",
+          "text": "Every page of the website at a glance."
+        }
+      ],
+      "links": []
+    }
+  ],
+  "tools": {
+    "Built with": [
+      "React 19",
+      "Vite",
+      "React Router",
+      "Plain CSS (no framework)",
+      "GSAP",
+      "Lucide icons",
+      "JSON data files"
+    ],
+    "AI tools used": [
+      "Claude (Anthropic) — code assistance and debugging",
+      "ChatGPT — content drafting",
+      "AI image generation — selected artwork"
+    ],
+    "Design & testing": [
+      "Figma",
+      "Chrome DevTools",
+      "Google Lighthouse"
+    ]
+  },
+  "process": [
+    {
+      "phase": "Research",
+      "text": "Studied the SRS, fan communities and existing fandom sites."
+    },
+    {
+      "phase": "Design",
+      "text": "Created the theme, layouts and user journeys in Figma."
+    },
+    {
+      "phase": "Build",
+      "text": "Developed the React SPA with JSON-driven content."
+    },
+    {
+      "phase": "Test",
+      "text": "Checked accessibility, responsiveness and performance."
+    },
+    {
+      "phase": "Present",
+      "text": "Documented the project and recorded the demo video."
+    }
+  ]
+}

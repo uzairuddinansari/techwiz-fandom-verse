@@ -1,0 +1,119 @@
+[
+  {
+    "title": "Chain of Death",
+    "subtitle": "Official Trailer",
+    "description": "A dark and mysterious trailer filled with danger, suspense, and deadly secrets.",
+    "category": "Movies",
+    "status": "upcoming",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790305590/Chain_-Of-Death.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/Chain_-Of-Death.jpg"
+  },
+  {
+    "title": "Attack on Titan",
+    "subtitle": "Season 1 Trailer",
+    "description": "Enter the world of humanity's fight for survival against terrifying Titans.",
+    "category": "Anime",
+    "status": "recentlyReleased",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306288/Attack_on_Titan_Season_1_Trailer.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/Attack_on_Titan_Season_1_Trailer.jpg"
+  },
+  {
+    "title": "Avengers: Doomsday",
+    "subtitle": "Special Teaser",
+    "description": "The Avengers return for a new chapter as an enormous threat approaches.",
+    "category": "Movies",
+    "status": "upcoming",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306332/Avengers__Doomsday___Special_Teaser___In_Theaters_December_18___Marvel.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/Avengers__Doomsday___Special_Teaser___In_Theaters_December_18___Marvel.jpg"
+  },
+  {
+    "title": "Demon Slayer",
+    "subtitle": "Infinity Castle — Main Trailer",
+    "description": "Tanjiro and the Demon Slayer Corps face their most dangerous battle yet inside the Infinity Castle.",
+    "category": "Anime",
+    "status": "recentlyReleased",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306366/Demon_Slayer__Kimetsu_no_Yaiba_Infinity_Castle___MAIN_TRAILER.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/Demon_Slayer__Kimetsu_no_Yaiba_Infinity_Castle___MAIN_TRAILER.jpg"
+  },
+  {
+    "title": "Dune: Part Three",
+    "subtitle": "Official Teaser Trailer",
+    "description": "Return to the epic world of Arrakis in the next chapter of the Dune saga.",
+    "category": "Movies",
+    "status": "upcoming",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306401/Dune__Part_Three___Official_Teaser_Trailer.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/Dune__Part_Three___Official_Teaser_Trailer.jpg"
+  },
+  {
+    "title": "ELDEN RING",
+    "subtitle": "Story Trailer",
+    "description": "Discover a haunting world of legends, ancient powers, and an unforgettable journey.",
+    "category": "Gaming",
+    "status": "recentlyReleased",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306447/ELDEN_RING_-_Story_Trailer.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/ELDEN_RING_-_Story_Trailer.jpg"
+  },
+  {
+    "title": "Genshin Impact",
+    "subtitle": "Official Launch Trailer",
+    "description": "Begin an adventure across the vast fantasy world of Teyvat.",
+    "category": "Gaming",
+    "status": "recentlyReleased",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306466/Genshin_Impact_-_Official_Launch_Trailer_1.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/Genshin_Impact_-_Official_Launch_Trailer_1.jpg"
+  },
+  {
+    "title": "Grand Voyage",
+    "subtitle": "Official Reveal Trailer",
+    "description": "Set sail on an ambitious ocean adventure with a spectacular journey across the seas.",
+    "category": "Gaming",
+    "status": "upcoming",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306547/GRAND_VOYAGE_Official_Reveal_Trailer___Oceanliner_Designs_Grand_Voyage.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/GRAND_VOYAGE_Official_Reveal_Trailer___Oceanliner_Designs_Grand_Voyage.jpg"
+  },
+  {
+    "title": "Shooting Stars",
+    "subtitle": "Official Trailer",
+    "description": "A music-driven story that brings the energy and journey of a global phenomenon to the screen.",
+    "category": "K-Pop",
+    "status": "recentlyReleased",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306567/SHOOTING_STARS_Official_Trailer_2017_Bangtan_Boys_Movie.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/SHOOTING_STARS_Official_Trailer_2017_Bangtan_Boys_Movie.jpg"
+  },
+  {
+    "title": "The Dark Knight",
+    "subtitle": "Official Trailer #1",
+    "description": "Gotham faces a dangerous new threat as Batman is pushed to his limits.",
+    "category": "Movies",
+    "status": "recentlyReleased",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306618/The_Dark_Knight_2008_Official_Trailer_1_-_Christopher_Nolan_Movie_HD.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/The_Dark_Knight_2008_Official_Trailer_1_-_Christopher_Nolan_Movie_HD.jpg"
+  },
+  {
+    "title": "Sorcerer",
+    "subtitle": "Modern Trailer",
+    "description": "A tense and atmospheric journey filled with mystery, danger, and supernatural forces.",
+    "category": "Movies",
+    "status": "upcoming",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306641/Sorcerer_Modern_Trailer.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/Sorcerer_Modern_Trailer.jpg"
+  },
+  {
+    "title": "MECAL",
+    "subtitle": "Trailer 2016",
+    "description": "A showcase of cinematic creativity, animation, and experimental storytelling.",
+    "category": "Festival",
+    "status": "recentlyReleased",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306651/TRAILER_MECAL_2016.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/TRAILER_MECAL_2016.jpg"
+  },
+  {
+    "title": "Uncanny X-Force",
+    "subtitle": "Official Trailer",
+    "description": "A darker Marvel team steps into action with a mission that demands impossible choices.",
+    "category": "Comics",
+    "status": "upcoming",
+    "videoSrc": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306667/Uncanny_X-Force_Trailer.mp4",
+    "poster": "https://res.cloudinary.com/i6su4pd1/video/upload/so_1/Uncanny_X-Force_Trailer.jpg"
+  }
+]

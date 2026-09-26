@@ -1,0 +1,100 @@
+{
+  "comics": [
+    {
+      "id": 1,
+      "title": "Batman",
+      "category": "Comics",
+      "genre": "Superhero, Crime, Action, Mystery",
+      "releaseDate": "1939-03-30",
+      "rating": "9.0/10",
+      "volumes": 100,
+      "articleTitle": "Inside the World of Batman",
+      "description": "Explore Gotham City, Batman's origins, iconic villains, memorable characters, and important story details fans may have missed.",
+      "image": "Movie_Article_img/the-batman.png"
+    },
+    {
+      "id": 2,
+      "title": "Spider-Man",
+      "category": "Comics",
+      "genre": "Superhero, Action, Adventure, Drama",
+      "releaseDate": "1962-08-10",
+      "rating": "9.1/10",
+      "volumes": 100,
+      "articleTitle": "Spider-Man: Things You May Have Missed",
+      "description": "Take a closer look at Peter Parker, his allies and enemies, important storylines, hidden details, and the history of Spider-Man.",
+      "image": "Comics_hero/Comics_hero1.jpeg"
+    },
+    {
+      "id": 3,
+      "title": "Superman",
+      "category": "Comics",
+      "genre": "Superhero, Action, Adventure, Sci-Fi",
+      "releaseDate": "1938-06-18",
+      "rating": "8.9/10",
+      "volumes": 100,
+      "articleTitle": "Superman: Hidden Details You Missed",
+      "description": "Explore Krypton, Metropolis, Superman's origins, iconic characters, famous villains, and important moments from his comic history.",
+      "image": "HERO/Comics.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "X-Men",
+      "category": "Comics",
+      "genre": "Superhero, Action, Sci-Fi, Drama",
+      "releaseDate": "1963-09-01",
+      "rating": "9.0/10",
+      "volumes": 100,
+      "articleTitle": "X-Men Explained for New Readers",
+      "description": "Discover the world of mutants, the X-Men team, major characters, famous storylines, rivalries, and important events throughout the comics.",
+      "image": "Comics_hero/Comics_hero.jpeg"
+    },
+    {
+      "id": 5,
+      "title": "Justice League",
+      "category": "Comics",
+      "genre": "Superhero, Action, Adventure, Sci-Fi",
+      "releaseDate": "1960-03-01",
+      "rating": "8.8/10",
+      "volumes": 100,
+      "articleTitle": "Justice League: Details You May Have Missed",
+      "description": "Explore the world's greatest heroes, team relationships, famous villains, major battles, and important details from Justice League stories.",
+      "image": "Movie_Article_img/the-dark-knight.png"
+    },
+    {
+      "id": 6,
+      "title": "The Avengers",
+      "category": "Comics",
+      "genre": "Superhero, Action, Adventure, Sci-Fi",
+      "releaseDate": "1963-09-01",
+      "rating": "8.9/10",
+      "volumes": 100,
+      "articleTitle": "The Avengers: Things You Missed",
+      "description": "Take a closer look at Earth's Mightiest Heroes, their origins, relationships, villains, major events, and memorable comic storylines.",
+      "image": "Movie_Article_img/avengers-endgame.png"
+    },
+    {
+      "id": 7,
+      "title": "The Walking Dead",
+      "category": "Comics",
+      "genre": "Horror, Drama, Action, Thriller",
+      "releaseDate": "2003-10-08",
+      "rating": "8.8/10",
+      "volumes": 32,
+      "articleTitle": "The Walking Dead: Hidden Details",
+      "description": "Explore the post-apocalyptic world, survivors, important character moments, dangerous enemies, and story details from the comic series.",
+      "image": "Comics_hero/Comics_hero2.jpeg"
+    },
+    {
+      "id": 8,
+      "title": "Invincible",
+      "category": "Comics",
+      "genre": "Superhero, Action, Sci-Fi, Drama",
+      "releaseDate": "2003-01-22",
+      "rating": "9.1/10",
+      "volumes": 25,
+      "articleTitle": "Invincible: Things You May Have Missed",
+      "description": "Discover Mark Grayson's journey, powerful heroes and villains, major battles, family relationships, and important details throughout the comic.",
+      "image": "Comics_hero/Comics_main.gif"
+    }
+  ]
+}

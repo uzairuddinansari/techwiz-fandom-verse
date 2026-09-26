@@ -1,0 +1,155 @@
+.anim-hero {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  /* background: var(--color-background); */
+  padding: 20px 0px;
+}
+
+.anim-hero-left,
+.anim-hero-right {
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.anim-hero-left {
+  z-index: 2;
+  width: 30%;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.anim-hero-right {
+  z-index: 1;
+  width: 70%;transform: translateX(-20px);
+}
+
+.anim-hero-left img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.anim-hero-right video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.anim-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.78) 0%,
+    rgba(0, 0, 0, 0.4) 55%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+}
+
+.anim-hero-content {
+  position: absolute;
+  left: 8%;
+  bottom: 12%;
+  width: 75%;
+  color: #fff;
+  z-index: 3;
+}
+
+.anim-hero-tag {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+  opacity: 0.8;
+}
+
+.anim-hero-content h1 {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: clamp(48px, 6vw, 95px);
+  line-height: 0.9;
+  font-weight: var(--heading-weight);
+  letter-spacing: -3px;
+}
+
+.anim-hero-content h1 span {
+  display: block;
+}
+
+.anim-hero-content p {
+  max-width: 480px;
+  margin: 28px 0;
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.anim-hero-btn {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: transparent;
+  color: #fff;
+  padding: 14px 20px;
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.35s ease;
+}
+
+.anim-hero-btn span {
+  font-size: 20px;
+  transition: transform 0.35s ease;
+}
+
+.anim-hero-btn:hover {
+  background: #fff;
+  color: #000;
+}
+
+.anim-hero-btn:hover span {
+  transform: translateX(6px);
+}
+
+@media (max-width: 800px) {
+  .anim-hero {
+    height: auto;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  .anim-hero-left,
+  .anim-hero-right {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .anim-hero-left {
+    min-height: 65vh;
+  }
+
+  .anim-hero-right {
+    min-height: 35vh;
+  }
+
+  .anim-hero-content {
+    left: 7%;
+    bottom: 10%;
+    width: 85%;
+  }
+
+  .anim-hero-content h1 {
+    font-size: clamp(42px, 11vw, 70px);
+  }
+}

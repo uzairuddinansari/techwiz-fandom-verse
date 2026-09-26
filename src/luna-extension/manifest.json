@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Luna Browser Assistant",
+  "version": "1.0.0",
+  "description": "Luna browser assistant",
+  "permissions": [
+    "storage",
+    "offscreen"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "externally_connectable": {
+    "matches": [
+      "http://localhost/*",
+      "http://127.0.0.1/*"
+    ]
+  }
+}

@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "title": "The Evolution of Anime",
+    "animeName": "Naruto",
+    "category": "ANIME",
+    "date": "Sep 24, 2026",
+    "readTime": "6 min read",
+    "author": "FandomVerse",
+    "image": "Anim_Articles_img/narutoooo.jpg",
+    "description": "How Naruto helped carry anime from late-night TV to a worldwide phenomenon, and what it taught a generation about perseverance."
+  },
+  {
+    "id": 2,
+    "title": "Inside the World of Manga",
+    "animeName": "One Piece",
+    "category": "MANGA",
+    "date": "Sep 23, 2026",
+    "readTime": "5 min read",
+    "author": "FandomVerse",
+    "image": "Anim_Articles_img/One Piece.jpg",
+    "description": "One Piece shows how a manga can grow into a decades-long voyage — world-building, foreshadowing and the Straw Hat crew."
+  },
+  {
+    "id": 3,
+    "title": "The Rise of Shonen Heroes",
+    "animeName": "Dragon Ball",
+    "category": "SHONEN",
+    "date": "Sep 22, 2026",
+    "readTime": "7 min read",
+    "author": "FandomVerse",
+    "image": "Anim_Articles_img/Dragon Ball.jpg",
+    "description": "From Goku to Deku: why shonen heroes who train, fail and rise again keep winning over new fans."
+  },
+  {
+    "id": 4,
+    "title": "Anime Worlds Beyond Imagination",
+    "animeName": "Attack on Titan",
+    "category": "WORLDS",
+    "date": "Sep 21, 2026",
+    "readTime": "4 min read",
+    "author": "FandomVerse",
+    "image": "Anim_Articles_img/Attack on Titan.jpg",
+    "description": "Attack on Titan built a world of walls, mysteries and moral grey areas unlike anything before it."
+  },
+  {
+    "id": 5,
+    "title": "The Art Behind Iconic Characters",
+    "animeName": "Demon Slayer",
+    "category": "CHARACTERS",
+    "date": "Sep 20, 2026",
+    "readTime": "6 min read",
+    "author": "FandomVerse",
+    "image": "Anim_Articles_img/demon-slayer.jpg",
+    "description": "Demon Slayer proves character design and colour can tell a story before a single line of dialogue."
+  },
+  {
+    "id": 6,
+    "title": "Legends of Japanese Animation",
+    "animeName": "My Hero Academia",
+    "category": "HISTORY",
+    "date": "Sep 19, 2026",
+    "readTime": "8 min read",
+    "author": "FandomVerse",
+    "image": "Anim_Articles_img/my-hero-academia.jpg",
+    "description": "My Hero Academia and the legends of Japanese animation that inspired its studios and storytellers."
+  },
+  {
+    "id": 7,
+    "title": "Why Anime Communities Matter",
+    "animeName": "Jujutsu Kaisen",
+    "category": "COMMUNITY",
+    "date": "Sep 18, 2026",
+    "readTime": "5 min read",
+    "author": "FandomVerse",
+    "image": "Anim_Articles_img/jujutsu-kaisen.jpg",
+    "description": "Jujutsu Kaisen fandoms show how theory videos, fan art and watch parties keep a series alive between seasons."
+  },
+  {
+    "id": 8,
+    "title": "From Screen to Global Culture",
+    "animeName": "Bleach",
+    "category": "CULTURE",
+    "date": "Sep 17, 2026",
+    "readTime": "7 min read",
+    "author": "FandomVerse",
+    "image": "Anim_Articles_img/Bleach.jpg",
+    "description": "Bleach and its long-awaited return show how anime has become part of global pop culture."
+  }
+]

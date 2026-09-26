@@ -1,0 +1,84 @@
+{
+  "kpop": [
+    {
+      "id": 1,
+      "title": "BTS",
+      "category": "K-Pop",
+      "genre": "K-Pop, Hip-Hop, Pop",
+      "releaseDate": "2013-06-13",
+      "articleTitle": "Inside the World of BTS",
+      "description": "A closer look at BTS, their journey, music, major achievements, memorable moments, and why their global fanbase continues to grow.",
+      "image": "K_pop_Article/news-BTS.png"
+    },
+    {
+      "id": 2,
+      "title": "BLACKPINK",
+      "category": "K-Pop",
+      "genre": "K-Pop, Pop, Hip-Hop",
+      "releaseDate": "2016-08-08",
+      "articleTitle": "BLACKPINK: Things You May Have Missed",
+      "description": "Explore BLACKPINK's journey, iconic performances, music, members, and interesting details that fans may have missed.",
+      "image": "K_pop_Article/BLACK PINK.webp"
+    },
+    {
+      "id": 3,
+      "title": "Stray Kids",
+      "category": "K-Pop",
+      "genre": "K-Pop, Hip-Hop, EDM",
+      "releaseDate": "2018-03-25",
+      "articleTitle": "Stray Kids: The Story Behind Their Success",
+      "description": "Take a closer look at Stray Kids, their music style, members, major releases, performances, and journey in K-Pop.",
+      "image": "K_pop_Article/STRAY KIDS.jpg"
+    },
+    {
+      "id": 4,
+      "title": "TWICE",
+      "category": "K-Pop",
+      "genre": "K-Pop, Pop, Dance",
+      "releaseDate": "2015-10-20",
+      "articleTitle": "TWICE: What Fans Are Talking About",
+      "description": "Discover TWICE's journey, popular songs, members, performances, and memorable moments throughout their career.",
+      "image": "K_pop_Article/TWICE.jfif"
+    },
+    {
+      "id": 5,
+      "title": "SEVENTEEN",
+      "category": "K-Pop",
+      "genre": "K-Pop, Pop, Hip-Hop",
+      "releaseDate": "2015-05-26",
+      "articleTitle": "SEVENTEEN: Things You May Have Missed",
+      "description": "A closer look at SEVENTEEN, their members, unique team structure, music, performances, and major achievements.",
+      "image": "K_pop_Article/SEVENTEEN.avif"
+    },
+    {
+      "id": 6,
+      "title": "NewJeans",
+      "category": "K-Pop",
+      "genre": "K-Pop, Pop, R&B",
+      "releaseDate": "2022-07-22",
+      "articleTitle": "NewJeans: The New Generation of K-Pop",
+      "description": "Explore NewJeans' music style, memorable releases, members, visual concepts, and their impact on modern K-Pop.",
+      "image": "K_pop_Article/NEW JEANS.webp"
+    },
+    {
+      "id": 7,
+      "title": "aespa",
+      "category": "K-Pop",
+      "genre": "K-Pop, Electropop, EDM",
+      "releaseDate": "2020-11-17",
+      "articleTitle": "aespa: The World Behind Their Music",
+      "description": "Discover aespa's unique concept, music, members, virtual-world storyline, major releases, and memorable performances.",
+      "image": "K_pop_Article/AESPA.jpg"
+    },
+    {
+      "id": 8,
+      "title": "IVE",
+      "category": "K-Pop",
+      "genre": "K-Pop, Pop, Dance",
+      "releaseDate": "2021-12-01",
+      "articleTitle": "IVE: Everything Fans Should Know",
+      "description": "A closer look at IVE, their music, members, popular releases, performances, and rise in the K-Pop industry.",
+      "image": "K_pop_Article/IVE.webp"
+    }
+  ]
+}

@@ -1,0 +1,972 @@
+.tws-section {
+  --tws-black: #111;
+  --tws-dark: #181818;
+  --tws-grey: #777;
+  --tws-soft-grey: #a3a3a3;
+  --tws-border: #ddddda;
+  --tws-paper: #f3f3f1;
+  --tws-white: #fff;
+
+  width: 100%;
+  background: var(--tws-white);
+  color: var(--tws-black);
+  overflow: hidden;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.tws-reveal {
+  opacity: 0;
+  transform: translateY(55px);
+  transition:
+    opacity 1s ease,
+    transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tws-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tws-hero {
+  width: min(1380px, calc(100% - 90px));
+  min-height: 780px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 0.92fr 1.08fr;
+  align-items: center;
+  gap: 30px;
+}
+
+.tws-hero-left {
+  padding-right: 40px;
+}
+
+.tws-eyebrow {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  margin-bottom: 38px;
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 3.5px;
+}
+
+.tws-eyebrow span {
+  width: 38px;
+  height: 1px;
+  background: #222;
+}
+
+.tws-eyebrow p {
+  margin: 0;
+}
+
+.tws-eyebrow strong {
+  margin-left: auto;
+  font-weight: 400;
+}
+
+.tws-hero h1 {
+  margin: 0;
+  font-size: clamp(65px, 8vw, 135px);
+  line-height: 0.76;
+  font-weight: 400;
+  letter-spacing: -8px;
+}
+
+.tws-hero h1 span {
+  display: block;
+  color: #858585;
+}
+
+.tws-intro {
+  max-width: 570px;
+  margin: 55px 0 50px;
+  color: #696969;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.tws-start {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 30px;
+  padding-top: 24px;
+  border-top: 1px solid var(--tws-border);
+}
+
+.tws-start div {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.tws-start span {
+  color: #999;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 2.8px;
+}
+
+.tws-start strong {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+.tws-hero-right {
+  position: relative;
+  height: 700px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.tws-hero-image-frame {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.tws-hero-image-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: grayscale(10%);
+  animation: twsHeroIn 1.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes twsHeroIn {
+  from {
+    opacity: 0;
+    transform: translateY(70px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.tws-hero-image-fade {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 180px;
+  background: linear-gradient(
+    to bottom,
+    transparent,
+    rgba(255, 255, 255, 0.92),
+    #fff
+  );
+}
+
+.tws-hero-number {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 0;
+  color: #f0f0ee;
+  font-family: Arial, sans-serif;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.tws-hero-label {
+  position: absolute;
+  right: 0;
+  bottom: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 7px;
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 2.5px;
+}
+
+.tws-statement {
+  width: min(1180px, calc(100% - 90px));
+  margin: 60px auto 170px;
+  padding-top: 30px;
+  border-top: 1px solid var(--tws-border);
+}
+
+.tws-statement > span,
+.tws-achievement-heading > span,
+.tws-emotion-copy > span {
+  color: #888;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.tws-statement h2 {
+  margin: 55px 0 45px;
+  font-size: clamp(65px, 9vw, 135px);
+  font-weight: 400;
+  line-height: 0.78;
+  letter-spacing: -7px;
+}
+
+.tws-statement h2 span {
+  color: #898989;
+}
+
+.tws-statement p {
+  width: min(520px, 100%);
+  margin-left: auto;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.tws-flow {
+  position: relative;
+  width: min(1320px, calc(100% - 90px));
+  margin: auto;
+  padding-bottom: 130px;
+}
+
+.tws-progress {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: #dededb;
+  transform: translateX(-50%);
+}
+
+.tws-progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1px;
+  background: #111;
+  transition: height 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tws-flow-number {
+  position: sticky;
+  top: 50%;
+  left: 50%;
+  z-index: 8;
+  width: 70px;
+  height: 70px;
+  margin-bottom: -70px;
+  background: #fff;
+  border: 1px solid #222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transform: translate(-50%, -50%);
+}
+
+.tws-flow-number span {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tws-flow-number small {
+  margin-top: 3px;
+  color: #999;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+}
+
+.tws-step {
+  position: relative;
+  min-height: 820px;
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  opacity: 0.35;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.tws-step.tws-visible,
+.tws-step.tws-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tws-step-side {
+  height: 100%;
+  padding-top: 95px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-family: Arial, sans-serif;
+}
+
+.tws-step-side > span {
+  z-index: 3;
+  padding: 8px 0;
+  background: #fff;
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 2px;
+}
+
+.tws-step-side > div {
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: transparent;
+}
+
+.tws-step-image-area {
+  position: relative;
+}
+
+.tws-step-image {
+  position: relative;
+  height: 620px;
+  overflow: hidden;
+  background: #eeeeec;
+}
+
+.tws-step-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(100%);
+  transform: scale(1.08);
+  transition:
+    transform 1.4s cubic-bezier(0.16, 1, 0.3, 1),
+    filter 1s ease;
+}
+
+.tws-active .tws-step-image img {
+  transform: scale(1);
+  filter: grayscale(8%);
+}
+
+.tws-step-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    transparent 55%
+  );
+}
+
+.tws-step-caption {
+  position: absolute;
+  right: 30px;
+  bottom: 28px;
+  left: 30px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  color: #fff;
+  font-family: Arial, sans-serif;
+}
+
+.tws-step-caption span {
+  font-size: 9px;
+  letter-spacing: 2.5px;
+}
+
+.tws-step-caption small {
+  color: #bbb;
+  font-size: 8px;
+  letter-spacing: 2px;
+}
+
+.tws-step-content {
+  padding-right: 35px;
+}
+
+.tws-step-label {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--tws-border);
+  color: #888;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 2.5px;
+}
+
+.tws-step-content h3 {
+  margin: 55px 0 40px;
+  font-size: clamp(55px, 6vw, 92px);
+  line-height: 0.8;
+  letter-spacing: -5px;
+  font-weight: 400;
+}
+
+.tws-step-content h3 span {
+  display: block;
+  color: #888;
+}
+
+.tws-step-content p {
+  max-width: 500px;
+  margin: 0;
+  color: #666;
+  font-size: 15px;
+  line-height: 1.95;
+}
+
+.tws-step-bottom {
+  margin-top: 65px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 20px;
+  align-items: center;
+  color: #888;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 2.5px;
+}
+
+.tws-step-bottom div {
+  height: 1px;
+  background: #ccc;
+}
+
+.tws-achievement {
+  width: 100%;
+  padding: 130px max(45px, calc((100% - 1320px) / 2));
+  background: #f3f3f1;
+}
+
+.tws-achievement-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: end;
+  padding-bottom: 70px;
+  border-bottom: 1px solid #d4d4d1;
+}
+
+.tws-achievement-heading h2 {
+  margin: 0;
+  font-size: clamp(65px, 8vw, 120px);
+  line-height: 0.8;
+  letter-spacing: -7px;
+  font-weight: 400;
+}
+
+.tws-achievement-heading h2 span {
+  color: #888;
+}
+
+.tws-achievement-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tws-achievement-box {
+  min-height: 160px;
+  padding: 50px 30px 20px 0;
+  display: flex;
+  gap: 25px;
+  border-right: 1px solid #d4d4d1;
+}
+
+.tws-achievement-box:not(:first-child) {
+  padding-left: 30px;
+}
+
+.tws-achievement-box:last-child {
+  border-right: none;
+}
+
+.tws-achievement-box > span {
+  color: #999;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+}
+
+.tws-achievement-box small {
+  display: block;
+  margin-bottom: 13px;
+  color: #999;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 2.5px;
+}
+
+.tws-achievement-box strong {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.tws-emotion {
+  width: min(1320px, calc(100% - 90px));
+  margin: auto;
+  padding: 160px 0;
+  display: grid;
+  grid-template-columns: 0.85fr 1.15fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.tws-emotion-copy h2 {
+  margin: 35px 0 45px;
+  font-size: clamp(60px, 7vw, 105px);
+  line-height: 0.78;
+  letter-spacing: -6px;
+  font-weight: 400;
+}
+
+.tws-emotion-copy h2 span {
+  color: #888;
+}
+
+.tws-emotion-copy p {
+  max-width: 470px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.tws-emotion-copy blockquote {
+  max-width: 490px;
+  margin: 45px 0 0;
+  padding-left: 25px;
+  border-left: 1px solid #222;
+  font-size: 21px;
+  line-height: 1.5;
+  font-style: italic;
+}
+
+.tws-emotion-image {
+  position: relative;
+  height: 650px;
+  overflow: hidden;
+}
+
+.tws-emotion-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%);
+  transition: transform 1.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tws-emotion:hover .tws-emotion-image img {
+  transform: scale(1.03);
+}
+
+.tws-emotion-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.65),
+    transparent 60%
+  );
+}
+
+.tws-emotion-label {
+  position: absolute;
+  left: 35px;
+  bottom: 30px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 3px;
+}
+
+.tws-emotion-label span {
+  display: block;
+  margin-top: 8px;
+  color: #bbb;
+}
+
+.tws-final {
+  position: relative;
+  min-height: 820px;
+  padding: 120px 40px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #171717;
+  color: #fff;
+}
+
+.tws-final::before,
+.tws-final::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #303030;
+  border-radius: 50%;
+}
+
+.tws-final::before {
+  width: 850px;
+  height: 850px;
+  right: -300px;
+  bottom: -500px;
+}
+
+.tws-final::after {
+  width: 500px;
+  height: 500px;
+  left: -260px;
+  top: -310px;
+}
+
+.tws-final-ghost {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #1e1e1e;
+  font-family: Arial, sans-serif;
+  font-size: clamp(100px, 18vw, 330px);
+  font-weight: 700;
+  line-height: 1;
+  white-space: nowrap;
+  transform: translate(-50%, -50%);
+  user-select: none;
+}
+
+.tws-final-inner {
+  position: relative;
+  z-index: 2;
+  width: min(1050px, 100%);
+}
+
+.tws-final-inner > span {
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 4px;
+}
+
+.tws-final-inner h2 {
+  margin: 50px 0;
+  font-size: clamp(65px, 9vw, 140px);
+  line-height: 0.78;
+  letter-spacing: -7px;
+  font-weight: 400;
+}
+
+.tws-final-inner h2 strong {
+  display: block;
+  color: #777;
+  font-weight: 400;
+}
+
+.tws-final-inner p {
+  width: min(570px, 100%);
+  margin-left: auto;
+  color: #aaa;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.tws-final-rule {
+  height: 1px;
+  margin: 65px 0 35px;
+  background: #333;
+}
+
+.tws-final-inner h3 {
+  max-width: 700px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  line-height: 2;
+  letter-spacing: 3px;
+  font-weight: 400;
+}
+
+.tws-final-meta {
+  margin-top: 80px;
+  padding-top: 22px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #333;
+  color: #777;
+  font-family: Arial, sans-serif;
+  font-size: 8px;
+  letter-spacing: 3px;
+}
+
+.tws-final-meta strong {
+  color: #fff;
+}
+
+.tws-end {
+  padding: 140px 30px 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.tws-end > span {
+  width: 65px;
+  height: 1px;
+  margin: 15px 0;
+  background: #222;
+}
+
+.tws-end p {
+  margin: 30px 0 45px;
+  color: #888;
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 5px;
+}
+
+.tws-end h4 {
+  margin: 0;
+  font-size: clamp(60px, 8vw, 120px);
+  line-height: 0.8;
+  letter-spacing: -6px;
+  font-weight: 400;
+}
+
+.tws-end h4 strong {
+  color: #888;
+  font-weight: 400;
+}
+
+@media (max-width: 1050px) {
+  .tws-hero {
+    grid-template-columns: 1fr;
+    padding-top: 70px;
+  }
+
+  .tws-hero-left {
+    padding-right: 0;
+  }
+
+  .tws-hero-right {
+    height: 560px;
+  }
+
+  .tws-step {
+    grid-template-columns: 50px 1fr;
+    gap: 35px;
+  }
+
+  .tws-step-content {
+    grid-column: 2;
+  }
+
+  .tws-step-image-area {
+    grid-column: 2;
+  }
+
+  .tws-progress {
+    left: 25px;
+  }
+
+  .tws-flow-number {
+    display: none;
+  }
+
+  .tws-achievement-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .tws-achievement-box:nth-child(2) {
+    border-right: none;
+  }
+
+  .tws-achievement-box:nth-child(3),
+  .tws-achievement-box:nth-child(4) {
+    border-top: 1px solid #d4d4d1;
+  }
+
+  .tws-emotion {
+    grid-template-columns: 1fr;
+  }
+
+  .tws-emotion-image {
+    order: -1;
+  }
+}
+
+@media (max-width: 700px) {
+  .tws-hero,
+  .tws-statement,
+  .tws-flow,
+  .tws-emotion {
+    width: calc(100% - 40px);
+  }
+
+  .tws-hero h1 {
+    font-size: 62px;
+    letter-spacing: -4px;
+  }
+
+  .tws-hero-right {
+    height: 390px;
+  }
+
+  .tws-hero-number {
+    font-size: 90px;
+  }
+
+  .tws-statement {
+    margin-top: 40px;
+    margin-bottom: 100px;
+  }
+
+  .tws-statement h2 {
+    font-size: 58px;
+    letter-spacing: -4px;
+  }
+
+  .tws-step {
+    min-height: auto;
+    padding: 90px 0;
+    grid-template-columns: 35px 1fr;
+    gap: 20px;
+  }
+
+  .tws-step-side {
+    padding-top: 10px;
+  }
+
+  .tws-step-image-area,
+  .tws-step-content {
+    grid-column: 2;
+  }
+
+  .tws-step-image {
+    height: 400px;
+  }
+
+  .tws-step-content h3 {
+    font-size: 58px;
+    letter-spacing: -4px;
+  }
+
+  .tws-step-label {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .tws-achievement {
+    padding: 90px 20px;
+  }
+
+  .tws-achievement-heading {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+
+  .tws-achievement-heading h2 {
+    font-size: 62px;
+    letter-spacing: -4px;
+  }
+
+  .tws-achievement-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tws-achievement-box,
+  .tws-achievement-box:not(:first-child) {
+    padding: 30px 0;
+    border-right: none;
+    border-bottom: 1px solid #d4d4d1;
+  }
+
+  .tws-achievement-box:last-child {
+    border-bottom: none;
+  }
+
+  .tws-emotion {
+    padding: 100px 0;
+  }
+
+  .tws-emotion-image {
+    height: 430px;
+  }
+
+  .tws-emotion-copy h2 {
+    font-size: 60px;
+    letter-spacing: -4px;
+  }
+
+  .tws-final {
+    min-height: 700px;
+    padding: 100px 25px;
+  }
+
+  .tws-final-inner h2 {
+    font-size: 62px;
+    letter-spacing: -4px;
+  }
+
+  .tws-final-inner p {
+    margin-left: 0;
+    margin-top: 30px;
+  }
+
+  .tws-final-meta {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .tws-end {
+    padding: 100px 20px;
+  }
+
+  .tws-end h4 {
+    font-size: 55px;
+    letter-spacing: -4px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tws-hero h1 {
+    font-size: 50px;
+  }
+
+  .tws-intro {
+    font-size: 14px;
+  }
+
+  .tws-start {
+    grid-template-columns: 1fr;
+  }
+
+  .tws-hero-right {
+    height: 320px;
+  }
+
+  .tws-statement h2 {
+    font-size: 48px;
+  }
+
+  .tws-step-content h3 {
+    font-size: 48px;
+  }
+
+  .tws-emotion-copy h2 {
+    font-size: 50px;
+  }
+
+  .tws-final-inner h2 {
+    font-size: 50px;
+  }
+
+  .tws-end h4 {
+    font-size: 45px;
+  }
+}

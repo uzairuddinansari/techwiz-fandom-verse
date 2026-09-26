@@ -1,0 +1,100 @@
+{
+  "tvShows": [
+    {
+      "id": 1,
+      "title": "Stranger Things",
+      "category": "TV Shows",
+      "genre": "Sci-Fi, Horror, Mystery, Drama",
+      "releaseDate": "2016-07-15",
+      "rating": "8.6/10",
+      "seasons": 5,
+      "articleTitle": "Inside the World of Stranger Things",
+      "description": "A closer look at Hawkins, the Upside Down, mysterious events, memorable characters, and story details fans may have missed.",
+      "image": "TV_Aericle_img/STRANDER THINGS.png"
+    },
+    {
+      "id": 2,
+      "title": "The Last of Us",
+      "category": "TV Shows",
+      "genre": "Drama, Horror, Sci-Fi",
+      "releaseDate": "2023-01-15",
+      "rating": "8.4/10",
+      "seasons": 2,
+      "articleTitle": "The Last of Us: Things You May Have Missed",
+      "description": "Explore the post-apocalyptic world, important characters, emotional story moments, and hidden details throughout the series.",
+      "image": "TV_Aericle_img/THE LAST OF US.png"
+    },
+    {
+      "id": 3,
+      "title": "Wednesday",
+      "category": "TV Shows",
+      "genre": "Comedy, Fantasy, Mystery",
+      "releaseDate": "2022-11-23",
+      "rating": "8.0/10",
+      "seasons": 2,
+      "articleTitle": "Wednesday: Hidden Details You Missed",
+      "description": "A closer look at Nevermore Academy, Wednesday Addams, mysterious events, characters, and details hidden throughout the show.",
+      "image": "TV_Aericle_img/WEDNESDAY.png"
+    },
+    {
+      "id": 4,
+      "title": "The Boys",
+      "category": "TV Shows",
+      "genre": "Action, Comedy, Crime, Sci-Fi",
+      "releaseDate": "2019-07-26",
+      "rating": "8.5/10",
+      "seasons": 5,
+      "articleTitle": "The Boys Explained for New Fans",
+      "description": "Explore the world of superheroes, the characters, major storylines, and details that viewers may have missed.",
+      "image": "TV_Aericle_img/THE BOYS.png"
+    },
+    {
+      "id": 5,
+      "title": "Arcane",
+      "category": "TV Shows",
+      "genre": "Animation, Action, Fantasy, Sci-Fi",
+      "releaseDate": "2021-11-06",
+      "rating": "9.0/10",
+      "seasons": 2,
+      "articleTitle": "Arcane: Details You May Have Missed",
+      "description": "Discover the world of Piltover and Zaun, the relationship between its characters, hidden references, and important story details.",
+      "image": "TV_Aericle_img/ARCANE.png"
+    },
+    {
+      "id": 6,
+      "title": "Fallout",
+      "category": "TV Shows",
+      "genre": "Drama, Sci-Fi, Action",
+      "releaseDate": "2024-04-10",
+      "rating": "8.3/10",
+      "seasons": 2,
+      "articleTitle": "Fallout: Things You Missed",
+      "description": "Take a closer look at the post-apocalyptic world, Vaults, characters, references to the games, and story details.",
+      "image": "TV_Aericle_img/FALLOUT.png"
+    },
+    {
+      "id": 7,
+      "title": "House of the Dragon",
+      "category": "TV Shows",
+      "genre": "Drama, Fantasy, Action",
+      "releaseDate": "2022-08-21",
+      "rating": "8.3/10",
+      "seasons": 2,
+      "articleTitle": "House of the Dragon: Hidden Details",
+      "description": "Explore House Targaryen, important characters, political conflicts, dragons, and details connected to the wider story.",
+      "image": "TV_Aericle_img/HOUSE OF DRAGON.png"
+    },
+    {
+      "id": 8,
+      "title": "Squid Game",
+      "category": "TV Shows",
+      "genre": "Drama, Thriller, Mystery",
+      "releaseDate": "2021-09-17",
+      "rating": "7.9/10",
+      "seasons": 3,
+      "articleTitle": "Squid Game: Things You May Have Missed",
+      "description": "A closer look at the characters, mysterious games, symbolism, story connections, and details throughout the series.",
+      "image": "TV_Aericle_img/SQUID GAME.png"
+    }
+  ]
+}

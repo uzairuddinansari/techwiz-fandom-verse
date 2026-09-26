@@ -1,0 +1,26 @@
+{
+  "note": "Demo accounts. Passwords are stored as SHA-256 hashes of 'fandomverse:<email>:<password>'. New sign-ups are saved in the browser (localStorage), because the website cannot write to JSON files.",
+  "users": [
+    {
+      "id": "u-demo",
+      "name": "Demo Fan",
+      "email": "demo@fandomverse.example",
+      "passwordHash": "c37d6fb7fc8987f42ea7ea1be2541056c377ac71e77162373a5ab90f0b74af02",
+      "avatarColor": "#e32636",
+      "favorites": ["anime", "gaming"],
+      "bio": "Collector of figures and late-night anime marathons.",
+      "joined": "2026-01-14"
+    },
+    {
+      "id": "u-aiko",
+      "name": "Aiko Tanaka",
+      "email": "aiko@fandomverse.example",
+      "passwordHash": "5e47efd12137e58f15026a0594e2659264a6bf5aff4dc39c4910b1a83ff32994",
+      "avatarColor": "#7c3aed",
+      "favorites": ["manga", "k-pop"],
+      "bio": "Manga reader, K-Pop dancer and part-time cosplayer.",
+      "joined": "2026-03-02"
+    }
+  ],
+  "avatarColors": ["#e32636", "#2563eb", "#7c3aed", "#047857", "#c2410c", "#be185d", "#111111"]
+}

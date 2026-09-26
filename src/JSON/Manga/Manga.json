@@ -1,0 +1,100 @@
+{
+  "manga": [
+    {
+      "id": 1,
+      "title": "One Piece",
+      "category": "Manga",
+      "genre": "Action, Adventure, Fantasy, Comedy",
+      "releaseDate": "1997-07-22",
+      "rating": "9.5/10",
+      "volumes": 100,
+      "articleTitle": "Inside the World of One Piece",
+      "description": "Explore the Grand Line, legendary pirates, Devil Fruits, powerful characters, mysterious islands, and story details fans may have missed.",
+      "image": "Anim_Articles_img/One Piece.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Naruto",
+      "category": "Manga",
+      "genre": "Action, Adventure, Martial Arts, Fantasy",
+      "releaseDate": "1999-09-21",
+      "rating": "9.2/10",
+      "volumes": 72,
+      "articleTitle": "Naruto: Things You May Have Missed",
+      "description": "Take a closer look at the shinobi world, Naruto's journey, important characters, hidden techniques, clans, and major story events.",
+      "image": "Anim_Articles_img/narutoooo.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Dragon Ball",
+      "category": "Manga",
+      "genre": "Action, Adventure, Martial Arts, Fantasy",
+      "releaseDate": "1984-12-03",
+      "rating": "9.3/10",
+      "volumes": 42,
+      "articleTitle": "Dragon Ball: Hidden Details You Missed",
+      "description": "Explore Goku's journey, powerful warriors, Dragon Balls, famous battles, transformations, and important details throughout the manga.",
+      "image": "Comics_hero/Comics_hero4.jpeg"
+    },
+    {
+      "id": 4,
+      "title": "Attack on Titan",
+      "category": "Manga",
+      "genre": "Action, Dark Fantasy, Drama, Mystery",
+      "releaseDate": "2009-09-09",
+      "rating": "9.4/10",
+      "volumes": 34,
+      "articleTitle": "Attack on Titan Explained for New Readers",
+      "description": "Discover the world beyond the walls, Titans, important characters, hidden mysteries, political conflicts, and major story revelations.",
+      "image": "Anim_Articles_img/Attack on Titan.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Demon Slayer",
+      "category": "Manga",
+      "genre": "Action, Dark Fantasy, Adventure",
+      "releaseDate": "2016-02-15",
+      "rating": "9.0/10",
+      "volumes": 23,
+      "articleTitle": "Demon Slayer: Details You May Have Missed",
+      "description": "Explore Tanjiro's journey, Demon Slayer Corps, breathing techniques, demons, Hashira, and important story details.",
+      "image": "Anim_Articles_img/demon-slayer.jpg"
+    },
+    {
+      "id": 6,
+      "title": "My Hero Academia",
+      "category": "Manga",
+      "genre": "Superhero, Action, Adventure, Fantasy",
+      "releaseDate": "2014-07-07",
+      "rating": "8.8/10",
+      "volumes": 42,
+      "articleTitle": "My Hero Academia: Things You Missed",
+      "description": "Take a closer look at heroes, Quirks, U.A. High School, major characters, villains, battles, and important story moments.",
+      "image": "Anim_Articles_img/my-hero-academia.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Jujutsu Kaisen",
+      "category": "Manga",
+      "genre": "Action, Supernatural, Dark Fantasy",
+      "releaseDate": "2018-03-05",
+      "rating": "9.1/10",
+      "volumes": 30,
+      "articleTitle": "Jujutsu Kaisen: Hidden Details",
+      "description": "Explore cursed energy, sorcerers, powerful characters, mysterious curses, major battles, and hidden details throughout the manga.",
+      "image": "Anim_Articles_img/jujutsu-kaisen.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Death Note",
+      "category": "Manga",
+      "genre": "Psychological Thriller, Mystery, Supernatural",
+      "releaseDate": "2003-12-01",
+      "rating": "9.3/10",
+      "volumes": 12,
+      "articleTitle": "Death Note: Things You May Have Missed",
+      "description": "Explore Light Yagami, the mysterious Death Note, Ryuk, L, psychological battles, hidden clues, and important story details.",
+      "image": "Comics_hero/Comics_hero3.jpeg"
+    }
+  ]
+}

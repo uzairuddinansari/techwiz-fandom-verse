@@ -1,0 +1,423 @@
+{
+  "categories": [
+    {
+      "slug": "anime",
+      "name": "Anime",
+      "path": "/Anime",
+      "icon": "ア",
+      "accent": "#e32636",
+      "heroImage": "HERO/Anime.jpeg",
+      "summary": "Legendary shonen battles, unforgettable heroes and the stories that shaped a global fandom.",
+      "tags": ["shonen", "action", "fantasy", "adventure"],
+      "gallery": [
+        { "title": "Naruto Uzumaki — Hidden Leaf", "image": "Anim_gellery_img/naruto.jpeg", "tags": ["naruto", "shonen"] },
+        { "title": "Straw Hat Pirates", "image": "Anim_gellery_img/one-piece.jpg", "tags": ["one piece", "adventure"] },
+        { "title": "Survey Corps", "image": "Anim_gellery_img/attack-on-titan.jpg", "tags": ["attack on titan", "dark fantasy"] },
+        { "title": "Tanjiro and Nezuko", "image": "Anim_gellery_img/demon-slayer.jpg", "tags": ["demon slayer", "action"] },
+        { "title": "Super Saiyan Showdown", "image": "Anim_gellery_img/dragon-ball-z.jpeg", "tags": ["dragon ball", "shonen"] },
+        { "title": "Plus Ultra", "image": "Anim_gellery_img/my-hero-academia.jpg", "tags": ["my hero academia", "superhero"] },
+        { "title": "Kira and Ryuk", "image": "Anim_gellery_img/death-note.jpeg", "tags": ["death note", "thriller"] },
+        { "title": "Soul Reapers", "image": "Anim_Articles_img/Bleach.jpg", "tags": ["bleach", "action"] }
+      ],
+      "videos": [
+        { "title": "Jujutsu Kaisen — Official Trailer", "kind": "trailer", "youtube": "pkKu9hLT-t8", "poster": "Anim_Articles_img/jujutsu-kaisen.jpg", "date": "2026-09-02", "description": "Yuji Itadori steps into the world of curses and sorcerers." },
+        { "title": "One Piece — Anime Version Trailer", "kind": "trailer", "youtube": "MCb13lbVGE0", "poster": "Anim_Articles_img/One Piece.jpg", "date": "2026-08-18", "description": "Luffy and the Straw Hats set sail in this celebratory anime-style trailer." },
+        { "title": "Road of Naruto — 20th Anniversary", "kind": "fan tribute", "youtube": "QczGoCmX-pI", "poster": "Anim_Articles_img/narutoooo.jpg", "date": "2026-07-30", "description": "A look back at two decades of Naruto's journey from outcast to Hokage." },
+        { "title": "Demon Slayer — Trailer 1", "kind": "trailer", "youtube": "VQGCKyvzIM4", "poster": "Anim_Articles_img/demon-slayer.jpg", "date": "2026-06-21", "description": "Tanjiro begins his quest to save his sister and avenge his family." },
+        { "title": "Anime Edit — Heroes Collide", "kind": "fan content", "video": "Anim_hero/Anim_hero_vid.mp4", "poster": "Anim_hero/Anim_hero_img.jpeg", "date": "2026-09-10", "description": "A fan-made edit celebrating the most iconic anime heroes." }
+      ],
+      "audio": [
+        { "title": "Best Anime of 2026 — Podcast", "kind": "podcast", "src": "Anim_audio/prodcast.mp4", "cover": "Anim_audio/Audio.jpeg", "duration": "12:40", "date": "2026-09-14", "description": "Our hosts rank the stand-out series of the year and what makes them special." },
+        { "title": "Shonen Soundtracks That Hit Different", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3", "cover": "Anim_Articles_img/Dragon Ball.jpg", "duration": "6:12", "date": "2026-08-22", "description": "A discussion on how score and sound design lift the biggest battle scenes." },
+        { "title": "Opening Themes Hour", "kind": "music", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3", "cover": "Anim_Articles_img/my-hero-academia.jpg", "duration": "7:05", "date": "2026-07-19", "description": "A relaxing mix inspired by anime opening themes." }
+      ],
+      "characters": [
+        { "name": "Naruto Uzumaki", "franchise": "Naruto", "image": "Footer/Naruto_uzumaki.jpeg", "bio": "A loud, determined ninja from the Hidden Leaf Village who carries the Nine-Tailed Fox and dreams of becoming Hokage.", "traits": ["determined", "loyal", "optimistic"] },
+        { "name": "Monkey D. Luffy", "franchise": "One Piece", "image": "Footer/Monkey_D_luffey.jpeg", "bio": "The rubber-bodied captain of the Straw Hat Pirates, sailing the Grand Line to find the One Piece and become King of the Pirates.", "traits": ["fearless", "cheerful", "free-spirited"] },
+        { "name": "Son Goku", "franchise": "Dragon Ball", "image": "Footer/Goku.png", "bio": "A Saiyan raised on Earth who lives for training and battle, always searching for a stronger opponent while protecting his friends.", "traits": ["pure-hearted", "competitive", "powerful"] },
+        { "name": "Tanjiro Kamado", "franchise": "Demon Slayer", "image": "Anim_Articles_img/demon-slayer.jpg", "bio": "A kind-hearted boy who joins the Demon Slayer Corps to turn his sister Nezuko back into a human.", "traits": ["compassionate", "resilient", "brave"] },
+        { "name": "Eren Yeager", "franchise": "Attack on Titan", "image": "Anim_gellery_img/attack-on-titan.jpg", "bio": "A young soldier of the Survey Corps who can transform into a Titan, driven by a burning desire for freedom.", "traits": ["driven", "intense", "rebellious"] },
+        { "name": "Izuku Midoriya", "franchise": "My Hero Academia", "image": "Anim_Articles_img/my-hero-academia.jpg", "bio": "Born without a Quirk, Deku inherits One For All and trains at U.A. High to become the greatest hero.", "traits": ["analytical", "selfless", "hard-working"] },
+        { "name": "Ichigo Kurosaki", "franchise": "Bleach", "image": "Anim_Articles_img/Bleach.jpg", "bio": "A teenager who gains the powers of a Soul Reaper and protects the living world from Hollows.", "traits": ["protective", "stubborn", "strong-willed"] }
+      ],
+      "events": [
+        { "title": "Anime Expo Karachi 2026", "kind": "convention", "date": "2026-10-18", "location": "Expo Centre, Karachi", "image": "HERO/Anime.jpeg", "description": "Artist alley, voice-actor panels, screenings and a huge cosplay showcase." },
+        { "title": "One Piece Watch Party", "kind": "watch party", "date": "2026-11-07", "location": "FandomVerse Lounge, Lahore", "image": "Anim_gellery_img/one-piece.jpg", "description": "Watch the latest episodes together on the big screen with trivia and prizes." },
+        { "title": "Cosplay Craft Workshop", "kind": "meetup", "date": "2026-12-12", "location": "Makers Hub, Islamabad", "image": "Anim_gellery_img/demon-slayer.jpg", "description": "Beginner-friendly workshop on building props and costumes from foam." },
+        { "title": "Shonen Summer Meetup", "kind": "meetup", "date": "2026-07-20", "location": "Dolmen Mall, Karachi", "image": "Anim_Articles_img/Dragon Ball.jpg", "description": "A community meetup celebrating Dragon Ball, Naruto and One Piece fans." }
+      ],
+      "merchandise": [
+        { "name": "Hidden Leaf Hoodie", "franchise": "Naruto", "kind": "apparel", "image": "Anim_Articles_img/narutoooo.jpg", "price": [39, 49], "description": "Heavyweight cotton hoodie with an embroidered Hidden Leaf symbol." },
+        { "name": "Straw Hat Replica", "franchise": "One Piece", "kind": "accessory", "image": "Anim_Articles_img/One Piece.jpg", "price": [22, 30], "description": "Woven straw hat with the iconic red band — just like Luffy's." },
+        { "name": "Super Saiyan Goku Figure", "franchise": "Dragon Ball", "kind": "figure", "image": "Footer/Goku.png", "price": [45, 65], "description": "20 cm PVC figure with interchangeable hands and a ki-blast effect." },
+        { "name": "Nezuko Plushie", "franchise": "Demon Slayer", "kind": "plushie", "image": "Anim_gellery_img/demon-slayer.jpg", "price": [18, 24], "description": "Super-soft plush with bamboo muzzle detail, 30 cm tall." },
+        { "name": "Survey Corps Cape", "franchise": "Attack on Titan", "kind": "apparel", "image": "Anim_Articles_img/Attack on Titan.jpg", "price": [28, 36], "description": "Green hooded cape with the Wings of Freedom crest." }
+      ],
+      "trailers": [
+        { "title": "Demon Slayer: Infinity Castle", "status": "released", "date": "2026-09-12", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306366/Demon_Slayer__Kimetsu_no_Yaiba_Infinity_Castle___MAIN_TRAILER.mp4", "poster": "Anim_gellery_img/demon-slayer.jpg", "description": "The Hashira face Muzan's forces inside the shifting Infinity Castle." },
+        { "title": "Attack on Titan — Season 1", "status": "released", "date": "2026-05-04", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306288/Attack_on_Titan_Season_1_Trailer.mp4", "poster": "Anim_gellery_img/attack-on-titan.jpg", "description": "Humanity's fight for survival against terrifying Titans begins." },
+        { "title": "Jujutsu Kaisen — Next Arc", "status": "upcoming", "date": "2027-01-08", "youtube": "pkKu9hLT-t8", "poster": "Anim_Articles_img/jujutsu-kaisen.jpg", "description": "Sorcerers return for the next chapter of the curse war." }
+      ]
+    },
+    {
+      "slug": "gaming",
+      "name": "Gaming",
+      "path": "/Gaming",
+      "icon": "遊",
+      "accent": "#e32636",
+      "heroImage": "HERO/Games.jpeg",
+      "summary": "Open worlds, fighting legends and competitive arenas — every game, every story, one hub.",
+      "tags": ["rpg", "open world", "fighting", "shooter"],
+      "gallery": [
+        { "title": "The King of Fighters XV", "image": "Game_Article/KOFXV.png", "tags": ["fighting", "kof"] },
+        { "title": "Vice City Returns", "image": "Game_Article/grand theft auto vi.png", "tags": ["open world", "gta"] },
+        { "title": "Agents of VALORANT", "image": "Game_Article/VALORANT.png", "tags": ["shooter", "esports"] },
+        { "title": "Blocky Horizons", "image": "Game_Article/MINECRAFT.png", "tags": ["sandbox", "minecraft"] },
+        { "title": "Night City", "image": "Game_Article/CYBERPUNK.png", "tags": ["rpg", "cyberpunk"] },
+        { "title": "The Lands Between", "image": "Game_Article/ELDEN RING.png", "tags": ["rpg", "soulslike"] },
+        { "title": "The Destined One", "image": "Game_Article/BLACK MYTH WUKONG.png", "tags": ["action", "mythology"] },
+        { "title": "Geralt of Rivia", "image": "Game_Article/THE_WITCHER_3_WILD_HUNT.png", "tags": ["rpg", "fantasy"] }
+      ],
+      "videos": [
+        { "title": "Grand Theft Auto VI — Trailer 1", "kind": "trailer", "youtube": "QdBZY2fkU-0", "poster": "Game_Article/grand theft auto vi.png", "date": "2026-09-01", "description": "Jason and Lucia's story begins in the state of Leonida." },
+        { "title": "Elden Ring — Gameplay Reveal", "kind": "gameplay", "youtube": "E3Huy2cdih0", "poster": "Game_Article/ELDEN RING.png", "date": "2026-08-12", "description": "First look at combat, exploration and bosses in the Lands Between." },
+        { "title": "Cyberpunk 2077 — E3 Trailer", "kind": "trailer", "youtube": "8X2kIfS6fb8", "poster": "Game_Article/CYBERPUNK.png", "date": "2026-07-05", "description": "Welcome to Night City, a megalopolis obsessed with power and body modification." },
+        { "title": "The Witcher 3 — Killing Monsters", "kind": "cinematic", "youtube": "c0i88t0Kacs", "poster": "Game_Article/THE_WITCHER_3_WILD_HUNT.png", "date": "2026-06-14", "description": "The legendary cinematic that introduced Geralt's hunt." },
+        { "title": "VALORANT — Duelists Cinematic", "kind": "cinematic", "youtube": "e_E9W2vsRbQ", "poster": "Game_Article/VALORANT.png", "date": "2026-05-28", "description": "The launch cinematic that set the tone for Riot's tactical shooter." }
+      ],
+      "audio": [
+        { "title": "Level Up Podcast — Open Worlds", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3", "cover": "Game_Article/ELDEN RING.png", "duration": "5:44", "date": "2026-09-08", "description": "Why the best open worlds reward curiosity instead of checklists." },
+        { "title": "Esports Weekly — VALORANT Recap", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3", "cover": "Game_Article/VALORANT.png", "duration": "5:02", "date": "2026-08-26", "description": "Highlights, upsets and the agents dominating the competitive scene." },
+        { "title": "Synthwave for Night City", "kind": "music", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3", "cover": "Game_Article/CYBERPUNK.png", "duration": "5:53", "date": "2026-07-11", "description": "A neon-soaked playlist inspired by cyberpunk worlds." }
+      ],
+      "characters": [
+        { "name": "Geralt of Rivia", "franchise": "The Witcher 3", "image": "Game_Article/THE_WITCHER_3_WILD_HUNT.png", "bio": "A monster hunter for hire, mutated and trained from childhood, searching for his adopted daughter Ciri.", "traits": ["stoic", "skilled", "honourable"] },
+        { "name": "V", "franchise": "Cyberpunk 2077", "image": "Game_Article/CYBERPUNK.png", "bio": "A mercenary outlaw in Night City chasing a one-of-a-kind implant that holds the key to immortality.", "traits": ["resourceful", "bold", "adaptable"] },
+        { "name": "The Destined One", "franchise": "Black Myth: Wukong", "image": "Game_Article/BLACK MYTH WUKONG.png", "bio": "A monkey warrior on a journey through ancient Chinese myth to uncover the truth behind a legend.", "traits": ["agile", "mythic", "relentless"] },
+        { "name": "Jett", "franchise": "VALORANT", "image": "Game_Article/VALORANT.png", "bio": "A duelist from South Korea whose agile, evasive fighting style lets her take risks no one else can.", "traits": ["agile", "confident", "daring"] },
+        { "name": "The Tarnished", "franchise": "Elden Ring", "image": "Game_Article/ELDEN RING.png", "bio": "An exile called back to the Lands Between to claim the shattered Elden Ring and become Elden Lord.", "traits": ["persistent", "mysterious", "brave"] },
+        { "name": "Lucia Caminos", "franchise": "Grand Theft Auto VI", "image": "Game_Article/grand theft auto vi.png", "bio": "One half of GTA VI's criminal duo, fresh out of prison and determined to build a better life.", "traits": ["tough", "ambitious", "loyal"] },
+        { "name": "Kyo Kusanagi", "franchise": "The King of Fighters XV", "image": "Game_Article/KOFXV.png", "bio": "Heir to the Kusanagi clan who wields sacred flames in the King of Fighters tournament.", "traits": ["fiery", "proud", "talented"] }
+      ],
+      "events": [
+        { "title": "FandomVerse Esports Cup", "kind": "tournament", "date": "2026-10-25", "location": "Arena 51, Karachi", "image": "Game_Article/VALORANT.png", "description": "Five-versus-five VALORANT tournament with casters, prizes and a live crowd." },
+        { "title": "Fighting Game Night", "kind": "meetup", "date": "2026-11-14", "location": "Pixel Café, Lahore", "image": "Game_Article/KOFXV.png", "description": "Casual brackets for KOF XV and other fighters — bring your own stick." },
+        { "title": "GTA VI Launch Party", "kind": "watch party", "date": "2026-11-19", "location": "FandomVerse Lounge, Karachi", "image": "Game_Article/grand theft auto vi.png", "description": "Midnight launch celebration with giveaways and big-screen play sessions." },
+        { "title": "Retro to Next-Gen Expo", "kind": "convention", "date": "2026-06-06", "location": "Expo Centre, Lahore", "image": "HERO/Games.jpeg", "description": "Indie showcases, retro arcades and developer talks." }
+      ],
+      "merchandise": [
+        { "name": "Witcher Medallion Necklace", "franchise": "The Witcher 3", "kind": "accessory", "image": "Game_Article/THE_WITCHER_3_WILD_HUNT.png", "price": [19, 29], "description": "Wolf School medallion in antique-finish metal on a steel chain." },
+        { "name": "Night City Jacket", "franchise": "Cyberpunk 2077", "kind": "apparel", "image": "Game_Article/CYBERPUNK.png", "price": [79, 99], "description": "Samurai-inspired jacket with reflective trim and a quilted lining." },
+        { "name": "Creeper Plushie", "franchise": "Minecraft", "kind": "plushie", "image": "Game_Article/MINECRAFT.png", "price": [15, 22], "description": "Soft pixel-perfect plush — thankfully it will not explode." },
+        { "name": "Radiant Keycap Set", "franchise": "VALORANT", "kind": "accessory", "image": "Game_Article/VALORANT.png", "price": [35, 55], "description": "PBT keycaps with agent-ability icons, fits most mechanical keyboards." },
+        { "name": "Wukong Staff Replica", "franchise": "Black Myth: Wukong", "kind": "collectible", "image": "Game_Article/BLACK MYTH WUKONG.png", "price": [59, 89], "description": "Extendable foam-core Ruyi Jingu Bang, safe for cosplay events." }
+      ],
+      "trailers": [
+        { "title": "ELDEN RING — Story Trailer", "status": "released", "date": "2026-02-25", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306447/ELDEN_RING_-_Story_Trailer.mp4", "poster": "Game_Article/ELDEN RING.png", "description": "The shattering of the Elden Ring and the war of the demigods." },
+        { "title": "Genshin Impact — Launch Trailer", "status": "released", "date": "2026-03-18", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306466/Genshin_Impact_-_Official_Launch_Trailer_1.mp4", "poster": "HERO/Games.jpeg", "description": "Explore Teyvat in the official launch trailer." },
+        { "title": "Grand Theft Auto VI", "status": "upcoming", "date": "2026-11-19", "youtube": "QdBZY2fkU-0", "poster": "Game_Article/grand theft auto vi.png", "description": "Return to Vice City in the most anticipated launch of the year." },
+        { "title": "Black Myth: Wukong — Final Trailer", "status": "released", "date": "2026-08-20", "youtube": "pnSsgRJmsCc", "poster": "Game_Article/BLACK MYTH WUKONG.png", "description": "The final look before the Destined One's journey begins." }
+      ]
+    },
+    {
+      "slug": "movies",
+      "name": "Movies",
+      "path": "/Movies",
+      "icon": "映",
+      "accent": "#e32636",
+      "heroImage": "HERO/Movies.jpeg",
+      "summary": "Blockbusters, cinematic universes and the details you missed on the big screen.",
+      "tags": ["action", "sci-fi", "superhero", "drama"],
+      "gallery": [
+        { "title": "Oppenheimer", "image": "Movie_Article_img/OPPENHEIMER.png", "tags": ["drama", "nolan"] },
+        { "title": "Dune: Part Two", "image": "Movie_Article_img/DUNE_PART_2.png", "tags": ["sci-fi", "epic"] },
+        { "title": "Spider-Man: No Way Home", "image": "Movie_Article_img/SPIDER_MAN_NO_WAY_HOME.png", "tags": ["superhero", "marvel"] },
+        { "title": "The Batman", "image": "Movie_Article_img/the-batman.png", "tags": ["superhero", "dc"] },
+        { "title": "Top Gun: Maverick", "image": "Movie_Article_img/top-gun-maverick.png", "tags": ["action", "aviation"] },
+        { "title": "Avengers: Endgame", "image": "Movie_Article_img/avengers-endgame.png", "tags": ["superhero", "marvel"] },
+        { "title": "Inception", "image": "Movie_Article_img/inception.png", "tags": ["sci-fi", "nolan"] },
+        { "title": "The Dark Knight", "image": "Movie_Article_img/the-dark-knight.png", "tags": ["superhero", "dc"] }
+      ],
+      "videos": [
+        { "title": "Dune: Part Two — Official Trailer", "kind": "trailer", "youtube": "Way9Dexny3w", "poster": "Movie_Article_img/DUNE_PART_2.png", "date": "2026-09-05", "description": "Paul Atreides unites with the Fremen on a path of revenge." },
+        { "title": "Oppenheimer — New Trailer", "kind": "trailer", "youtube": "uYPbbksJxIg", "poster": "Movie_Article_img/OPPENHEIMER.png", "date": "2026-08-15", "description": "The story of the man who changed the world forever." },
+        { "title": "The Batman — Main Trailer", "kind": "trailer", "youtube": "mqqft2x_Aa4", "poster": "Movie_Article_img/the-batman.png", "date": "2026-07-22", "description": "Two years of stalking the streets as the Batman." },
+        { "title": "Inception — Official Trailer", "kind": "trailer", "youtube": "YoHD9XEInc0", "poster": "Movie_Article_img/inception.png", "date": "2026-06-30", "description": "Your mind is the scene of the crime." },
+        { "title": "Top Gun: Maverick — Official Trailer", "kind": "trailer", "youtube": "giXco2jaZ_4", "poster": "Movie_Article_img/top-gun-maverick.png", "date": "2026-05-19", "description": "Maverick returns to train a new generation of Top Gun graduates." }
+      ],
+      "audio": [
+        { "title": "Director's Cut — Nolan's Time Tricks", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3", "cover": "Movie_Article_img/inception.png", "duration": "6:48", "date": "2026-09-11", "description": "How non-linear storytelling keeps audiences guessing." },
+        { "title": "Score Breakdown — Desert Power", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-7.mp3", "cover": "Movie_Article_img/DUNE_PART_2.png", "duration": "7:12", "date": "2026-08-17", "description": "Inside the thunderous soundscape of Arrakis." },
+        { "title": "Multiverse Mondays", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3", "cover": "Movie_Article_img/SPIDER_MAN_NO_WAY_HOME.png", "duration": "5:23", "date": "2026-07-27", "description": "Ranking every cinematic multiverse moment." }
+      ],
+      "characters": [
+        { "name": "Bruce Wayne / Batman", "franchise": "The Batman", "image": "Movie_Article_img/the-batman.png", "bio": "A young, obsessive Batman in his second year of crime fighting, uncovering corruption across Gotham City.", "traits": ["brooding", "detective", "relentless"] },
+        { "name": "The Joker", "franchise": "The Dark Knight", "image": "Movie_Article_img/the-dark-knight.png", "bio": "An agent of chaos who pushes Gotham — and Batman — to the edge of their moral limits.", "traits": ["chaotic", "unpredictable", "theatrical"] },
+        { "name": "Peter Parker", "franchise": "Spider-Man: No Way Home", "image": "Movie_Article_img/SPIDER_MAN_NO_WAY_HOME.png", "bio": "A teenage hero whose secret identity is exposed, leading to a multiverse-shattering spell.", "traits": ["witty", "responsible", "brave"] },
+        { "name": "Tony Stark / Iron Man", "franchise": "Avengers: Endgame", "image": "Movie_Article_img/avengers-endgame.png", "bio": "Genius inventor and Avenger who makes the ultimate sacrifice to undo the snap.", "traits": ["genius", "sarcastic", "heroic"] },
+        { "name": "Paul Atreides", "franchise": "Dune: Part Two", "image": "Movie_Article_img/DUNE_PART_2.png", "bio": "Heir of House Atreides who joins the Fremen and rises as a prophesied leader.", "traits": ["visionary", "conflicted", "strategic"] },
+        { "name": "Pete \"Maverick\" Mitchell", "franchise": "Top Gun: Maverick", "image": "Movie_Article_img/top-gun-maverick.png", "bio": "A legendary naval aviator who trains an elite squad for a near-impossible mission.", "traits": ["daring", "skilled", "rebellious"] },
+        { "name": "Dom Cobb", "franchise": "Inception", "image": "Movie_Article_img/inception.png", "bio": "A thief who steals secrets from dreams and is offered one last job: planting an idea.", "traits": ["brilliant", "haunted", "determined"] }
+      ],
+      "events": [
+        { "title": "Nolan Marathon Night", "kind": "watch party", "date": "2026-10-11", "location": "Nueplex Cinemas, Karachi", "image": "Movie_Article_img/inception.png", "description": "Back-to-back screenings of Inception, The Dark Knight and Oppenheimer." },
+        { "title": "Superhero Film Fest", "kind": "convention", "date": "2026-12-05", "location": "Cinepax, Lahore", "image": "Movie_Article_img/avengers-endgame.png", "description": "A weekend of Marvel and DC screenings, costume contests and trivia." },
+        { "title": "Avengers: Doomsday Premiere Watch", "kind": "watch party", "date": "2026-12-18", "location": "FandomVerse Lounge, Karachi", "image": "Movie_Article_img/avengers-endgame.png", "description": "Opening-night group booking with exclusive fan badges." },
+        { "title": "Film Critics Meetup", "kind": "meetup", "date": "2026-08-09", "location": "The Second Floor, Karachi", "image": "HERO/Movies.jpeg", "description": "Discuss the summer's biggest releases with fellow movie lovers." }
+      ],
+      "merchandise": [
+        { "name": "Batman Logo Tee", "franchise": "The Batman", "kind": "apparel", "image": "Movie_Article_img/the-batman.png", "price": [24, 32], "description": "Soft-wash black tee with a distressed red bat emblem." },
+        { "name": "Spider-Man Mask Replica", "franchise": "Spider-Man", "kind": "collectible", "image": "Movie_Article_img/SPIDER_MAN_NO_WAY_HOME.png", "price": [49, 69], "description": "Life-size mask with textured web pattern and display stand." },
+        { "name": "Arrakis Poster Set", "franchise": "Dune: Part Two", "kind": "poster", "image": "Movie_Article_img/DUNE_PART_2.png", "price": [18, 26], "description": "Three matte-finish A3 posters inspired by the desert planet." },
+        { "name": "Aviator Sunglasses", "franchise": "Top Gun: Maverick", "kind": "accessory", "image": "Movie_Article_img/top-gun-maverick.png", "price": [29, 45], "description": "Classic metal-frame aviators with a Top Gun case." },
+        { "name": "Infinity Gauntlet Mug", "franchise": "Avengers: Endgame", "kind": "homeware", "image": "Movie_Article_img/avengers-endgame.png", "price": [14, 19], "description": "Ceramic mug shaped like the gauntlet — all six stones included." }
+      ],
+      "trailers": [
+        { "title": "Avengers: Doomsday — Special Teaser", "status": "upcoming", "date": "2026-12-18", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306332/Avengers__Doomsday___Special_Teaser___In_Theaters_December_18___Marvel.mp4", "poster": "Movie_Article_img/avengers-endgame.png", "description": "The Avengers return as an enormous threat approaches." },
+        { "title": "Dune: Part Three — Teaser", "status": "upcoming", "date": "2026-12-18", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306401/Dune__Part_Three___Official_Teaser_Trailer.mp4", "poster": "Movie_Article_img/DUNE_PART_2.png", "description": "The next chapter of the Dune saga." },
+        { "title": "Chain of Death — Official Trailer", "status": "upcoming", "date": "2027-02-14", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790305590/Chain_-Of-Death.mp4", "poster": "HERO/Movies.jpeg", "description": "A dark, suspense-filled thriller full of deadly secrets." },
+        { "title": "The Dark Knight — Trailer #1", "status": "released", "date": "2026-07-18", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306618/The_Dark_Knight_2008_Official_Trailer_1_-_Christopher_Nolan_Movie_HD.mp4", "poster": "Movie_Article_img/the-dark-knight.png", "description": "Batman faces the Joker in Nolan's crime epic." },
+        { "title": "Spider-Man: No Way Home", "status": "released", "date": "2026-06-10", "youtube": "JfVOs4VSpmA", "poster": "Movie_Article_img/SPIDER_MAN_NO_WAY_HOME.png", "description": "The multiverse is unleashed." }
+      ]
+    },
+    {
+      "slug": "tv-shows",
+      "name": "TV Shows",
+      "path": "/TV_Shows",
+      "icon": "視",
+      "accent": "#e32636",
+      "heroImage": "TV_Aericle_img/STRANDER THINGS.png",
+      "summary": "Binge-worthy series, cliffhangers and the characters that keep us pressing ‘next episode’.",
+      "tags": ["drama", "sci-fi", "fantasy", "thriller"],
+      "gallery": [
+        { "title": "Stranger Things", "image": "TV_Aericle_img/STRANDER THINGS.png", "tags": ["sci-fi", "netflix"] },
+        { "title": "The Last of Us", "image": "TV_Aericle_img/THE LAST OF US.png", "tags": ["drama", "post-apocalyptic"] },
+        { "title": "Wednesday", "image": "TV_Aericle_img/WEDNESDAY.png", "tags": ["mystery", "netflix"] },
+        { "title": "The Boys", "image": "TV_Aericle_img/THE BOYS.png", "tags": ["superhero", "satire"] },
+        { "title": "Arcane", "image": "TV_Aericle_img/ARCANE.png", "tags": ["animation", "fantasy"] },
+        { "title": "Fallout", "image": "TV_Aericle_img/FALLOUT.png", "tags": ["post-apocalyptic", "adaptation"] },
+        { "title": "House of the Dragon", "image": "TV_Aericle_img/HOUSE OF DRAGON.png", "tags": ["fantasy", "drama"] },
+        { "title": "Squid Game", "image": "TV_Aericle_img/SQUID GAME.png", "tags": ["thriller", "k-drama"] }
+      ],
+      "videos": [
+        { "title": "Stranger Things — Final Trailer", "kind": "trailer", "youtube": "b9EkMc79ZSU", "poster": "TV_Aericle_img/STRANDER THINGS.png", "date": "2026-09-09", "description": "Hawkins faces its darkest threat yet." },
+        { "title": "The Last of Us — Official Trailer", "kind": "trailer", "youtube": "uLtkt8BonwM", "poster": "TV_Aericle_img/THE LAST OF US.png", "date": "2026-08-20", "description": "Joel and Ellie's journey across a broken America." },
+        { "title": "Wednesday Addams — Official Teaser", "kind": "teaser", "youtube": "Di310WS8zLk", "poster": "TV_Aericle_img/WEDNESDAY.png", "date": "2026-08-01", "description": "Nevermore Academy's most unusual student investigates." },
+        { "title": "Arcane — Official Trailer", "kind": "trailer", "youtube": "fXmAurh012s", "poster": "TV_Aericle_img/ARCANE.png", "date": "2026-07-14", "description": "Piltover and Zaun collide in Riot's animated series." },
+        { "title": "House of the Dragon — Official Trailer", "kind": "trailer", "youtube": "DotnJ7tTA34", "poster": "TV_Aericle_img/HOUSE OF DRAGON.png", "date": "2026-06-24", "description": "The Targaryen civil war begins." },
+        { "title": "Squid Game — Official Trailer", "kind": "trailer", "youtube": "oqxAJKy0ii4", "poster": "TV_Aericle_img/SQUID GAME.png", "date": "2026-05-30", "description": "456 players, one deadly prize." }
+      ],
+      "audio": [
+        { "title": "Binge Report — Hawkins Theories", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-9.mp3", "cover": "TV_Aericle_img/STRANDER THINGS.png", "duration": "5:10", "date": "2026-09-12", "description": "Fan theories about the Upside Down and what comes next." },
+        { "title": "Dragons & Dynasties", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3", "cover": "TV_Aericle_img/HOUSE OF DRAGON.png", "duration": "5:43", "date": "2026-08-24", "description": "Breaking down every Targaryen alliance and betrayal." },
+        { "title": "Episode Rewind — The Boys", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-11.mp3", "cover": "TV_Aericle_img/THE BOYS.png", "duration": "5:36", "date": "2026-07-30", "description": "Satire, supes and the darkest jokes on television." }
+      ],
+      "characters": [
+        { "name": "Eleven", "franchise": "Stranger Things", "image": "TV_Aericle_img/STRANDER THINGS.png", "bio": "A girl with psychokinetic powers who escaped Hawkins Lab and fights to protect her friends from the Upside Down.", "traits": ["powerful", "loyal", "brave"] },
+        { "name": "Wednesday Addams", "franchise": "Wednesday", "image": "TV_Aericle_img/WEDNESDAY.png", "bio": "A deadpan, brilliant student at Nevermore Academy who solves a monstrous murder mystery.", "traits": ["deadpan", "clever", "fearless"] },
+        { "name": "Joel Miller", "franchise": "The Last of Us", "image": "TV_Aericle_img/THE LAST OF US.png", "bio": "A hardened survivor tasked with smuggling Ellie across a post-pandemic United States.", "traits": ["protective", "gritty", "grieving"] },
+        { "name": "Homelander", "franchise": "The Boys", "image": "TV_Aericle_img/THE BOYS.png", "bio": "The leader of The Seven — a beloved superhero with a terrifying dark side.", "traits": ["menacing", "narcissistic", "powerful"] },
+        { "name": "Jinx", "franchise": "Arcane", "image": "TV_Aericle_img/ARCANE.png", "bio": "A volatile inventor from Zaun whose explosive genius is matched only by her trauma.", "traits": ["chaotic", "inventive", "haunted"] },
+        { "name": "Lucy MacLean", "franchise": "Fallout", "image": "TV_Aericle_img/FALLOUT.png", "bio": "An optimistic Vault Dweller who ventures into the wasteland to rescue her father.", "traits": ["optimistic", "resourceful", "kind"] },
+        { "name": "Rhaenyra Targaryen", "franchise": "House of the Dragon", "image": "TV_Aericle_img/HOUSE OF DRAGON.png", "bio": "The king's chosen heir who must fight for the Iron Throne in the Dance of the Dragons.", "traits": ["ambitious", "proud", "determined"] },
+        { "name": "Seong Gi-hun", "franchise": "Squid Game", "image": "TV_Aericle_img/SQUID GAME.png", "bio": "Player 456 — a debt-ridden father who enters a deadly competition for a life-changing prize.", "traits": ["compassionate", "desperate", "resilient"] }
+      ],
+      "events": [
+        { "title": "Stranger Things Finale Watch Party", "kind": "watch party", "date": "2026-10-31", "location": "FandomVerse Lounge, Karachi", "image": "TV_Aericle_img/STRANDER THINGS.png", "description": "Halloween-night screening with 80s costumes and arcade games." },
+        { "title": "Nevermore Costume Ball", "kind": "meetup", "date": "2026-11-21", "location": "Arts Council, Lahore", "image": "TV_Aericle_img/WEDNESDAY.png", "description": "Dress in black, learn the famous dance and enjoy a gothic evening." },
+        { "title": "Series Fan Convention", "kind": "convention", "date": "2027-01-16", "location": "Expo Centre, Karachi", "image": "TV_Aericle_img/HOUSE OF DRAGON.png", "description": "Panels, prop exhibits and photo booths for the biggest TV fandoms." },
+        { "title": "Arcane Art Jam", "kind": "meetup", "date": "2026-08-15", "location": "Makers Hub, Islamabad", "image": "TV_Aericle_img/ARCANE.png", "description": "Painting and illustration session inspired by Arcane's style." }
+      ],
+      "merchandise": [
+        { "name": "Hellfire Club Tee", "franchise": "Stranger Things", "kind": "apparel", "image": "TV_Aericle_img/STRANDER THINGS.png", "price": [22, 30], "description": "Black and red tee inspired by Hawkins High's D&D club." },
+        { "name": "Nevermore Crest Scarf", "franchise": "Wednesday", "kind": "apparel", "image": "TV_Aericle_img/WEDNESDAY.png", "price": [19, 27], "description": "Striped knit scarf with the Nevermore Academy crest." },
+        { "name": "Jinx Monkey Bomb Plush", "franchise": "Arcane", "kind": "plushie", "image": "TV_Aericle_img/ARCANE.png", "price": [21, 28], "description": "Plush version of Jinx's signature explosive monkey." },
+        { "name": "Vault-Tec Lunchbox", "franchise": "Fallout", "kind": "collectible", "image": "TV_Aericle_img/FALLOUT.png", "price": [25, 35], "description": "Tin lunchbox with retro Vault Boy artwork." },
+        { "name": "Dragon Egg Set", "franchise": "House of the Dragon", "kind": "collectible", "image": "TV_Aericle_img/HOUSE OF DRAGON.png", "price": [39, 59], "description": "Three resin dragon eggs with a display stand." }
+      ],
+      "trailers": [
+        { "title": "The Boys — Official Trailer", "status": "released", "date": "2026-06-13", "youtube": "M1bhOaLV4FU", "poster": "TV_Aericle_img/THE BOYS.png", "description": "Supes, secrets and The Boys fighting back." },
+        { "title": "Fallout — Teaser Trailer", "status": "released", "date": "2026-04-10", "youtube": "0kQ8i2FpRDk", "poster": "TV_Aericle_img/FALLOUT.png", "description": "War never changes — welcome to the wasteland." },
+        { "title": "Stranger Things — Final Season", "status": "upcoming", "date": "2026-10-31", "youtube": "b9EkMc79ZSU", "poster": "TV_Aericle_img/STRANDER THINGS.png", "description": "The final battle for Hawkins." },
+        { "title": "Wednesday — New Season", "status": "upcoming", "date": "2027-03-05", "youtube": "Di310WS8zLk", "poster": "TV_Aericle_img/WEDNESDAY.png", "description": "Wednesday returns to Nevermore." }
+      ]
+    },
+    {
+      "slug": "k-pop",
+      "name": "K-Pop",
+      "path": "/K_Pop",
+      "icon": "音",
+      "accent": "#e32636",
+      "heroImage": "HERO/K_pop.jpeg",
+      "summary": "Chart-topping groups, iconic music videos and comeback news from the world of K-Pop.",
+      "tags": ["boy group", "girl group", "comeback", "music video"],
+      "gallery": [
+        { "title": "BTS", "image": "K_pop_Article/news-BTS.png", "tags": ["boy group", "hybe"] },
+        { "title": "BLACKPINK", "image": "K_pop_Article/BLACK PINK.webp", "tags": ["girl group", "yg"] },
+        { "title": "Stray Kids", "image": "K_pop_Article/STRAY KIDS.jpg", "tags": ["boy group", "jyp"] },
+        { "title": "TWICE", "image": "K_pop_Article/TWICE.jfif", "tags": ["girl group", "jyp"] },
+        { "title": "SEVENTEEN", "image": "K_pop_Article/SEVENTEEN.avif", "tags": ["boy group", "pledis"] },
+        { "title": "NewJeans", "image": "K_pop_Article/NEW JEANS.webp", "tags": ["girl group", "ador"] },
+        { "title": "aespa", "image": "K_pop_Article/AESPA.jpg", "tags": ["girl group", "sm"] },
+        { "title": "IVE", "image": "K_pop_Article/IVE.webp", "tags": ["girl group", "starship"] }
+      ],
+      "videos": [
+        { "title": "BTS — 'Dynamite' Official MV", "kind": "music video", "youtube": "gdZLi9oWNZg", "poster": "K_pop_Article/news-BTS.png", "date": "2026-09-03", "description": "The disco-pop hit that topped charts worldwide." },
+        { "title": "BLACKPINK — 'How You Like That'", "kind": "music video", "youtube": "ioNng23DkIM", "poster": "K_pop_Article/BLACK PINK.webp", "date": "2026-08-19", "description": "A powerful comeback with bold visuals." },
+        { "title": "Stray Kids — 'God's Menu'", "kind": "music video", "youtube": "TQTlCHxyuu8", "poster": "K_pop_Article/STRAY KIDS.jpg", "date": "2026-08-02", "description": "Stray Kids cook up an intense performance." },
+        { "title": "NewJeans — 'Super Shy'", "kind": "music video", "youtube": "ArmDp-zijuc", "poster": "K_pop_Article/NEW JEANS.webp", "date": "2026-07-15", "description": "Breezy, playful and instantly catchy." },
+        { "title": "TWICE — 'FANCY'", "kind": "music video", "youtube": "kOHB85vDuow", "poster": "K_pop_Article/TWICE.jfif", "date": "2026-06-26", "description": "A colourful, confident era for TWICE." },
+        { "title": "aespa — 'Next Level'", "kind": "music video", "youtube": "4TWR90KJl84", "poster": "K_pop_Article/AESPA.jpg", "date": "2026-06-04", "description": "aespa's metaverse storyline hits the next level." }
+      ],
+      "audio": [
+        { "title": "Comeback Countdown", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-12.mp3", "cover": "K_pop_Article/news-BTS.png", "duration": "5:18", "date": "2026-09-15", "description": "Every comeback expected before the end of the year." },
+        { "title": "Idol Talk — Choreography Special", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-13.mp3", "cover": "K_pop_Article/STRAY KIDS.jpg", "duration": "5:57", "date": "2026-08-28", "description": "How the most viral dance breaks are created." },
+        { "title": "Late-Night K-Pop Chill Mix", "kind": "music", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-14.mp3", "cover": "K_pop_Article/NEW JEANS.webp", "duration": "4:30", "date": "2026-08-01", "description": "A mellow instrumental mix for studying or winding down." }
+      ],
+      "characters": [
+        { "name": "BTS", "franchise": "BIGHIT MUSIC", "image": "K_pop_Article/news-BTS.png", "bio": "Seven-member group that became a global phenomenon with messages of self-love and record-breaking hits.", "traits": ["global", "iconic", "record-breaking"] },
+        { "name": "BLACKPINK", "franchise": "YG Entertainment", "image": "K_pop_Article/BLACK PINK.webp", "bio": "The four-member girl group known for fierce concepts, fashion influence and stadium tours.", "traits": ["fierce", "stylish", "powerful"] },
+        { "name": "Stray Kids", "franchise": "JYP Entertainment", "image": "K_pop_Article/STRAY KIDS.jpg", "bio": "A self-producing group whose in-house unit 3RACHA writes their intense, genre-bending tracks.", "traits": ["self-produced", "energetic", "bold"] },
+        { "name": "TWICE", "franchise": "JYP Entertainment", "image": "K_pop_Article/TWICE.jfif", "bio": "Nine members whose bright, catchy singles made them one of the best-selling girl groups ever.", "traits": ["bright", "catchy", "beloved"] },
+        { "name": "SEVENTEEN", "franchise": "PLEDIS Entertainment", "image": "K_pop_Article/SEVENTEEN.avif", "bio": "Thirteen members across vocal, hip-hop and performance units, famed for synchronised choreography.", "traits": ["synchronised", "creative", "versatile"] },
+        { "name": "NewJeans", "franchise": "ADOR", "image": "K_pop_Article/NEW JEANS.webp", "bio": "A girl group celebrated for a fresh, nostalgic sound and effortless style.", "traits": ["fresh", "trendsetting", "playful"] },
+        { "name": "aespa", "franchise": "SM Entertainment", "image": "K_pop_Article/AESPA.jpg", "bio": "A four-member group with a metaverse concept featuring digital avatar counterparts.", "traits": ["futuristic", "bold", "conceptual"] },
+        { "name": "IVE", "franchise": "Starship Entertainment", "image": "K_pop_Article/IVE.webp", "bio": "A six-member group known for elegant, confident anthems like 'LOVE DIVE'.", "traits": ["elegant", "confident", "charismatic"] }
+      ],
+      "events": [
+        { "title": "K-Pop Random Play Dance", "kind": "meetup", "date": "2026-10-04", "location": "Sea View, Karachi", "image": "HERO/K_pop.jpeg", "description": "Jump in when your favourite song plays — all skill levels welcome." },
+        { "title": "Comeback Listening Party", "kind": "watch party", "date": "2026-11-12", "location": "FandomVerse Lounge, Lahore", "image": "K_pop_Article/STRAY KIDS.jpg", "description": "Stream the newest MVs together with lightsticks and fan chants." },
+        { "title": "Hallyu Culture Festival", "kind": "convention", "date": "2026-12-19", "location": "Expo Centre, Islamabad", "image": "K_pop_Article/BLACK PINK.webp", "description": "K-food stalls, cover-dance contests and Korean language booths." },
+        { "title": "Fan Art Exchange", "kind": "meetup", "date": "2026-08-23", "location": "Arts Council, Karachi", "image": "K_pop_Article/NEW JEANS.webp", "description": "Trade photocards, zines and fan art with fellow fans." }
+      ],
+      "merchandise": [
+        { "name": "Official-Style Lightstick", "franchise": "BTS", "kind": "accessory", "image": "K_pop_Article/news-BTS.png", "price": [45, 60], "description": "Bluetooth-sync lightstick with multiple colour modes." },
+        { "name": "BLACKPINK Photocard Binder", "franchise": "BLACKPINK", "kind": "collectible", "image": "K_pop_Article/BLACK PINK.webp", "price": [16, 24], "description": "A5 binder with 20 clear sleeves for your photocard collection." },
+        { "name": "Stray Kids SKZOO Plush", "franchise": "Stray Kids", "kind": "plushie", "image": "K_pop_Article/STRAY KIDS.jpg", "price": [20, 28], "description": "Cuddly plush of the members' animal characters." },
+        { "name": "NewJeans Bunny Tote", "franchise": "NewJeans", "kind": "apparel", "image": "K_pop_Article/NEW JEANS.webp", "price": [15, 20], "description": "Canvas tote bag with the playful bunny logo." },
+        { "name": "TWICE Album Box Set", "franchise": "TWICE", "kind": "music", "image": "K_pop_Article/TWICE.jfif", "price": [35, 55], "description": "Collector's box with CD, photobook and random photocards." }
+      ],
+      "trailers": [
+        { "title": "Burn the Stage: Shooting Stars", "status": "released", "date": "2026-03-22", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306567/SHOOTING_STARS_Official_Trailer_2017_Bangtan_Boys_Movie.mp4", "poster": "K_pop_Article/news-BTS.png", "description": "Behind the scenes of BTS's world tour." },
+        { "title": "SEVENTEEN — 'Super'", "status": "released", "date": "2026-05-12", "youtube": "-GQg25oP0S4", "poster": "K_pop_Article/SEVENTEEN.avif", "description": "SEVENTEEN's high-energy performance anthem." },
+        { "title": "IVE — World Tour Film", "status": "upcoming", "date": "2027-02-06", "youtube": "Y8JFxS1HlDo", "poster": "K_pop_Article/IVE.webp", "description": "IVE's first concert film arrives in cinemas." },
+        { "title": "BLACKPINK — Stadium Concert Film", "status": "upcoming", "date": "2026-12-10", "youtube": "IHNzOHi8sJs", "poster": "K_pop_Article/BLACK PINK.webp", "description": "Relive the tour on the big screen." }
+      ]
+    },
+    {
+      "slug": "comics",
+      "name": "Comics",
+      "path": "/Comics",
+      "icon": "漫",
+      "accent": "#e32636",
+      "heroImage": "Comics_hero/Comics_hero.jpeg",
+      "summary": "Capes, cowls and classic panels — from Marvel and DC legends to indie originals.",
+      "tags": ["marvel", "dc", "superhero", "classic"],
+      "gallery": [
+        { "title": "Marvel Legends Collage", "image": "Comics_hero/Comics_hero.jpeg", "tags": ["marvel", "classic"] },
+        { "title": "Spider-Verse", "image": "Comics_hero/Comics_hero1.jpeg", "tags": ["marvel", "spider-man"] },
+        { "title": "Tom & Jerry Comic Strip", "image": "Comics_hero/Comics_hero2.jpeg", "tags": ["classic", "comedy"] },
+        { "title": "Cosmic Sentinel vs. Shakti", "image": "HERO/Comics.jpeg", "tags": ["indie", "superhero"] },
+        { "title": "The Dark Knight", "image": "Movie_Article_img/the-dark-knight.png", "tags": ["dc", "batman"] },
+        { "title": "The Batman", "image": "Movie_Article_img/the-batman.png", "tags": ["dc", "batman"] },
+        { "title": "Avengers Assemble", "image": "Movie_Article_img/avengers-endgame.png", "tags": ["marvel", "team"] },
+        { "title": "No Way Home", "image": "Movie_Article_img/SPIDER_MAN_NO_WAY_HOME.png", "tags": ["marvel", "spider-man"] }
+      ],
+      "videos": [
+        { "title": "Superman — Official Trailer", "kind": "trailer", "youtube": "Ox8ZLF6cGM0", "poster": "Comics_hero/Comics_hero.jpeg", "date": "2026-09-06", "description": "The Man of Steel's new cinematic era begins." },
+        { "title": "Invincible — Official Trailer", "kind": "trailer", "youtube": "-bfAVpuko5o", "poster": "HERO/Comics.jpeg", "date": "2026-08-11", "description": "Mark Grayson learns what it means to be a hero." },
+        { "title": "Justice League — Official Trailer", "kind": "trailer", "youtube": "3cxixDgHUYw", "poster": "Movie_Article_img/the-dark-knight.png", "date": "2026-07-09", "description": "DC's greatest heroes unite." },
+        { "title": "The Walking Dead — Trailer", "kind": "trailer", "youtube": "R1v0uFms68U", "poster": "Comics_hero/Comics_hero2.jpeg", "date": "2026-06-02", "description": "Robert Kirkman's comic comes to life." }
+      ],
+      "audio": [
+        { "title": "Panel to Panel — Golden Age", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3", "cover": "Comics_hero/Comics_hero.jpeg", "duration": "5:30", "date": "2026-09-13", "description": "How the Golden Age created the modern superhero." },
+        { "title": "Spider-Verse Deep Dive", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-16.mp3", "cover": "Comics_hero/Comics_hero1.jpeg", "duration": "5:22", "date": "2026-08-21", "description": "Every Spider-Person you need to know about." },
+        { "title": "Indie Comics Spotlight", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3", "cover": "HERO/Comics.jpeg", "duration": "5:44", "date": "2026-07-24", "description": "Creator-owned series worth adding to your pull list." }
+      ],
+      "characters": [
+        { "name": "Spider-Man", "franchise": "Marvel", "image": "Comics_hero/Comics_hero1.jpeg", "bio": "Peter Parker, bitten by a radioactive spider, learns that with great power comes great responsibility.", "traits": ["witty", "agile", "responsible"] },
+        { "name": "Batman", "franchise": "DC", "image": "Movie_Article_img/the-batman.png", "bio": "Billionaire Bruce Wayne becomes Gotham's Dark Knight after witnessing his parents' murder.", "traits": ["detective", "disciplined", "resourceful"] },
+        { "name": "Captain America", "franchise": "Marvel", "image": "Comics_hero/Comics_hero.jpeg", "bio": "Super-soldier Steve Rogers fights for justice with an unbreakable shield and an unwavering moral compass.", "traits": ["noble", "strategic", "loyal"] },
+        { "name": "Iron Man", "franchise": "Marvel", "image": "Movie_Article_img/avengers-endgame.png", "bio": "Inventor Tony Stark builds a powered suit of armour and becomes a founding Avenger.", "traits": ["genius", "charismatic", "inventive"] },
+        { "name": "The Joker", "franchise": "DC", "image": "Movie_Article_img/the-dark-knight.png", "bio": "The Clown Prince of Crime and Batman's most unpredictable nemesis.", "traits": ["chaotic", "cunning", "theatrical"] },
+        { "name": "Tom & Jerry", "franchise": "Classic Comics", "image": "Comics_hero/Comics_hero2.jpeg", "bio": "The cat-and-mouse duo whose slapstick rivalry has entertained readers for generations.", "traits": ["mischievous", "comedic", "timeless"] },
+        { "name": "Aethera, the Cosmic Sentinel", "franchise": "FandomVerse Originals", "image": "HERO/Comics.jpeg", "bio": "An original FandomVerse heroine who channels starlight to defend Downtown Metropolis.", "traits": ["cosmic", "determined", "protective"] }
+      ],
+      "events": [
+        { "title": "Free Comic Book Day", "kind": "meetup", "date": "2026-10-03", "location": "Liberty Books, Karachi", "image": "Comics_hero/Comics_hero.jpeg", "description": "Pick up free issues and meet local comic artists." },
+        { "title": "Comic-Con Pakistan", "kind": "convention", "date": "2026-11-28", "location": "Expo Centre, Lahore", "image": "Comics_hero/Comics_hero1.jpeg", "description": "Creator panels, exclusive variants and the biggest cosplay stage." },
+        { "title": "Draw Your Own Hero", "kind": "workshop", "date": "2026-12-06", "location": "Makers Hub, Islamabad", "image": "HERO/Comics.jpeg", "description": "Learn paneling, inking and lettering with professional artists." },
+        { "title": "Batman Day Screening", "kind": "watch party", "date": "2026-09-20", "location": "FandomVerse Lounge, Karachi", "image": "Movie_Article_img/the-dark-knight.png", "description": "Celebrate the Caped Crusader with a double feature." }
+      ],
+      "merchandise": [
+        { "name": "Spider-Man Graphic Tee", "franchise": "Marvel", "kind": "apparel", "image": "Comics_hero/Comics_hero1.jpeg", "price": [22, 30], "description": "Vintage-print tee featuring classic Spidey panel art." },
+        { "name": "Bat-Signal Desk Lamp", "franchise": "DC", "kind": "homeware", "image": "Movie_Article_img/the-batman.png", "price": [34, 49], "description": "USB lamp that projects the Bat-Signal onto your wall." },
+        { "name": "Captain America Shield", "franchise": "Marvel", "kind": "collectible", "image": "Comics_hero/Comics_hero.jpeg", "price": [59, 89], "description": "Metal-finish 1:1 shield replica with arm straps." },
+        { "name": "Classic Comics Poster Pack", "franchise": "Classic Comics", "kind": "poster", "image": "Comics_hero/Comics_hero2.jpeg", "price": [14, 22], "description": "Four retro comic-strip posters on heavyweight paper." },
+        { "name": "Cosmic Sentinel Issue #1", "franchise": "FandomVerse Originals", "kind": "comic", "image": "HERO/Comics.jpeg", "price": [6, 12], "description": "The debut issue of our original hero, standard and foil variants." }
+      ],
+      "trailers": [
+        { "title": "Uncanny X-Force — Trailer", "status": "upcoming", "date": "2027-04-02", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306667/Uncanny_X-Force_Trailer.mp4", "poster": "Comics_hero/Comics_hero.jpeg", "description": "Marvel's black-ops mutant team takes the stage." },
+        { "title": "Superman", "status": "released", "date": "2026-07-11", "youtube": "Ox8ZLF6cGM0", "poster": "Comics_hero/Comics_hero.jpeg", "description": "A new beginning for DC's first superhero." },
+        { "title": "Invincible — Next Season", "status": "upcoming", "date": "2027-02-20", "youtube": "-bfAVpuko5o", "poster": "HERO/Comics.jpeg", "description": "Mark's toughest battles are still ahead." }
+      ]
+    },
+    {
+      "slug": "manga",
+      "name": "Manga",
+      "path": "/Manga",
+      "icon": "書",
+      "accent": "#e32636",
+      "heroImage": "HERO/Manga.jpeg",
+      "summary": "Ink, panels and legendary arcs — read about the manga that started it all.",
+      "tags": ["shonen", "seinen", "thriller", "classic"],
+      "gallery": [
+        { "title": "Death Note Panels", "image": "Comics_hero/Comics_hero3.jpeg", "tags": ["thriller", "death note"] },
+        { "title": "Goku Breaks the Page", "image": "Comics_hero/Comics_hero4.jpeg", "tags": ["shonen", "dragon ball"] },
+        { "title": "Grand Line Adventure", "image": "Anim_Articles_img/One Piece.jpg", "tags": ["shonen", "one piece"] },
+        { "title": "Shinobi Way", "image": "Anim_Articles_img/narutoooo.jpg", "tags": ["shonen", "naruto"] },
+        { "title": "Wall Maria", "image": "Anim_Articles_img/Attack on Titan.jpg", "tags": ["seinen", "attack on titan"] },
+        { "title": "Breath of Water", "image": "Anim_Articles_img/demon-slayer.jpg", "tags": ["shonen", "demon slayer"] },
+        { "title": "Cursed Energy", "image": "Anim_Articles_img/jujutsu-kaisen.jpg", "tags": ["shonen", "jujutsu kaisen"] },
+        { "title": "Manga Hub Cover", "image": "HERO/Manga.jpeg", "tags": ["classic", "art"] }
+      ],
+      "videos": [
+        { "title": "Death Note — Official Trailer", "kind": "trailer", "youtube": "NlJZ-YgAt-c", "poster": "Comics_hero/Comics_hero3.jpeg", "date": "2026-09-04", "description": "Light Yagami finds a notebook that can kill." },
+        { "title": "Attack on Titan — Trailer", "kind": "trailer", "youtube": "MGRm4IzK1SQ", "poster": "Anim_Articles_img/Attack on Titan.jpg", "date": "2026-08-08", "description": "The manga's walls come crashing down on screen." },
+        { "title": "Chainsaw Man — Teaser PV", "kind": "teaser", "youtube": "q15CRdE5Bv0", "poster": "HERO/Manga.jpeg", "date": "2026-07-17", "description": "Tatsuki Fujimoto's hit manga roars into animation." },
+        { "title": "My Hero Academia — PV 6", "kind": "trailer", "youtube": "D5fYOnwYkj4", "poster": "Anim_Articles_img/my-hero-academia.jpg", "date": "2026-06-19", "description": "Deku and Class 1-A face their biggest challenge." }
+      ],
+      "audio": [
+        { "title": "Manga Book Club — Death Note", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3", "cover": "Comics_hero/Comics_hero3.jpeg", "duration": "5:23", "date": "2026-09-16", "description": "A spoiler-light discussion of Light versus L." },
+        { "title": "Mangaka Masterclass", "kind": "podcast", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-6.mp3", "cover": "Comics_hero/Comics_hero4.jpeg", "duration": "6:48", "date": "2026-08-29", "description": "How Akira Toriyama's panel flow changed action manga." },
+        { "title": "Reading Lo-fi Mix", "kind": "music", "src": "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-10.mp3", "cover": "HERO/Manga.jpeg", "duration": "5:43", "date": "2026-07-28", "description": "Calm beats for your next reading session." }
+      ],
+      "characters": [
+        { "name": "Light Yagami", "franchise": "Death Note", "image": "Comics_hero/Comics_hero3.jpeg", "bio": "A brilliant student who finds the Death Note and sets out to create a world without crime.", "traits": ["genius", "ruthless", "charismatic"] },
+        { "name": "Ryuk", "franchise": "Death Note", "image": "Anim_gellery_img/death-note.jpeg", "bio": "A bored Shinigami who drops his notebook into the human world just to see what happens.", "traits": ["mischievous", "curious", "neutral"] },
+        { "name": "Son Goku", "franchise": "Dragon Ball", "image": "Comics_hero/Comics_hero4.jpeg", "bio": "Akira Toriyama's legendary Saiyan, whose manga battles defined the shonen genre.", "traits": ["pure-hearted", "strong", "cheerful"] },
+        { "name": "Monkey D. Luffy", "franchise": "One Piece", "image": "Anim_Articles_img/One Piece.jpg", "bio": "Eiichiro Oda's rubber pirate captain on the longest-running adventure in manga.", "traits": ["fearless", "loyal", "joyful"] },
+        { "name": "Naruto Uzumaki", "franchise": "Naruto", "image": "Anim_Articles_img/narutoooo.jpg", "bio": "Masashi Kishimoto's never-give-up ninja who wins over an entire village.", "traits": ["determined", "kind", "persistent"] },
+        { "name": "Levi Ackerman", "franchise": "Attack on Titan", "image": "Anim_Articles_img/Attack on Titan.jpg", "bio": "Humanity's strongest soldier and captain of the Survey Corps' Special Operations Squad.", "traits": ["disciplined", "stoic", "lethal"] }
+      ],
+      "events": [
+        { "title": "Manga Swap Meet", "kind": "meetup", "date": "2026-10-10", "location": "Liberty Books, Lahore", "image": "HERO/Manga.jpeg", "description": "Trade volumes, discover new series and meet fellow readers." },
+        { "title": "Inking Workshop with Pros", "kind": "workshop", "date": "2026-11-15", "location": "Makers Hub, Karachi", "image": "Comics_hero/Comics_hero4.jpeg", "description": "Learn screentones and brush inking used by professional mangaka." },
+        { "title": "Death Note Night", "kind": "watch party", "date": "2026-12-13", "location": "FandomVerse Lounge, Islamabad", "image": "Comics_hero/Comics_hero3.jpeg", "description": "Marathon of the anime adaptation with a mystery-solving game." },
+        { "title": "Shonen Jump Anniversary", "kind": "convention", "date": "2026-07-04", "location": "Expo Centre, Karachi", "image": "Anim_Articles_img/One Piece.jpg", "description": "Celebrating decades of iconic manga with exhibits and panels." }
+      ],
+      "merchandise": [
+        { "name": "Death Note Notebook", "franchise": "Death Note", "kind": "stationery", "image": "Comics_hero/Comics_hero3.jpeg", "price": [12, 18], "description": "Replica notebook with the rules printed inside — for writing notes only!" },
+        { "name": "One Piece Box Set 1", "franchise": "One Piece", "kind": "books", "image": "Anim_Articles_img/One Piece.jpg", "price": [79, 99], "description": "Volumes 1–23 of the East Blue and Baroque Works sagas." },
+        { "name": "Dragon Ball Poster Scroll", "franchise": "Dragon Ball", "kind": "poster", "image": "Comics_hero/Comics_hero4.jpeg", "price": [16, 25], "description": "Fabric wall scroll with black-and-white manga art." },
+        { "name": "Naruto Headband", "franchise": "Naruto", "kind": "accessory", "image": "Anim_Articles_img/narutoooo.jpg", "price": [9, 14], "description": "Metal-plate Hidden Leaf forehead protector." },
+        { "name": "Manga Page Tote Bag", "franchise": "FandomVerse", "kind": "apparel", "image": "HERO/Manga.jpeg", "price": [15, 20], "description": "Canvas tote printed with classic manga panels." }
+      ],
+      "trailers": [
+        { "title": "Demon Slayer — Infinity Castle", "status": "released", "date": "2026-09-12", "video": "https://res.cloudinary.com/i6su4pd1/video/upload/v1790306366/Demon_Slayer__Kimetsu_no_Yaiba_Infinity_Castle___MAIN_TRAILER.mp4", "poster": "Anim_Articles_img/demon-slayer.jpg", "description": "The manga's final arc animated for cinemas." },
+        { "title": "Death Note — Anime Adaptation", "status": "released", "date": "2026-04-18", "youtube": "NlJZ-YgAt-c", "poster": "Comics_hero/Comics_hero3.jpeg", "description": "The classic cat-and-mouse thriller." },
+        { "title": "Chainsaw Man — Next Arc", "status": "upcoming", "date": "2027-01-24", "youtube": "q15CRdE5Bv0", "poster": "HERO/Manga.jpeg", "description": "Denji's story continues." }
+      ]
+    }
+  ]
+}
