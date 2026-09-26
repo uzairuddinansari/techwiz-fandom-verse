@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { Bookmark, CalendarDays, Map as MapIcon, ShoppingBag, UserRound, UsersRound, Clapperboard, Compass, Film, Gamepad2, Info, LayoutDashboard, Mail, Music2, Search, Tv, BookOpen, Sparkles, Wrench } from "lucide-react";
 import "../../styles/Footer.css";
-import luffy from "../../assets/Footer/Monkey_D_luffey.jpeg";
-import naruto from "../../assets/Footer/Naruto_uzumaki.jpeg";
+import luffy from "../../assets/Footer/Monkey_D_luffey.png";
+import naruto from "../../assets/Footer/Naruto_uzumaki.png";
 import goku from "../../assets/Footer/Goku.png";
 
 const animeCharacters = [

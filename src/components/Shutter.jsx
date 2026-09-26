@@ -36,6 +36,7 @@ const projects = [
 
 const shutterLinks = [
   { to: "/", label: "Home" },
+  { to: "/sitemap", label: "Site Map" },
   { to: "/shop", label: "Shop" },
   { to: "/Trailers", label: "Trailers" },
   { to: "/releases", label: "Releases" },
