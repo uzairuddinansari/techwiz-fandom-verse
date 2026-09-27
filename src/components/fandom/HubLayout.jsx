@@ -17,13 +17,6 @@ export default function HubLayout({ slug, hero }) {
       {hero || <HubHero slug={slug} />}
 
       <main className="hub-page" id="hub-content">
-        <nav className="hub-tabs" aria-label={`${category.name} sections`}>
-          {sections.map((section) => (
-            <NavLink key={section.key} to={section.path ? `${category.path}/${section.path}` : category.path} end={!section.path}>
-              {section.label}
-            </NavLink>
-          ))}
-        </nav>
 
         <div className="fv-container hub-crumbs">
           <Breadcrumbs
