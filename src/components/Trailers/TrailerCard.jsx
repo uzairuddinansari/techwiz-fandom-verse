@@ -1,10 +1,10 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { categories } from "../../fandom/catalog";
 import { toggleBookmark, useBookmarks } from "../../fandom/store";
 
 const slugify = (text) => text.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "");
 
-/* Shape a trailers.json entry like a catalog item so it can live in the shared bookmarks. */
 const asBookmark = (trailer) => {
   const category = categories.find((entry) => entry.name.toLowerCase() === trailer.category.toLowerCase());
   return {
@@ -22,15 +22,23 @@ const asBookmark = (trailer) => {
 
 export default function TrailerCard({ trailer, type = "Trailer" }) {
   const [isOpen, setIsOpen] = useState(false);
+  const closeRef = useRef(null);
   const bookmark = asBookmark(trailer);
   const saved = useBookmarks().some((entry) => entry.uid === bookmark.uid);
 
   useEffect(() => {
     document.body.style.overflow = isOpen ? "hidden" : "";
-
+    if (isOpen) closeRef.current?.focus();
     return () => {
       document.body.style.overflow = "";
     };
+  }, [isOpen]);
+
+  useEffect(() => {
+    if (!isOpen) return;
+    const onKey = (e) => e.key === "Escape" && setIsOpen(false);
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
   }, [isOpen]);
 
   const handleSaveTrailer = () => toggleBookmark(bookmark);
@@ -39,28 +47,13 @@ export default function TrailerCard({ trailer, type = "Trailer" }) {
     <>
       <article className="trailer-card">
         <div className="trailer-media">
-          <img
-            src={trailer.poster}
-            alt={trailer.title}
-            loading="lazy"
-          />
-
-          <span className="trailer-type">
-            {type}
-          </span>
-
-          <button
-            className="trailer-play"
-            onClick={() => setIsOpen(true)}
-            aria-label={`Play ${trailer.title}`}
-          >
+          <img src={trailer.poster} alt={trailer.title} loading="lazy" />
+          <span className="trailer-type">{type}</span>
+          <button className="trailer-play" onClick={() => setIsOpen(true)} aria-label={`Play ${trailer.title}`}>
             ▶
           </button>
-
           <button
-            className={`trailer-favorite ${
-              saved ? "saved" : ""
-            }`}
+            className={`trailer-favorite ${saved ? "saved" : ""}`}
             onClick={handleSaveTrailer}
             aria-pressed={saved}
             aria-label={saved ? `Remove ${trailer.title} from bookmarks` : `Bookmark ${trailer.title}`}
@@ -71,9 +64,7 @@ export default function TrailerCard({ trailer, type = "Trailer" }) {
 
         <div className="trailer-content">
           <h2>{trailer.title} — Trailer</h2>
-
           <p>{trailer.description}</p>
-
           <div className="trailer-tags">
             <span>{trailer.category}</span>
             <span>{type}</span>
@@ -81,41 +72,34 @@ export default function TrailerCard({ trailer, type = "Trailer" }) {
         </div>
       </article>
 
-      {isOpen && (
-        <div className="trailer-drawer">
-          <div
-            className="trailer-drawer-backdrop"
-            onClick={() => setIsOpen(false)}
-          />
+      {isOpen &&
+        createPortal(
+          <div className="trailer-drawer">
+            <div className="trailer-drawer-backdrop" onClick={() => setIsOpen(false)} />
 
-          <div className="trailer-video-panel">
-            <button
-              className="trailer-close"
-              onClick={() => setIsOpen(false)}
-              aria-label="Close video"
+            <div
+              className="trailer-video-panel"
+              role="dialog"
+              aria-modal="true"
+              aria-label={trailer.title}
             >
-              ×
-            </button>
+              <button ref={closeRef} className="trailer-close" onClick={() => setIsOpen(false)} aria-label="Close video">
+                ×
+              </button>
 
-            <div className="trailer-video-wrapper">
-              <video
-                src={trailer.videoSrc}
-                controls
-                autoPlay
-                playsInline
-              />
+              <div className="trailer-video-wrapper">
+                <video src={trailer.videoSrc} controls autoPlay playsInline preload="metadata" />
+              </div>
+
+              <div className="trailer-video-info">
+                <span>{trailer.category}</span>
+                <h2>{trailer.title}</h2>
+                <p>{trailer.subtitle}</p>
+              </div>
             </div>
-
-            <div className="trailer-video-info">
-              <span>{trailer.category}</span>
-
-              <h2>{trailer.title}</h2>
-
-              <p>{trailer.subtitle}</p>
-            </div>
-          </div>
-        </div>
-      )}
+          </div>,
+          document.body
+        )}
     </>
   );
 }
