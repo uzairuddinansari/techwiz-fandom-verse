@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 import { Bookmark, ChevronLeft, ChevronRight, ShoppingBag, X } from "lucide-react";
 import { formatDate, formatPrice, sectionForType, sectionPath, typeLabels } from "../../fandom/catalog";
@@ -109,7 +110,7 @@ export default function MediaModal({ items, index, onClose, onNavigate }) {
 
     const isPlayable = item.type === "video" || item.type === "trailer";
 
-    return (
+    return createPortal(
         <div className="fv-modal-backdrop" onMouseDown={onClose}>
             <div
                 className={`fv-modal fv-modal-${item.type}`}
@@ -163,6 +164,7 @@ export default function MediaModal({ items, index, onClose, onNavigate }) {
                     </div>
                 </div>
             </div>
-        </div>
+        </div>,
+        document.body
     );
 }
